@@ -1,0 +1,3 @@
+apache-airflow[celery]==3.2.1
+dbt-trino==1.9.3
+dbt-core==1.10.10
