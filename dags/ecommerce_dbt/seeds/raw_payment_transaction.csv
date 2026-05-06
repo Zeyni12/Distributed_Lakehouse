@@ -1,0 +1,5 @@
+transaction_id,user_id,order_id,amount,currency,payment_method,status,transaction_timestamp
+t1,u1,o1001,25.5,USD,card,success,2026-05-06T10:05:00Z
+t2,u2,o1002,15.0,USD,mpesa,success,2026-05-06T10:06:10Z
+t3,u3,o1003,40.0,USD,card,failed,2026-05-06T10:07:30Z
+t4,u1,o1004,12.0,USD,card,success,2026-05-06T10:08:00Z

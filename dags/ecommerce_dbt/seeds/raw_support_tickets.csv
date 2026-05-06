@@ -1,0 +1,5 @@
+ticket_id,user_id,category,priority,status,created_at,resolved_at
+t100,u1,payment,high,open,2026-05-06T09:30:00Z,
+t101,u2,delivery,medium,resolved,2026-05-05T14:00:00Z,2026-05-06T08:00:00Z
+t102,u3,product,low,open,2026-05-06T11:00:00Z,
+t103,u1,account,high,resolved,2026-05-04T10:00:00Z,2026-05-05T10:00:00Z

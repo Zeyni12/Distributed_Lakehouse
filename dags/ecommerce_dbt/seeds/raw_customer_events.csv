@@ -1,0 +1,5 @@
+event_id,user_id,event_type,event_timestamp,product_id,session_id,device,location
+e1,u1,view,2026-05-06T10:00:00Z,p101,s1,mobile,Addis Ababa
+e2,u1,click,2026-05-06T10:01:10Z,p101,s1,mobile,Addis Ababa
+e3,u2,view,2026-05-06T10:02:00Z,p105,s2,desktop,Nairobi
+e4,u3,purchase,2026-05-06T10:03:30Z,p110,s3,mobile,Addis Ababa

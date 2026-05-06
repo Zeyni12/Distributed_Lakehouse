@@ -1,0 +1,5 @@
+snapshot_id,product_id,warehouse_id,stock_qty,price,recorded_at
+s1,p101,w1,120,25.5,2026-05-06T09:00:00Z
+s2,p105,w1,80,15.0,2026-05-06T09:00:00Z
+s3,p110,w2,45,40.0,2026-05-06T09:00:00Z
+s4,p101,w1,115,25.5,2026-05-06T10:00:00Z
