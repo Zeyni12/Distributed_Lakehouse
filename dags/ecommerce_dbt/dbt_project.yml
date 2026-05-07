@@ -1,20 +1,59 @@
-seeds:
-  ecommerce_dbt:
-     schema: bronze
+# seeds:
+#   ecommerce_dbt:
+#      schema: bronze
+
+# models:
+#   ecommerce_dbt:
+#     bronze:
+#       +tags: bronze
+#       +schema: bronze
+#       +materialized: table
+      
+#     silver:
+#       +tags: silver
+#       +schema: silver
+#       +materialized: table
+
+#     gold:
+#       +tags: gold
+#       +schema: gold
+#       +materialized: table 
+# name: ecommerce_dbt
+# version: "1.0"
+# config-version: 2
+
+# profile: ecommerce_trino
+
+# model-paths: ["models"]
+# seed-paths: ["seeds"]
+
+# models:
+#   ecommerce_dbt:
+#     bronze:
+#       +schema: bronze
+#     silver:
+#       +schema: silver
+#     gold:
+#       +schema: gold
+
+name: ecommerce_dbt
+version: "1.0"
+config-version: 2
+
+profile: ecommerce_trino
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
 
 models:
   ecommerce_dbt:
     bronze:
-      +tags: bronze
       +schema: bronze
-      +materialized: table
-      
     silver:
-      +tags: silver
       +schema: silver
-      +materialized: table
-
     gold:
-      +tags: gold
       +schema: gold
-      +materialized: table 
+
+seeds:
+  ecommerce_dbt:
+    +schema: raw

@@ -328,7 +328,7 @@
 
 from datetime import timedelta, datetime
 from airflow import settings
-from airflow.decorators import dag, task
+from airflow.sdk import dag, task
 
 DBT_ROOT_DIR = f"{settings.DAGS_FOLDER}/ecommerce_dbt"
 

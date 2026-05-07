@@ -287,14 +287,23 @@ services:
     volumes:
       - minio-data:/data
     restart: always
+  # nessie:
+  #   image: projectnessie/nessie
+  #   container_name: nessie
+  #   ports:
+  #     - "19120:19120"
+  #   environment:
+  #     QUARKUS_PROFILE: prod
+  #   restart: always
+
   nessie:
-    image: projectnessie/nessie
-    container_name: nessie
-    ports:
-      - "19120:19120"
-    environment:
-      QUARKUS_PROFILE: prod
-    restart: always
+   image: projectnessie/nessie
+   container_name: nessie
+   ports:
+    - "19120:19120"
+   environment:
+     QUARKUS_HTTP_PORT: 19120
+     NESSIE_VERSION_STORE_TYPE: IN_MEMORY
 
   trino-coordinator:
     image: trinodb/trino:latest

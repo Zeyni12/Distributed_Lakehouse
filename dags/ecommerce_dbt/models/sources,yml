@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: raw
+    database: iceberg
+    schema: raw
+    tables:
+      - name: raw_payment_transactions
+      - name: raw_customer_events

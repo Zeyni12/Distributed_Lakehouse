@@ -1,0 +1,154 @@
+{"timestamp":"2026-05-07T11:49:13.514087Z","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":209}
+{"timestamp":"2026-05-07T11:49:13.516206Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag_pipeline.py","logger":"airflow.dag_processing.dagbag.BundleDagBag","filename":"dagbag.py","lineno":469}
+{"timestamp":"2026-05-07T11:49:17.382372Z","level":"info","event":"Seeding bronze...","logger":"unusual_prefix_11c7dd38b84fb77f29c2585710943d4b7baaf7b9_dag_pipeline","filename":"dag_pipeline.py","lineno":382}
+{"timestamp":"2026-05-07T11:49:17.979341Z","level":"info","event":"Tables do not exist or error occurred: (trino.exceptions.TrinoExternalError) TrinoExternalError(type=EXTERNAL, name=ICEBERG_CATALOG_ERROR, message=\"Cannot obtain metadata\", query_id=20260507_114917_00001_f8ybt)\n[SQL: SELECT count(*) as cnt FROM raw_customer_events]\n(Background on this error at: https://sqlalche.me/e/20/e3q8), proceeding with seeding","logger":"unusual_prefix_11c7dd38b84fb77f29c2585710943d4b7baaf7b9_dag_pipeline","filename":"dag_pipeline.py","lineno":405}
+{"timestamp":"2026-05-07T11:49:17.979879Z","level":"warning","event":"DbtOperator.execute cannot be called outside of the Task Runner!","logger":"airflow.task.operators.operators.dbt_operator.DbtOperator","filename":"operator.py","lineno":437}
+{"timestamp":"2026-05-07T11:49:17.989654Z","level":"info","event":"Executing dbt command: seed --project-dir /opt/airflow/dags/ecommerce_dbt --profiles-dir /opt/airflow/dags/ecommerce_dbt --full-refresh","logger":"airflow.task.operators.operators.dbt_operator.DbtOperator","filename":"dbt_operator.py","lineno":180}
+{"timestamp":"2026-05-07T11:49:18.340193Z","level":"info","event":"\u001b[0m11:49:18  Running with dbt=1.10.10","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:18.524588Z","level":"info","event":"keyring module not found. OAuth2 token will not be stored in keyring.","logger":"trino.auth","filename":"auth.py","lineno":361}
+{"timestamp":"2026-05-07T11:49:18.544651Z","level":"info","event":"keyring module not found. OAuth2 token will not be stored in keyring.","logger":"trino.auth","filename":"auth.py","lineno":361}
+{"timestamp":"2026-05-07T11:49:20.375970Z","level":"info","event":"\u001b[0m11:49:20  Registered adapter: trino=1.9.3","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.260094Z","level":"info","event":"\u001b[0m11:49:22  Encountered an error:","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.261330Z","level":"info","event":"'dbt_trino://macros/apply_grants.sql'","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.420534Z","level":"info","event":"\u001b[0m11:49:22  Traceback (most recent call last):","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.420927Z","level":"info","event":"  File \"/home/airflow/.local/lib/python3.13/site-packages/sqlalchemy/engine/base.py\", line 1967, in _exec_single_context","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.424430Z","level":"info","event":"    self.dialect.do_execute(","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.425513Z","level":"info","event":"    ~~~~~~~~~~~~~~~~~~~~~~~^","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.426015Z","level":"info","event":"        cursor, str_statement, effective_parameters, context","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.426381Z","level":"info","event":"        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.426721Z","level":"info","event":"    )","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.427084Z","level":"info","event":"    ^","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.427433Z","level":"info","event":"  File \"/home/airflow/.local/lib/python3.13/site-packages/trino/sqlalchemy/dialect.py\", line 442, in do_execute","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.427754Z","level":"info","event":"    cursor.execute(statement, parameters)","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.428316Z","level":"info","event":"    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.428712Z","level":"info","event":"  File \"/home/airflow/.local/lib/python3.13/site-packages/trino/dbapi.py\", line 640, in execute","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.429055Z","level":"info","event":"    self._iterator = iter(self._query.execute())","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.429395Z","level":"info","event":"                          ~~~~~~~~~~~~~~~~~~~^^","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.429772Z","level":"info","event":"  File \"/home/airflow/.local/lib/python3.13/site-packages/trino/client.py\", line 938, in execute","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.430124Z","level":"info","event":"    self._result.rows += self.fetch()","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.430486Z","level":"info","event":"                         ~~~~~~~~~~^^","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.430827Z","level":"info","event":"  File \"/home/airflow/.local/lib/python3.13/site-packages/trino/client.py\", line 958, in fetch","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.431149Z","level":"info","event":"    status = self._request.process(response)","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.431456Z","level":"info","event":"  File \"/home/airflow/.local/lib/python3.13/site-packages/trino/client.py\", line 727, in process","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.431768Z","level":"info","event":"    raise self._process_error(response[\"error\"], response.get(\"id\"))","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.432092Z","level":"info","event":"          ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.432434Z","level":"info","event":"  File \"/home/airflow/.local/lib/python3.13/site-packages/trino/client.py\", line 696, in _process_error","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.434704Z","level":"info","event":"    raise exceptions.TrinoExternalError(error, query_id)","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.435188Z","level":"info","event":"trino.exceptions.TrinoExternalError: TrinoExternalError(type=EXTERNAL, name=ICEBERG_CATALOG_ERROR, message=\"Cannot obtain metadata\", query_id=20260507_114917_00001_f8ybt)","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.435513Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.435947Z","level":"info","event":"The above exception was the direct cause of the following exception:","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.436454Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.437504Z","level":"info","event":"Traceback (most recent call last):","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.442371Z","level":"info","event":"  File \"/opt/airflow/dags/dag_pipeline.py\", line 391, in seed_bronze","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.442869Z","level":"info","event":"    result = conn.execute(text(\"SELECT count(*) as cnt FROM raw_customer_events\"))","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.443287Z","level":"info","event":"  File \"/home/airflow/.local/lib/python3.13/site-packages/sqlalchemy/engine/base.py\", line 1419, in execute","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.443656Z","level":"info","event":"    return meth(","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.443959Z","level":"info","event":"        self,","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.444306Z","level":"info","event":"        distilled_parameters,","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.444712Z","level":"info","event":"        execution_options or NO_OPTIONS,","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.445093Z","level":"info","event":"    )","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.445494Z","level":"info","event":"  File \"/home/airflow/.local/lib/python3.13/site-packages/sqlalchemy/sql/elements.py\", line 527, in _execute_on_connection","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.445817Z","level":"info","event":"    return connection._execute_clauseelement(","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.446310Z","level":"info","event":"           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.446698Z","level":"info","event":"        self, distilled_params, execution_options","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.447052Z","level":"info","event":"        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.447419Z","level":"info","event":"    )","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.447761Z","level":"info","event":"    ^","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.451937Z","level":"info","event":"  File \"/home/airflow/.local/lib/python3.13/site-packages/sqlalchemy/engine/base.py\", line 1641, in _execute_clauseelement","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.452891Z","level":"info","event":"    ret = self._execute_context(","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.453405Z","level":"info","event":"        dialect,","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.458381Z","level":"info","event":"    ...<8 lines>...","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.458934Z","level":"info","event":"        cache_hit=cache_hit,","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.459398Z","level":"info","event":"    )","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.459691Z","level":"info","event":"  File \"/home/airflow/.local/lib/python3.13/site-packages/sqlalchemy/engine/base.py\", line 1846, in _execute_context","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.460008Z","level":"info","event":"    return self._exec_single_context(","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.460478Z","level":"info","event":"           ~~~~~~~~~~~~~~~~~~~~~~~~~^","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.461038Z","level":"info","event":"        dialect, context, statement, parameters","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.461445Z","level":"info","event":"        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.461757Z","level":"info","event":"    )","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.464046Z","level":"info","event":"    ^","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.464572Z","level":"info","event":"  File \"/home/airflow/.local/lib/python3.13/site-packages/sqlalchemy/engine/base.py\", line 1986, in _exec_single_context","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.465078Z","level":"info","event":"    self._handle_dbapi_exception(","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.465585Z","level":"info","event":"    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.466305Z","level":"info","event":"        e, str_statement, effective_parameters, cursor, context","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.466697Z","level":"info","event":"        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.467232Z","level":"info","event":"    )","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.467576Z","level":"info","event":"    ^","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.467947Z","level":"info","event":"  File \"/home/airflow/.local/lib/python3.13/site-packages/sqlalchemy/engine/base.py\", line 2363, in _handle_dbapi_exception","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.468298Z","level":"info","event":"    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.468763Z","level":"info","event":"  File \"/home/airflow/.local/lib/python3.13/site-packages/sqlalchemy/engine/base.py\", line 1967, in _exec_single_context","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.469113Z","level":"info","event":"    self.dialect.do_execute(","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.469472Z","level":"info","event":"    ~~~~~~~~~~~~~~~~~~~~~~~^","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.469963Z","level":"info","event":"        cursor, str_statement, effective_parameters, context","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.470732Z","level":"info","event":"        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.471374Z","level":"info","event":"    )","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.473600Z","level":"info","event":"    ^","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.474161Z","level":"info","event":"  File \"/home/airflow/.local/lib/python3.13/site-packages/trino/sqlalchemy/dialect.py\", line 442, in do_execute","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.475441Z","level":"info","event":"    cursor.execute(statement, parameters)","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.475804Z","level":"info","event":"    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.476083Z","level":"info","event":"  File \"/home/airflow/.local/lib/python3.13/site-packages/trino/dbapi.py\", line 640, in execute","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.476483Z","level":"info","event":"    self._iterator = iter(self._query.execute())","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.476878Z","level":"info","event":"                          ~~~~~~~~~~~~~~~~~~~^^","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.477211Z","level":"info","event":"  File \"/home/airflow/.local/lib/python3.13/site-packages/trino/client.py\", line 938, in execute","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.477490Z","level":"info","event":"    self._result.rows += self.fetch()","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.477755Z","level":"info","event":"                         ~~~~~~~~~~^^","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.478061Z","level":"info","event":"  File \"/home/airflow/.local/lib/python3.13/site-packages/trino/client.py\", line 958, in fetch","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.478446Z","level":"info","event":"    status = self._request.process(response)","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.478803Z","level":"info","event":"  File \"/home/airflow/.local/lib/python3.13/site-packages/trino/client.py\", line 727, in process","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.479118Z","level":"info","event":"    raise self._process_error(response[\"error\"], response.get(\"id\"))","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.479442Z","level":"info","event":"          ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.479742Z","level":"info","event":"  File \"/home/airflow/.local/lib/python3.13/site-packages/trino/client.py\", line 696, in _process_error","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.480014Z","level":"info","event":"    raise exceptions.TrinoExternalError(error, query_id)","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.480353Z","level":"info","event":"sqlalchemy.exc.OperationalError: (trino.exceptions.TrinoExternalError) TrinoExternalError(type=EXTERNAL, name=ICEBERG_CATALOG_ERROR, message=\"Cannot obtain metadata\", query_id=20260507_114917_00001_f8ybt)","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.480721Z","level":"info","event":"[SQL: SELECT count(*) as cnt FROM raw_customer_events]","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.481000Z","level":"info","event":"(Background on this error at: https://sqlalche.me/e/20/e3q8)","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.481313Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.481602Z","level":"info","event":"During handling of the above exception, another exception occurred:","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.481913Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.482179Z","level":"info","event":"Traceback (most recent call last):","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.482436Z","level":"info","event":"  File \"/home/airflow/.local/lib/python3.13/site-packages/dbt/cli/requires.py\", line 178, in wrapper","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.482719Z","level":"info","event":"    result, success = func(*args, **kwargs)","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.482984Z","level":"info","event":"                      ~~~~^^^^^^^^^^^^^^^^^","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.483244Z","level":"info","event":"  File \"/home/airflow/.local/lib/python3.13/site-packages/dbt/cli/requires.py\", line 128, in wrapper","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.483507Z","level":"info","event":"    return func(*args, **kwargs)","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.483762Z","level":"info","event":"  File \"/home/airflow/.local/lib/python3.13/site-packages/dbt/cli/requires.py\", line 272, in wrapper","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.484041Z","level":"info","event":"    return func(*args, **kwargs)","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.484348Z","level":"info","event":"  File \"/home/airflow/.local/lib/python3.13/site-packages/dbt/cli/requires.py\", line 303, in wrapper","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.484655Z","level":"info","event":"    return func(*args, **kwargs)","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.484915Z","level":"info","event":"  File \"/home/airflow/.local/lib/python3.13/site-packages/dbt/cli/requires.py\", line 350, in wrapper","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.485174Z","level":"info","event":"    return func(*args, **kwargs)","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.485428Z","level":"info","event":"  File \"/home/airflow/.local/lib/python3.13/site-packages/dbt/cli/requires.py\", line 389, in wrapper","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.485676Z","level":"info","event":"    setup_manifest(ctx, write=write, write_perf_info=write_perf_info)","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.485938Z","level":"info","event":"    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.486219Z","level":"info","event":"  File \"/home/airflow/.local/lib/python3.13/site-packages/dbt/cli/requires.py\", line 416, in setup_manifest","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.486505Z","level":"info","event":"    ctx.obj[\"manifest\"] = parse_manifest(","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.486775Z","level":"info","event":"                          ~~~~~~~~~~~~~~^","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.487051Z","level":"info","event":"        runtime_config,","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.487330Z","level":"info","event":"        ^^^^^^^^^^^^^^^","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.487610Z","level":"info","event":"    ...<3 lines>...","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.487882Z","level":"info","event":"        active_integrations,","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.489694Z","level":"info","event":"        ^^^^^^^^^^^^^^^^^^^^","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.490085Z","level":"info","event":"    )","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.490524Z","level":"info","event":"    ^","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.491142Z","level":"info","event":"  File \"/home/airflow/.local/lib/python3.13/site-packages/dbt/parser/manifest.py\", line 2123, in parse_manifest","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.491666Z","level":"info","event":"    manifest = ManifestLoader.get_full_manifest(","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.492010Z","level":"info","event":"        runtime_config,","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.492275Z","level":"info","event":"        write_perf_info=write_perf_info,","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.492588Z","level":"info","event":"    )","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.492875Z","level":"info","event":"  File \"/home/airflow/.local/lib/python3.13/site-packages/dbt/parser/manifest.py\", line 320, in get_full_manifest","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.493162Z","level":"info","event":"    manifest = loader.load()","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.493424Z","level":"info","event":"  File \"/home/airflow/.local/lib/python3.13/site-packages/dbt/parser/manifest.py\", line 389, in load","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.493689Z","level":"info","event":"    self.load_and_parse_macros(project_parser_files)","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.493937Z","level":"info","event":"    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.494399Z","level":"info","event":"  File \"/home/airflow/.local/lib/python3.13/site-packages/dbt/parser/manifest.py\", line 691, in load_and_parse_macros","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.497234Z","level":"info","event":"    block = FileBlock(self.manifest.files[file_id])","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.499599Z","level":"info","event":"                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.500073Z","level":"info","event":"KeyError: 'dbt_trino://macros/apply_grants.sql'","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:22.500533Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-05-07T11:49:23.846026Z","level":"error","event":"dbt command failed!","logger":"airflow.task.operators.operators.dbt_operator.DbtOperator","filename":"dbt_operator.py","lineno":198}
+{"timestamp":"2026-05-07T11:49:23.846229Z","level":"error","event":"Exception: 'dbt_trino://macros/apply_grants.sql'","logger":"airflow.task.operators.operators.dbt_operator.DbtOperator","filename":"dbt_operator.py","lineno":200}
+{"timestamp":"2026-05-07T11:49:23.846433Z","level":"warning","event":"Error occurred during seeding: dbt command failed: seed --project-dir /opt/airflow/dags/ecommerce_dbt --profiles-dir /opt/airflow/dags/ecommerce_dbt --full-refresh","logger":"unusual_prefix_11c7dd38b84fb77f29c2585710943d4b7baaf7b9_dag_pipeline","filename":"dag_pipeline.py","lineno":424}
+{"timestamp":"2026-05-07T11:49:23.846621Z","level":"info","event":"Done. Returned value was: {'status': 'failed', 'layer': 'bronze_seed', 'pipeline_id': 'dag_pipeline_20260507114912', 'timestamp': '2026-05-07T11:49:23.846520', 'error': 'dbt command failed: seed --project-dir /opt/airflow/dags/ecommerce_dbt --profiles-dir /opt/airflow/dags/ecommerce_dbt --full-refresh'}","logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator","filename":"python.py","lineno":229}
+{"timestamp":"2026-05-07T11:49:23.846869Z","level":"info","event":"Pushing xcom","ti":"RuntimeTaskInstance(id=UUID('019e0245-339e-791a-907b-d6ae1e453a4b'), task_id='seed_bronze', dag_id='ecommerce_dag_pipeline', run_id='manual__2026-05-07T11:49:10.075505+00:00', try_number=1, dag_version_id=UUID('019dfd0d-c356-769c-9658-e2450a265e78'), map_index=-1, hostname='170cd49165bb', context_carrier={'traceparent': '00-9e5e61ef1333585577482e571fbe57c2-fffe0a1d8aaf8ca8-01'}, task=<Task(_PythonDecoratedOperator): seed_bronze>, bundle_instance=LocalDagBundle(name=dags-folder), max_tries=2, start_date=datetime.datetime(2026, 5, 7, 11, 49, 13, 390431, tzinfo=datetime.timezone.utc), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None, sentry_integration='')","logger":"task","filename":"task_runner.py","lineno":1724}
+{"timestamp":"2026-05-07T11:49:24.008538Z","level":"error","event":"/usr/python/lib/python3.13/multiprocessing/resource_tracker.py:400: UserWarning: resource_tracker: There appear to be 3 leaked semaphore objects to clean up at shutdown: {'/mp-1cyobki4', '/mp-sv8110g8', '/mp-xssxcedr'}","logger":"task.stderr"}
+{"timestamp":"2026-05-07T11:49:24.012911Z","level":"error","event":"  warnings.warn(","logger":"task.stderr"}

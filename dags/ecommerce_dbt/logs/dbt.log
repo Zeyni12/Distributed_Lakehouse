@@ -34,3 +34,1756 @@ click.exceptions.Abort
 [0m14:56:18.610755 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FD7F706190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FD7F775610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FD788E0DD0>]}
 [0m14:56:18.611763 [debug] [MainThread]: Flushing usage events
 [0m14:56:21.111935 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:42:41.801157 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efae5877a10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efae65af750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efae446fc50>]}
+
+
+============================== 10:42:41.960120 | 79006feb-c4cc-4150-a71a-ac4658e73b68 ==============================
+[0m10:42:41.960120 [info ] [MainThread]: Running with dbt=1.10.10
+[0m10:42:41.961675 [debug] [MainThread]: running dbt with arguments {'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_experimental_parser': 'False', 'log_path': '/opt/airflow/dags/ecommerce_dbt/logs', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'target_path': 'None', 'quiet': 'False', 'no_print': 'None', 'send_anonymous_usage_stats': 'True', 'introspect': 'True', 'fail_fast': 'False', 'printer_width': '80', 'use_colors': 'True', 'static_parser': 'True', 'debug': 'False', 'indirect_selection': 'eager', 'profiles_dir': '/opt/airflow/dags/ecommerce_dbt', 'invocation_command': 'dbt celery worker', 'version_check': 'True', 'partial_parse': 'True', 'log_format': 'default', 'warn_error': 'None', 'cache_selected_only': 'False'}
+[0m10:42:41.980434 [error] [MainThread]: Encountered an error:
+Runtime Error
+  dbt cannot run because no profile was specified for this dbt project.
+  To specify a profile for this project, add a line like the this to
+  your dbt_project.yml file:
+  
+  profile: [profile name]
+  
+  Here, [profile name] should be replaced with a profile name
+  defined in your profiles.yml file. You can find profiles.yml here:
+  
+  /home/airflow/.dbt/profiles.yml
+  
+[0m10:42:41.983278 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_success": false, "command_wall_clock_time": 0.34289193, "process_in_blocks": "4488", "process_kernel_time": 0.5429, "process_mem_max_rss": "294740", "process_out_blocks": "3560", "process_user_time": 3.125792}
+[0m10:42:41.984401 [debug] [MainThread]: Command `cli seed` failed at 10:42:41.984186 after 0.34 seconds
+[0m10:42:41.993428 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efae44b49d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efae4421eb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efae4481bf0>]}
+[0m10:42:41.994669 [debug] [MainThread]: Flushing usage events
+[0m10:42:43.014959 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:43:34.999608 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efae5842e40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efae65a1a90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efae6489090>]}
+
+
+============================== 10:43:35.006015 | 95301a8f-d72f-48d5-bada-f49a32109552 ==============================
+[0m10:43:35.006015 [info ] [MainThread]: Running with dbt=1.10.10
+[0m10:43:35.007173 [debug] [MainThread]: running dbt with arguments {'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_experimental_parser': 'False', 'log_path': '/opt/airflow/dags/ecommerce_dbt/logs', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'target_path': 'None', 'quiet': 'False', 'no_print': 'None', 'send_anonymous_usage_stats': 'True', 'introspect': 'True', 'fail_fast': 'False', 'printer_width': '80', 'use_colors': 'True', 'static_parser': 'True', 'debug': 'False', 'indirect_selection': 'eager', 'profiles_dir': '/opt/airflow/dags/ecommerce_dbt', 'invocation_command': 'dbt celery worker', 'version_check': 'True', 'partial_parse': 'True', 'log_format': 'default', 'warn_error': 'None', 'cache_selected_only': 'False'}
+[0m10:43:35.013864 [error] [MainThread]: Encountered an error:
+Runtime Error
+  dbt cannot run because no profile was specified for this dbt project.
+  To specify a profile for this project, add a line like the this to
+  your dbt_project.yml file:
+  
+  profile: [profile name]
+  
+  Here, [profile name] should be replaced with a profile name
+  defined in your profiles.yml file. You can find profiles.yml here:
+  
+  /home/airflow/.dbt/profiles.yml
+  
+[0m10:43:35.018533 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_success": false, "command_wall_clock_time": 0.18407474, "process_in_blocks": "0", "process_kernel_time": 0.276184, "process_mem_max_rss": "274332", "process_out_blocks": "0", "process_user_time": 2.523322}
+[0m10:43:35.020005 [debug] [MainThread]: Command `cli seed` failed at 10:43:35.019686 after 0.19 seconds
+[0m10:43:35.021519 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efae45c3a80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efae4454dd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efae4451260>]}
+[0m10:43:35.023046 [debug] [MainThread]: Flushing usage events
+[0m10:43:35.989693 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:45:30.569339 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efae584ae40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efae65ada90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efae6499090>]}
+
+
+============================== 10:45:30.575710 | a5ead81a-b4da-48b6-a056-1ff9a5640091 ==============================
+[0m10:45:30.575710 [info ] [MainThread]: Running with dbt=1.10.10
+[0m10:45:30.576807 [debug] [MainThread]: running dbt with arguments {'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_experimental_parser': 'False', 'log_path': '/opt/airflow/dags/ecommerce_dbt/logs', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'target_path': 'None', 'quiet': 'False', 'no_print': 'None', 'send_anonymous_usage_stats': 'True', 'introspect': 'True', 'fail_fast': 'False', 'printer_width': '80', 'use_colors': 'True', 'static_parser': 'True', 'debug': 'False', 'indirect_selection': 'eager', 'profiles_dir': '/opt/airflow/dags/ecommerce_dbt', 'invocation_command': 'dbt celery worker', 'version_check': 'True', 'partial_parse': 'True', 'log_format': 'default', 'warn_error': 'None', 'cache_selected_only': 'False'}
+[0m10:45:30.588870 [error] [MainThread]: Encountered an error:
+Runtime Error
+  dbt cannot run because no profile was specified for this dbt project.
+  To specify a profile for this project, add a line like the this to
+  your dbt_project.yml file:
+  
+  profile: [profile name]
+  
+  Here, [profile name] should be replaced with a profile name
+  defined in your profiles.yml file. You can find profiles.yml here:
+  
+  /home/airflow/.dbt/profiles.yml
+  
+[0m10:45:30.590230 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_success": false, "command_wall_clock_time": 0.18455718, "process_in_blocks": "0", "process_kernel_time": 0.2779, "process_mem_max_rss": "274448", "process_out_blocks": "0", "process_user_time": 2.463207}
+[0m10:45:30.591618 [debug] [MainThread]: Command `cli seed` failed at 10:45:30.591206 after 0.19 seconds
+[0m10:45:30.593071 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efae45c3a80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efae4450ef0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efae44bc490>]}
+[0m10:45:30.594995 [debug] [MainThread]: Flushing usage events
+[0m10:45:31.509287 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:07:23.242190 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x706a6aea01a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x706a6c095f90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x706a6bf01590>]}
+
+
+============================== 11:07:23.360420 | 289ba77a-ce18-4e7f-abd1-2fec9e3c20a0 ==============================
+[0m11:07:23.360420 [info ] [MainThread]: Running with dbt=1.10.10
+[0m11:07:23.361853 [debug] [MainThread]: running dbt with arguments {'warn_error': 'None', 'log_format': 'default', 'use_colors': 'True', 'target_path': 'None', 'profiles_dir': '/opt/airflow/dags/ecommerce_dbt', 'empty': 'None', 'cache_selected_only': 'False', 'printer_width': '80', 'partial_parse': 'True', 'log_path': '/opt/airflow/dags/ecommerce_dbt/logs', 'fail_fast': 'False', 'debug': 'False', 'no_print': 'None', 'version_check': 'True', 'log_cache_events': 'False', 'introspect': 'True', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True', 'write_json': 'True', 'invocation_command': 'dbt celery worker', 'static_parser': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager'}
+[0m11:07:23.734315 [warn ] [MainThread]: [[33mWARNING[0m][DuplicateYAMLKeysDeprecation]: Deprecated functionality
+Duplicate key 'models' in "<unicode string>", line 30, column 1 in file
+`/opt/airflow/dags/ecommerce_dbt/dbt_project.yml`
+[0m11:07:23.736332 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '289ba77a-ce18-4e7f-abd1-2fec9e3c20a0', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x706a69ecf360>]}
+[0m11:07:25.759254 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '289ba77a-ce18-4e7f-abd1-2fec9e3c20a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x706a69b5c490>]}
+[0m11:07:25.909955 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '289ba77a-ce18-4e7f-abd1-2fec9e3c20a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x706a69cef450>]}
+[0m11:07:25.911173 [info ] [MainThread]: Registered adapter: trino=1.9.3
+[0m11:07:26.616373 [debug] [MainThread]: checksum: 502a0dc23e9052e1ae09f7c44ee219ef7a02dfea7e7d66580d54c304c14d553b, vars: {}, profile: , target: , version: 1.10.10
+[0m11:07:26.621600 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m11:07:26.622837 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '289ba77a-ce18-4e7f-abd1-2fec9e3c20a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x706a69868d70>]}
+[0m11:07:33.122798 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.ecommerce_dbt.bronze_payment_transactions' (models/bronze/bronze_payment_transactions.sql) depends on a node named 'raw_payment_transactions' which was not found
+[0m11:07:33.124707 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- DuplicateYAMLKeysDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m11:07:33.126585 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_success": false, "command_wall_clock_time": 10.052405, "process_in_blocks": "4888", "process_kernel_time": 0.853524, "process_mem_max_rss": "303584", "process_out_blocks": "4032", "process_user_time": 5.884601}
+[0m11:07:33.130272 [debug] [MainThread]: Command `cli seed` failed at 11:07:33.130021 after 10.06 seconds
+[0m11:07:33.131406 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x706a69d6be70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x706a68fe8e50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x706a69514940>]}
+[0m11:07:33.132439 [debug] [MainThread]: Flushing usage events
+[0m11:07:35.326789 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:13:26.285822 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000184A077CA10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000184A04D1590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000184A07A6B90>]}
+
+
+============================== 14:13:26.292883 | 2e506781-4b71-40d7-b613-d59224fa7017 ==============================
+[0m14:13:26.292883 [info ] [MainThread]: Running with dbt=1.10.10
+[0m14:13:26.294894 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'D:\\Distributed_Lakehouse\\dags\\ecommerce_dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt clean', 'use_experimental_parser': 'False', 'log_path': 'D:\\Distributed_Lakehouse\\dags\\ecommerce_dbt\\logs'}
+[0m14:13:26.877546 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '2e506781-4b71-40d7-b613-d59224fa7017', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000184A18E7BD0>]}
+[0m14:13:27.020972 [debug] [MainThread]: Command `dbt clean` succeeded at 14:13:27.020972 after 0.90 seconds
+[0m14:13:27.020972 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000184A07A6890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000184A0736290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000184A06656D0>]}
+[0m14:13:27.022490 [debug] [MainThread]: Flushing usage events
+[0m14:13:28.653830 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:13:36.347548 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027D3F4EF9D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027D3EC8B8D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027D3F526DD0>]}
+
+
+============================== 14:13:36.354547 | 80ada18e-bf2b-4795-9254-c763e0a63d42 ==============================
+[0m14:13:36.354547 [info ] [MainThread]: Running with dbt=1.10.10
+[0m14:13:36.355558 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'D:\\Distributed_Lakehouse\\dags\\ecommerce_dbt', 'invocation_command': 'dbt debug', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'D:\\Distributed_Lakehouse\\dags\\ecommerce_dbt\\logs'}
+[0m14:13:36.416411 [info ] [MainThread]: dbt version: 1.10.10
+[0m14:13:36.418698 [info ] [MainThread]: python version: 3.11.7
+[0m14:13:36.419522 [info ] [MainThread]: python path: D:\Distributed_Lakehouse\env311\Scripts\python.exe
+[0m14:13:36.420531 [info ] [MainThread]: os info: Windows-10-10.0.26100-SP0
+[0m14:13:37.175954 [info ] [MainThread]: Using profiles dir at D:\Distributed_Lakehouse\dags\ecommerce_dbt
+[0m14:13:37.176955 [info ] [MainThread]: Using profiles.yml file at D:\Distributed_Lakehouse\dags\ecommerce_dbt\profiles.yml
+[0m14:13:37.177958 [info ] [MainThread]: Using dbt_project.yml file at D:\Distributed_Lakehouse\dags\ecommerce_dbt\dbt_project.yml
+[0m14:13:37.178471 [info ] [MainThread]: adapter type: trino
+[0m14:13:37.180048 [info ] [MainThread]: adapter version: 1.9.3
+[0m14:13:37.391675 [info ] [MainThread]: Configuration:
+[0m14:13:37.392675 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m14:13:37.393676 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m14:13:37.394188 [info ] [MainThread]: Required dependencies:
+[0m14:13:37.395191 [debug] [MainThread]: Executing "git --help"
+[0m14:13:37.503833 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m14:13:37.504835 [debug] [MainThread]: STDERR: "b''"
+[0m14:13:37.504835 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m14:13:37.505838 [info ] [MainThread]: Connection:
+[0m14:13:37.506860 [info ] [MainThread]:   host: trino-coordinator
+[0m14:13:37.507860 [info ] [MainThread]:   port: 8080
+[0m14:13:37.509106 [info ] [MainThread]:   user: trino
+[0m14:13:37.510105 [info ] [MainThread]:   database: iceberg
+[0m14:13:37.511106 [info ] [MainThread]:   schema: bronze
+[0m14:13:37.512109 [info ] [MainThread]:   cert: None
+[0m14:13:37.513206 [info ] [MainThread]:   prepared_statements_enabled: True
+[0m14:13:37.514205 [info ] [MainThread]: Registered adapter: trino=1.9.3
+[0m14:13:39.618480 [debug] [MainThread]: Acquiring new trino connection 'debug'
+[0m14:13:46.589963 [debug] [MainThread]: Using trino connection "debug"
+[0m14:13:46.590962 [debug] [MainThread]: On debug: select 1 as id
+[0m14:13:46.590962 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:13:46.592477 [warn ] [MainThread]: [[33mWARNING[0m]: SSL certificate validation is disabled by default. It is legacy behavior which will be changed in future releases. It is strongly advised to enable `require_certificate_validation` flag or explicitly set `cert` configuration to `True` for security reasons. You may receive an error after that if your SSL setup is incorrect.
+You may opt into the new behavior sooner by setting `flags.require_certificate_validation` to `True` in `dbt_project.yml`.
+Visit https://docs.getdbt.com/reference/global-configs/behavior-changes for more information.
+[0m14:13:46.593491 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'BehaviorChangeEvent', 'label': '80ada18e-bf2b-4795-9254-c763e0a63d42', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027D407C1B90>]}
+[0m14:13:50.455025 [debug] [MainThread]: Trino adapter: Trino error: failed to execute: HTTPConnectionPool(host='trino-coordinator', port=8080): Max retries exceeded with url: /v1/statement (Caused by NameResolutionError("HTTPConnection(host='trino-coordinator', port=8080): Failed to resolve 'trino-coordinator' ([Errno 11001] getaddrinfo failed)"))
+[0m14:13:50.457040 [debug] [MainThread]: On debug: Close
+[0m14:13:50.458614 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m14:13:50.462042 [info ] [MainThread]: [31m1 check failed:[0m
+[0m14:13:50.463937 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  failed to execute: HTTPConnectionPool(host='trino-coordinator', port=8080): Max retries exceeded with url: /v1/statement (Caused by NameResolutionError("HTTPConnection(host='trino-coordinator', port=8080): Failed to resolve 'trino-coordinator' ([Errno 11001] getaddrinfo failed)"))
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m14:13:50.472183 [debug] [MainThread]: Command `dbt debug` failed at 14:13:50.470001 after 14.26 seconds
+[0m14:13:50.474239 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m14:13:50.478734 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027D38630A50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027D3F4ADA90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027D3F4AED10>]}
+[0m14:13:50.480734 [debug] [MainThread]: Flushing usage events
+[0m14:13:51.732276 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:13:59.072123 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020B3A0ECED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020B3A116650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020B3A116090>]}
+
+
+============================== 14:13:59.079189 | 437fa06d-4382-478d-8f02-ab062fcb2f0e ==============================
+[0m14:13:59.079189 [info ] [MainThread]: Running with dbt=1.10.10
+[0m14:13:59.080209 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'D:\\Distributed_Lakehouse\\dags\\ecommerce_dbt', 'invocation_command': 'dbt seed', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'D:\\Distributed_Lakehouse\\dags\\ecommerce_dbt\\logs'}
+[0m14:13:59.541794 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '437fa06d-4382-478d-8f02-ab062fcb2f0e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020B3A423850>]}
+[0m14:13:59.914151 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '437fa06d-4382-478d-8f02-ab062fcb2f0e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020B358AC2D0>]}
+[0m14:13:59.915286 [info ] [MainThread]: Registered adapter: trino=1.9.3
+[0m14:14:00.802587 [debug] [MainThread]: checksum: 502a0dc23e9052e1ae09f7c44ee219ef7a02dfea7e7d66580d54c304c14d553b, vars: {}, profile: , target: , version: 1.10.10
+[0m14:14:00.804220 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m14:14:00.805553 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '437fa06d-4382-478d-8f02-ab062fcb2f0e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020B3A633C90>]}
+[0m14:14:06.480724 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '437fa06d-4382-478d-8f02-ab062fcb2f0e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020B3AAB7150>]}
+[0m14:14:06.698785 [debug] [MainThread]: Wrote artifact WritableManifest to D:\Distributed_Lakehouse\dags\ecommerce_dbt\target\manifest.json
+[0m14:14:07.138685 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\Distributed_Lakehouse\dags\ecommerce_dbt\target\semantic_manifest.json
+[0m14:14:07.480741 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '437fa06d-4382-478d-8f02-ab062fcb2f0e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020B37B99190>]}
+[0m14:14:07.481755 [info ] [MainThread]: Found 12 models, 4 seeds, 14 data tests, 455 macros
+[0m14:14:07.483755 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '437fa06d-4382-478d-8f02-ab062fcb2f0e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020B3AB43850>]}
+[0m14:14:07.487638 [info ] [MainThread]: 
+[0m14:14:07.489853 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m14:14:07.491360 [info ] [MainThread]: 
+[0m14:14:07.493370 [debug] [MainThread]: Acquiring new trino connection 'master'
+[0m14:14:07.508640 [debug] [ThreadPool]: Acquiring new trino connection 'list_iceberg'
+[0m14:14:07.672541 [debug] [ThreadPool]: Using trino connection "list_iceberg"
+[0m14:14:07.673542 [debug] [ThreadPool]: On list_iceberg: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "ecommerce_trino", "target_name": "dev", "connection_name": "list_iceberg"} */
+
+    select schema_name
+    from "iceberg".INFORMATION_SCHEMA.schemata
+[0m14:14:07.674542 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:14:07.675551 [warn ] [ThreadPool]: [[33mWARNING[0m]: SSL certificate validation is disabled by default. It is legacy behavior which will be changed in future releases. It is strongly advised to enable `require_certificate_validation` flag or explicitly set `cert` configuration to `True` for security reasons. You may receive an error after that if your SSL setup is incorrect.
+You may opt into the new behavior sooner by setting `flags.require_certificate_validation` to `True` in `dbt_project.yml`.
+Visit https://docs.getdbt.com/reference/global-configs/behavior-changes for more information.
+[0m14:14:07.676541 [debug] [ThreadPool]: Sending event: {'category': 'dbt', 'action': 'BehaviorChangeEvent', 'label': '437fa06d-4382-478d-8f02-ab062fcb2f0e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020B3ACAE250>]}
+[0m14:14:12.395332 [debug] [ThreadPool]: Trino adapter: Trino error: failed to execute: HTTPConnectionPool(host='trino-coordinator', port=8080): Max retries exceeded with url: /v1/statement (Caused by NameResolutionError("HTTPConnection(host='trino-coordinator', port=8080): Failed to resolve 'trino-coordinator' ([Errno 11001] getaddrinfo failed)"))
+[0m14:14:12.397354 [debug] [ThreadPool]: On list_iceberg: Close
+[0m14:14:12.398875 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:14:12.399877 [debug] [MainThread]: Connection 'list_iceberg' was properly closed.
+[0m14:14:12.400874 [info ] [MainThread]: 
+[0m14:14:12.402381 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 4.91 seconds (4.91s).
+[0m14:14:12.404392 [error] [MainThread]: Encountered an error:
+Database Error
+  failed to execute: HTTPConnectionPool(host='trino-coordinator', port=8080): Max retries exceeded with url: /v1/statement (Caused by NameResolutionError("HTTPConnection(host='trino-coordinator', port=8080): Failed to resolve 'trino-coordinator' ([Errno 11001] getaddrinfo failed)"))
+[0m14:14:12.407907 [debug] [MainThread]: Command `dbt seed` failed at 14:14:12.407907 after 13.50 seconds
+[0m14:14:12.409918 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020B3A116790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020B3A1177D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020B32240F50>]}
+[0m14:14:12.411917 [debug] [MainThread]: Flushing usage events
+[0m14:14:13.632525 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:14:25.808611 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C66B566AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C66B5670D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C66B566810>]}
+
+
+============================== 14:14:25.815790 | 0c49679c-8398-4b8f-8b45-3ffea5c1a61a ==============================
+[0m14:14:25.815790 [info ] [MainThread]: Running with dbt=1.10.10
+[0m14:14:25.816792 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'D:\\Distributed_Lakehouse\\dags\\ecommerce_dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt run', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'D:\\Distributed_Lakehouse\\dags\\ecommerce_dbt\\logs'}
+[0m14:14:26.232976 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0c49679c-8398-4b8f-8b45-3ffea5c1a61a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C66C5DC110>]}
+[0m14:14:26.360378 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0c49679c-8398-4b8f-8b45-3ffea5c1a61a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C667D1DB50>]}
+[0m14:14:26.362378 [info ] [MainThread]: Registered adapter: trino=1.9.3
+[0m14:14:26.975245 [debug] [MainThread]: checksum: 502a0dc23e9052e1ae09f7c44ee219ef7a02dfea7e7d66580d54c304c14d553b, vars: {}, profile: , target: , version: 1.10.10
+[0m14:14:27.496092 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m14:14:27.496092 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m14:14:27.567490 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '0c49679c-8398-4b8f-8b45-3ffea5c1a61a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C66CC41B10>]}
+[0m14:14:27.736439 [debug] [MainThread]: Wrote artifact WritableManifest to D:\Distributed_Lakehouse\dags\ecommerce_dbt\target\manifest.json
+[0m14:14:27.739637 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\Distributed_Lakehouse\dags\ecommerce_dbt\target\semantic_manifest.json
+[0m14:14:27.758417 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '0c49679c-8398-4b8f-8b45-3ffea5c1a61a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C66CB2D750>]}
+[0m14:14:27.763283 [info ] [MainThread]: Found 12 models, 4 seeds, 14 data tests, 455 macros
+[0m14:14:27.763283 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0c49679c-8398-4b8f-8b45-3ffea5c1a61a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C66CD6F910>]}
+[0m14:14:27.767757 [info ] [MainThread]: 
+[0m14:14:27.769984 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m14:14:27.771272 [info ] [MainThread]: 
+[0m14:14:27.772282 [debug] [MainThread]: Acquiring new trino connection 'master'
+[0m14:14:27.783559 [debug] [ThreadPool]: Acquiring new trino connection 'list_iceberg'
+[0m14:14:27.802921 [debug] [ThreadPool]: Acquiring new trino connection 'list_iceberg'
+[0m14:14:27.808466 [debug] [ThreadPool]: Acquiring new trino connection 'list_iceberg'
+[0m14:14:27.978803 [debug] [ThreadPool]: Using trino connection "list_iceberg"
+[0m14:14:27.979802 [debug] [ThreadPool]: Using trino connection "list_iceberg"
+[0m14:14:27.981117 [debug] [ThreadPool]: Using trino connection "list_iceberg"
+[0m14:14:27.981117 [debug] [ThreadPool]: On list_iceberg: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "ecommerce_trino", "target_name": "dev", "connection_name": "list_iceberg"} */
+
+    select schema_name
+    from "iceberg".INFORMATION_SCHEMA.schemata
+[0m14:14:27.982116 [debug] [ThreadPool]: On list_iceberg: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "ecommerce_trino", "target_name": "dev", "connection_name": "list_iceberg"} */
+
+    select schema_name
+    from "iceberg".INFORMATION_SCHEMA.schemata
+[0m14:14:27.983118 [debug] [ThreadPool]: On list_iceberg: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "ecommerce_trino", "target_name": "dev", "connection_name": "list_iceberg"} */
+
+    select schema_name
+    from "iceberg".INFORMATION_SCHEMA.schemata
+[0m14:14:27.983785 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:14:27.984795 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:14:27.985183 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:14:27.986183 [warn ] [ThreadPool]: [[33mWARNING[0m]: SSL certificate validation is disabled by default. It is legacy behavior which will be changed in future releases. It is strongly advised to enable `require_certificate_validation` flag or explicitly set `cert` configuration to `True` for security reasons. You may receive an error after that if your SSL setup is incorrect.
+You may opt into the new behavior sooner by setting `flags.require_certificate_validation` to `True` in `dbt_project.yml`.
+Visit https://docs.getdbt.com/reference/global-configs/behavior-changes for more information.
+[0m14:14:27.986183 [warn ] [ThreadPool]: [[33mWARNING[0m]: SSL certificate validation is disabled by default. It is legacy behavior which will be changed in future releases. It is strongly advised to enable `require_certificate_validation` flag or explicitly set `cert` configuration to `True` for security reasons. You may receive an error after that if your SSL setup is incorrect.
+You may opt into the new behavior sooner by setting `flags.require_certificate_validation` to `True` in `dbt_project.yml`.
+Visit https://docs.getdbt.com/reference/global-configs/behavior-changes for more information.
+[0m14:14:27.987688 [warn ] [ThreadPool]: [[33mWARNING[0m]: SSL certificate validation is disabled by default. It is legacy behavior which will be changed in future releases. It is strongly advised to enable `require_certificate_validation` flag or explicitly set `cert` configuration to `True` for security reasons. You may receive an error after that if your SSL setup is incorrect.
+You may opt into the new behavior sooner by setting `flags.require_certificate_validation` to `True` in `dbt_project.yml`.
+Visit https://docs.getdbt.com/reference/global-configs/behavior-changes for more information.
+[0m14:14:27.988697 [debug] [ThreadPool]: Sending event: {'category': 'dbt', 'action': 'BehaviorChangeEvent', 'label': '0c49679c-8398-4b8f-8b45-3ffea5c1a61a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C66CC33410>]}
+[0m14:14:27.988697 [debug] [ThreadPool]: Sending event: {'category': 'dbt', 'action': 'BehaviorChangeEvent', 'label': '0c49679c-8398-4b8f-8b45-3ffea5c1a61a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C66CAC2A50>]}
+[0m14:14:27.990203 [debug] [ThreadPool]: Sending event: {'category': 'dbt', 'action': 'BehaviorChangeEvent', 'label': '0c49679c-8398-4b8f-8b45-3ffea5c1a61a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C66D0BDA50>]}
+[0m14:14:32.003285 [debug] [ThreadPool]: Trino adapter: Trino error: failed to execute: HTTPConnectionPool(host='trino-coordinator', port=8080): Max retries exceeded with url: /v1/statement (Caused by NameResolutionError("HTTPConnection(host='trino-coordinator', port=8080): Failed to resolve 'trino-coordinator' ([Errno 11001] getaddrinfo failed)"))
+[0m14:14:32.006211 [debug] [ThreadPool]: On list_iceberg: Close
+[0m14:14:32.127896 [debug] [ThreadPool]: Trino adapter: Trino error: failed to execute: HTTPConnectionPool(host='trino-coordinator', port=8080): Max retries exceeded with url: /v1/statement (Caused by NameResolutionError("HTTPConnection(host='trino-coordinator', port=8080): Failed to resolve 'trino-coordinator' ([Errno 11001] getaddrinfo failed)"))
+[0m14:14:32.128904 [debug] [ThreadPool]: On list_iceberg: Close
+[0m14:14:32.399569 [debug] [ThreadPool]: Trino adapter: Trino error: failed to execute: HTTPConnectionPool(host='trino-coordinator', port=8080): Max retries exceeded with url: /v1/statement (Caused by NameResolutionError("HTTPConnection(host='trino-coordinator', port=8080): Failed to resolve 'trino-coordinator' ([Errno 11001] getaddrinfo failed)"))
+[0m14:14:32.401585 [debug] [ThreadPool]: On list_iceberg: Close
+[0m14:14:32.403514 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:14:32.403514 [debug] [MainThread]: Connection 'list_iceberg' was properly closed.
+[0m14:14:32.404526 [debug] [MainThread]: Connection 'list_iceberg' was properly closed.
+[0m14:14:32.405522 [debug] [MainThread]: Connection 'list_iceberg' was properly closed.
+[0m14:14:32.405522 [info ] [MainThread]: 
+[0m14:14:32.407022 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 4.63 seconds (4.63s).
+[0m14:14:32.408530 [error] [MainThread]: Encountered an error:
+Database Error
+  failed to execute: HTTPConnectionPool(host='trino-coordinator', port=8080): Max retries exceeded with url: /v1/statement (Caused by NameResolutionError("HTTPConnection(host='trino-coordinator', port=8080): Failed to resolve 'trino-coordinator' ([Errno 11001] getaddrinfo failed)"))
+[0m14:14:32.411558 [debug] [MainThread]: Command `dbt run` failed at 14:14:32.410569 after 6.74 seconds
+[0m14:14:32.412574 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C66B5DE450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C66B5DEBD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C66CC432D0>]}
+[0m14:14:32.414553 [debug] [MainThread]: Flushing usage events
+[0m14:14:33.821856 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:14:45.742433 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018B03546B10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018B0353F490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018B0353C910>]}
+
+
+============================== 14:14:45.749456 | 2baec2a8-bd92-4ccf-9111-1cf32687b310 ==============================
+[0m14:14:45.749456 [info ] [MainThread]: Running with dbt=1.10.10
+[0m14:14:45.750464 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'D:\\Distributed_Lakehouse\\dags\\ecommerce_dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt test', 'use_experimental_parser': 'False', 'log_path': 'D:\\Distributed_Lakehouse\\dags\\ecommerce_dbt\\logs'}
+[0m14:14:46.163601 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '2baec2a8-bd92-4ccf-9111-1cf32687b310', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018B04892610>]}
+[0m14:14:46.293210 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '2baec2a8-bd92-4ccf-9111-1cf32687b310', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018B7FD0CB50>]}
+[0m14:14:46.294212 [info ] [MainThread]: Registered adapter: trino=1.9.3
+[0m14:14:46.885170 [debug] [MainThread]: checksum: 502a0dc23e9052e1ae09f7c44ee219ef7a02dfea7e7d66580d54c304c14d553b, vars: {}, profile: , target: , version: 1.10.10
+[0m14:14:47.105004 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m14:14:47.106003 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m14:14:47.174026 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '2baec2a8-bd92-4ccf-9111-1cf32687b310', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018B047296D0>]}
+[0m14:14:47.354460 [debug] [MainThread]: Wrote artifact WritableManifest to D:\Distributed_Lakehouse\dags\ecommerce_dbt\target\manifest.json
+[0m14:14:47.357942 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\Distributed_Lakehouse\dags\ecommerce_dbt\target\semantic_manifest.json
+[0m14:14:47.444703 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '2baec2a8-bd92-4ccf-9111-1cf32687b310', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018B047BCD50>]}
+[0m14:14:47.446221 [info ] [MainThread]: Found 12 models, 4 seeds, 14 data tests, 455 macros
+[0m14:14:47.446221 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2baec2a8-bd92-4ccf-9111-1cf32687b310', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018B04AE7D90>]}
+[0m14:14:47.451741 [info ] [MainThread]: 
+[0m14:14:47.454747 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m14:14:47.456248 [info ] [MainThread]: 
+[0m14:14:47.457760 [debug] [MainThread]: Acquiring new trino connection 'master'
+[0m14:14:47.470683 [debug] [ThreadPool]: Acquiring new trino connection 'list_iceberg_bronze_silver'
+[0m14:14:47.472191 [debug] [ThreadPool]: Acquiring new trino connection 'list_iceberg_bronze_bronze'
+[0m14:14:47.506712 [debug] [ThreadPool]: Acquiring new trino connection 'list_iceberg_bronze_raw'
+[0m14:14:47.510249 [debug] [ThreadPool]: Acquiring new trino connection 'list_iceberg_bronze_gold'
+[0m14:14:47.658692 [debug] [ThreadPool]: Using trino connection "list_iceberg_bronze_silver"
+[0m14:14:47.662832 [debug] [ThreadPool]: Using trino connection "list_iceberg_bronze_bronze"
+[0m14:14:47.665886 [debug] [ThreadPool]: Using trino connection "list_iceberg_bronze_raw"
+[0m14:14:47.669406 [debug] [ThreadPool]: Using trino connection "list_iceberg_bronze_gold"
+[0m14:14:47.669406 [debug] [ThreadPool]: On list_iceberg_bronze_silver: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "ecommerce_trino", "target_name": "dev", "connection_name": "list_iceberg_bronze_silver"} */
+select
+      t.table_catalog as database,
+      t.table_name as name,
+      t.table_schema as schema,
+      case when mv.name is not null then 'materialized_view'
+           when t.table_type = 'BASE TABLE' then 'table'
+           when t.table_type = 'VIEW' then 'view'
+           else t.table_type
+      end as table_type
+    from "iceberg".INFORMATION_SCHEMA.tables t
+    left join (
+            select * from system.metadata.materialized_views
+            where catalog_name = 'iceberg'
+              and schema_name = 'bronze_silver') mv
+          on mv.catalog_name = t.table_catalog and mv.schema_name = t.table_schema and mv.name = t.table_name
+    where t.table_schema = 'bronze_silver'
+[0m14:14:47.670406 [debug] [ThreadPool]: On list_iceberg_bronze_bronze: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "ecommerce_trino", "target_name": "dev", "connection_name": "list_iceberg_bronze_bronze"} */
+select
+      t.table_catalog as database,
+      t.table_name as name,
+      t.table_schema as schema,
+      case when mv.name is not null then 'materialized_view'
+           when t.table_type = 'BASE TABLE' then 'table'
+           when t.table_type = 'VIEW' then 'view'
+           else t.table_type
+      end as table_type
+    from "iceberg".INFORMATION_SCHEMA.tables t
+    left join (
+            select * from system.metadata.materialized_views
+            where catalog_name = 'iceberg'
+              and schema_name = 'bronze_bronze') mv
+          on mv.catalog_name = t.table_catalog and mv.schema_name = t.table_schema and mv.name = t.table_name
+    where t.table_schema = 'bronze_bronze'
+[0m14:14:47.671406 [debug] [ThreadPool]: On list_iceberg_bronze_raw: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "ecommerce_trino", "target_name": "dev", "connection_name": "list_iceberg_bronze_raw"} */
+select
+      t.table_catalog as database,
+      t.table_name as name,
+      t.table_schema as schema,
+      case when mv.name is not null then 'materialized_view'
+           when t.table_type = 'BASE TABLE' then 'table'
+           when t.table_type = 'VIEW' then 'view'
+           else t.table_type
+      end as table_type
+    from "iceberg".INFORMATION_SCHEMA.tables t
+    left join (
+            select * from system.metadata.materialized_views
+            where catalog_name = 'iceberg'
+              and schema_name = 'bronze_raw') mv
+          on mv.catalog_name = t.table_catalog and mv.schema_name = t.table_schema and mv.name = t.table_name
+    where t.table_schema = 'bronze_raw'
+[0m14:14:47.672040 [debug] [ThreadPool]: On list_iceberg_bronze_gold: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "ecommerce_trino", "target_name": "dev", "connection_name": "list_iceberg_bronze_gold"} */
+select
+      t.table_catalog as database,
+      t.table_name as name,
+      t.table_schema as schema,
+      case when mv.name is not null then 'materialized_view'
+           when t.table_type = 'BASE TABLE' then 'table'
+           when t.table_type = 'VIEW' then 'view'
+           else t.table_type
+      end as table_type
+    from "iceberg".INFORMATION_SCHEMA.tables t
+    left join (
+            select * from system.metadata.materialized_views
+            where catalog_name = 'iceberg'
+              and schema_name = 'bronze_gold') mv
+          on mv.catalog_name = t.table_catalog and mv.schema_name = t.table_schema and mv.name = t.table_name
+    where t.table_schema = 'bronze_gold'
+[0m14:14:47.673047 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:14:47.674062 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:14:47.674570 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:14:47.675580 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:14:47.675580 [warn ] [ThreadPool]: [[33mWARNING[0m]: SSL certificate validation is disabled by default. It is legacy behavior which will be changed in future releases. It is strongly advised to enable `require_certificate_validation` flag or explicitly set `cert` configuration to `True` for security reasons. You may receive an error after that if your SSL setup is incorrect.
+You may opt into the new behavior sooner by setting `flags.require_certificate_validation` to `True` in `dbt_project.yml`.
+Visit https://docs.getdbt.com/reference/global-configs/behavior-changes for more information.
+[0m14:14:47.676582 [warn ] [ThreadPool]: [[33mWARNING[0m]: SSL certificate validation is disabled by default. It is legacy behavior which will be changed in future releases. It is strongly advised to enable `require_certificate_validation` flag or explicitly set `cert` configuration to `True` for security reasons. You may receive an error after that if your SSL setup is incorrect.
+You may opt into the new behavior sooner by setting `flags.require_certificate_validation` to `True` in `dbt_project.yml`.
+Visit https://docs.getdbt.com/reference/global-configs/behavior-changes for more information.
+[0m14:14:47.678098 [warn ] [ThreadPool]: [[33mWARNING[0m]: SSL certificate validation is disabled by default. It is legacy behavior which will be changed in future releases. It is strongly advised to enable `require_certificate_validation` flag or explicitly set `cert` configuration to `True` for security reasons. You may receive an error after that if your SSL setup is incorrect.
+You may opt into the new behavior sooner by setting `flags.require_certificate_validation` to `True` in `dbt_project.yml`.
+Visit https://docs.getdbt.com/reference/global-configs/behavior-changes for more information.
+[0m14:14:47.679105 [warn ] [ThreadPool]: [[33mWARNING[0m]: SSL certificate validation is disabled by default. It is legacy behavior which will be changed in future releases. It is strongly advised to enable `require_certificate_validation` flag or explicitly set `cert` configuration to `True` for security reasons. You may receive an error after that if your SSL setup is incorrect.
+You may opt into the new behavior sooner by setting `flags.require_certificate_validation` to `True` in `dbt_project.yml`.
+Visit https://docs.getdbt.com/reference/global-configs/behavior-changes for more information.
+[0m14:14:47.680113 [debug] [ThreadPool]: Sending event: {'category': 'dbt', 'action': 'BehaviorChangeEvent', 'label': '2baec2a8-bd92-4ccf-9111-1cf32687b310', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018B04DF58D0>]}
+[0m14:14:47.681114 [debug] [ThreadPool]: Sending event: {'category': 'dbt', 'action': 'BehaviorChangeEvent', 'label': '2baec2a8-bd92-4ccf-9111-1cf32687b310', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018B0517C1D0>]}
+[0m14:14:47.681114 [debug] [ThreadPool]: Sending event: {'category': 'dbt', 'action': 'BehaviorChangeEvent', 'label': '2baec2a8-bd92-4ccf-9111-1cf32687b310', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018B0517C350>]}
+[0m14:14:47.682114 [debug] [ThreadPool]: Sending event: {'category': 'dbt', 'action': 'BehaviorChangeEvent', 'label': '2baec2a8-bd92-4ccf-9111-1cf32687b310', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018B0517C950>]}
+[0m14:14:51.586487 [debug] [ThreadPool]: Trino adapter: Trino error: failed to execute: HTTPConnectionPool(host='trino-coordinator', port=8080): Max retries exceeded with url: /v1/statement (Caused by NameResolutionError("HTTPConnection(host='trino-coordinator', port=8080): Failed to resolve 'trino-coordinator' ([Errno 11001] getaddrinfo failed)"))
+[0m14:14:51.588004 [debug] [ThreadPool]: On list_iceberg_bronze_gold: ROLLBACK
+[0m14:14:51.588004 [debug] [ThreadPool]: On list_iceberg_bronze_gold: Close
+[0m14:14:51.933386 [debug] [ThreadPool]: Trino adapter: Trino error: failed to execute: HTTPConnectionPool(host='trino-coordinator', port=8080): Max retries exceeded with url: /v1/statement (Caused by NameResolutionError("HTTPConnection(host='trino-coordinator', port=8080): Failed to resolve 'trino-coordinator' ([Errno 11001] getaddrinfo failed)"))
+[0m14:14:51.934574 [debug] [ThreadPool]: On list_iceberg_bronze_silver: ROLLBACK
+[0m14:14:51.935571 [debug] [ThreadPool]: On list_iceberg_bronze_silver: Close
+[0m14:14:51.979329 [debug] [ThreadPool]: Trino adapter: Trino error: failed to execute: HTTPConnectionPool(host='trino-coordinator', port=8080): Max retries exceeded with url: /v1/statement (Caused by NameResolutionError("HTTPConnection(host='trino-coordinator', port=8080): Failed to resolve 'trino-coordinator' ([Errno 11001] getaddrinfo failed)"))
+[0m14:14:51.980344 [debug] [ThreadPool]: On list_iceberg_bronze_raw: ROLLBACK
+[0m14:14:51.981363 [debug] [ThreadPool]: On list_iceberg_bronze_raw: Close
+[0m14:14:52.169338 [debug] [ThreadPool]: Trino adapter: Trino error: failed to execute: HTTPConnectionPool(host='trino-coordinator', port=8080): Max retries exceeded with url: /v1/statement (Caused by NameResolutionError("HTTPConnection(host='trino-coordinator', port=8080): Failed to resolve 'trino-coordinator' ([Errno 11001] getaddrinfo failed)"))
+[0m14:14:52.171027 [debug] [ThreadPool]: On list_iceberg_bronze_bronze: ROLLBACK
+[0m14:14:52.171574 [debug] [ThreadPool]: On list_iceberg_bronze_bronze: Close
+[0m14:14:52.173239 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:14:52.173781 [debug] [MainThread]: Connection 'list_iceberg_bronze_silver' was properly closed.
+[0m14:14:52.174870 [debug] [MainThread]: Connection 'list_iceberg_bronze_bronze' was properly closed.
+[0m14:14:52.175401 [debug] [MainThread]: Connection 'list_iceberg_bronze_raw' was properly closed.
+[0m14:14:52.176499 [debug] [MainThread]: Connection 'list_iceberg_bronze_gold' was properly closed.
+[0m14:14:52.178041 [info ] [MainThread]: 
+[0m14:14:52.179114 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 4.72 seconds (4.72s).
+[0m14:14:52.181752 [error] [MainThread]: Encountered an error:
+Database Error
+  failed to execute: HTTPConnectionPool(host='trino-coordinator', port=8080): Max retries exceeded with url: /v1/statement (Caused by NameResolutionError("HTTPConnection(host='trino-coordinator', port=8080): Failed to resolve 'trino-coordinator' ([Errno 11001] getaddrinfo failed)"))
+[0m14:14:52.190199 [debug] [MainThread]: Command `dbt test` failed at 14:14:52.189439 after 6.72 seconds
+[0m14:14:52.192448 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018B032E0E90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018B04DF6990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018B7C6E0F50>]}
+[0m14:14:52.194029 [debug] [MainThread]: Flushing usage events
+[0m14:14:53.615446 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:49:18.291069 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x706a6b15b4d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x706a6c09cf50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x706a69d5fc50>]}
+
+
+============================== 11:49:18.339300 | 462ea936-7f8c-49c1-85ee-0fb0dc4c7b60 ==============================
+[0m11:49:18.339300 [info ] [MainThread]: Running with dbt=1.10.10
+[0m11:49:18.341736 [debug] [MainThread]: running dbt with arguments {'warn_error': 'None', 'log_format': 'default', 'use_colors': 'True', 'target_path': 'None', 'profiles_dir': '/opt/airflow/dags/ecommerce_dbt', 'empty': 'None', 'cache_selected_only': 'False', 'printer_width': '80', 'partial_parse': 'True', 'log_path': '/opt/airflow/dags/ecommerce_dbt/logs', 'fail_fast': 'False', 'debug': 'False', 'no_print': 'None', 'version_check': 'True', 'log_cache_events': 'False', 'introspect': 'True', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True', 'write_json': 'True', 'invocation_command': 'dbt celery worker', 'static_parser': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager'}
+[0m11:49:20.225628 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '462ea936-7f8c-49c1-85ee-0fb0dc4c7b60', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x706a6adf15b0>]}
+[0m11:49:20.373993 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '462ea936-7f8c-49c1-85ee-0fb0dc4c7b60', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x706a69caa250>]}
+[0m11:49:20.375454 [info ] [MainThread]: Registered adapter: trino=1.9.3
+[0m11:49:21.153979 [debug] [MainThread]: checksum: 502a0dc23e9052e1ae09f7c44ee219ef7a02dfea7e7d66580d54c304c14d553b, vars: {}, profile: , target: , version: 1.10.10
+[0m11:49:21.918170 [debug] [MainThread]: Partial parsing enabled: 143 files deleted, 143 files added, 0 files changed.
+[0m11:49:21.919487 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/utils/split_part.sql
+[0m11:49:21.920425 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/materializations/incremental.sql
+[0m11:49:21.921243 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/drop.sql
+[0m11:49:21.922199 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/snapshots/helpers.sql
+[0m11:49:21.923362 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/configs.sql
+[0m11:49:21.924449 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/utils/any_value.sql
+[0m11:49:21.925462 [debug] [MainThread]: Partial parsing: added file: ecommerce_dbt://models/silver/silver_customer_events.sql
+[0m11:49:21.926403 [debug] [MainThread]: Partial parsing: added file: dbt://macros/generic_test_sql/unique.sql
+[0m11:49:21.927242 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/schema.sql
+[0m11:49:21.927983 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/array_append.sql
+[0m11:49:21.928710 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/models/incremental/column_helpers.sql
+[0m11:49:21.929401 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/snapshots/strategies.sql
+[0m11:49:21.930133 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/array_construct.sql
+[0m11:49:21.930835 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/generate_series.sql
+[0m11:49:21.931524 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/bool_or.sql
+[0m11:49:21.932186 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/listagg.sql
+[0m11:49:21.932907 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/apply_grants.sql
+[0m11:49:21.933605 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/adapters.sql
+[0m11:49:21.934393 [debug] [MainThread]: Partial parsing: added file: dbt://tests/generic/builtin.sql
+[0m11:49:21.935275 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/materialized_view/rename.sql
+[0m11:49:21.936111 [debug] [MainThread]: Partial parsing: added file: ecommerce_dbt://models/bronze/bronze_inventory_snapshots.sql
+[0m11:49:21.936889 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/utils/dateadd.sql
+[0m11:49:21.937593 [debug] [MainThread]: Partial parsing: added file: dbt://macros/adapters/schema.sql
+[0m11:49:21.938383 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/except.sql
+[0m11:49:21.939547 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/snapshots/snapshot_merge.sql
+[0m11:49:21.940652 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/create_backup.sql
+[0m11:49:21.941679 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/rename.sql
+[0m11:49:21.942823 [debug] [MainThread]: Partial parsing: added file: dbt://macros/generic_test_sql/not_null.sql
+[0m11:49:21.943739 [debug] [MainThread]: Partial parsing: added file: dbt://macros/get_custom_name/get_custom_schema.sql
+[0m11:49:21.944550 [debug] [MainThread]: Partial parsing: added file: ecommerce_dbt://seeds/raw_payment_transactions.csv
+[0m11:49:21.945517 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/utils/datatypes.sql
+[0m11:49:21.946506 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/create.sql
+[0m11:49:21.947260 [debug] [MainThread]: Partial parsing: added file: dbt://macros/unit_test_sql/get_fixture_sql.sql
+[0m11:49:21.948086 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/utils/bool_or.sql
+[0m11:49:21.948893 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/seeds/helpers.sql
+[0m11:49:21.949735 [debug] [MainThread]: Partial parsing: added file: ecommerce_dbt://models/bronze/bronze_support_tickets.sql
+[0m11:49:21.950651 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/dateadd.sql
+[0m11:49:21.951541 [debug] [MainThread]: Partial parsing: added file: dbt://macros/adapters/freshness.sql
+[0m11:49:21.952338 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/table/drop.sql
+[0m11:49:21.953167 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/models/materialized_view.sql
+[0m11:49:21.953934 [debug] [MainThread]: Partial parsing: added file: dbt://macros/adapters/relation.sql
+[0m11:49:21.955085 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/safe_cast.sql
+[0m11:49:21.957021 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/right.sql
+[0m11:49:21.958165 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/utils/array_append.sql
+[0m11:49:21.959272 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/materializations/materialized_view.sql
+[0m11:49:21.960331 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/seeds/seed.sql
+[0m11:49:21.961357 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/materialized_view/alter.sql
+[0m11:49:21.962314 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/materializations/seeds/helpers.sql
+[0m11:49:21.963171 [debug] [MainThread]: Partial parsing: added file: ecommerce_dbt://models/gold/gold_inventory_health.sql
+[0m11:49:21.964035 [debug] [MainThread]: Partial parsing: added file: ecommerce_dbt://models/gold/gold_customer_360.sql
+[0m11:49:21.965001 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/tests/where_subquery.sql
+[0m11:49:21.965925 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/materializations/table.sql
+[0m11:49:21.966933 [debug] [MainThread]: Partial parsing: added file: dbt://macros/adapters/metadata.sql
+[0m11:49:21.967921 [debug] [MainThread]: Partial parsing: added file: ecommerce_dbt://models/silver/silver_payments.sql
+[0m11:49:21.968936 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/last_day.sql
+[0m11:49:21.969839 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/materializations/view.sql
+[0m11:49:21.970568 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/utils/date_trunc.sql
+[0m11:49:21.971308 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/utils/safe_cast.sql
+[0m11:49:21.972159 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/utils/listagg.sql
+[0m11:49:21.973128 [debug] [MainThread]: Partial parsing: added file: dbt://macros/adapters/show.sql
+[0m11:49:21.974456 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/models/incremental/on_schema_change.sql
+[0m11:49:21.976010 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/view/create.sql
+[0m11:49:21.976942 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/date_trunc.sql
+[0m11:49:21.977771 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/datediff.sql
+[0m11:49:21.979080 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/view/drop.sql
+[0m11:49:21.979852 [debug] [MainThread]: Partial parsing: added file: dbt://macros/adapters/validate_sql.sql
+[0m11:49:21.980776 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/catalog.sql
+[0m11:49:21.981596 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/models/view.sql
+[0m11:49:21.982492 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/models/table.sql
+[0m11:49:21.983420 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/snapshots/snapshot.sql
+[0m11:49:21.984306 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/hash.sql
+[0m11:49:21.985188 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/materialized_view/refresh.sql
+[0m11:49:21.986052 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/materializations/snapshot.sql
+[0m11:49:21.986930 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/view/replace.sql
+[0m11:49:21.987909 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/any_value.sql
+[0m11:49:21.989005 [debug] [MainThread]: Partial parsing: added file: dbt://macros/get_custom_name/get_custom_database.sql
+[0m11:49:21.992350 [debug] [MainThread]: Partial parsing: added file: dbt://macros/adapters/columns.sql
+[0m11:49:21.993364 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/hooks.sql
+[0m11:49:21.994280 [debug] [MainThread]: Partial parsing: added file: ecommerce_dbt://seeds/raw_inventory_snapshots.csv
+[0m11:49:21.995141 [debug] [MainThread]: Partial parsing: added file: dbt://docs/overview.md
+[0m11:49:21.996000 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/models/clone/can_clone_table.sql
+[0m11:49:21.996963 [debug] [MainThread]: Partial parsing: added file: dbt://macros/adapters/timestamps.sql
+[0m11:49:21.997895 [debug] [MainThread]: Partial parsing: added file: ecommerce_dbt://models/bronze/bronze_customer_events.sql
+[0m11:49:21.998762 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/utils/right.sql
+[0m11:49:21.999626 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/cast_bool_to_text.sql
+[0m11:49:22.000502 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/materialized_view/replace.sql
+[0m11:49:22.001366 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/materialized_view/create.sql
+[0m11:49:22.002199 [debug] [MainThread]: Partial parsing: added file: ecommerce_dbt://models/silver/silver_support.sql
+[0m11:49:22.003018 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/models/clone/clone.sql
+[0m11:49:22.003866 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/models/incremental/merge.sql
+[0m11:49:22.004665 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/column/columns_spec_ddl.sql
+[0m11:49:22.005738 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/literal.sql
+[0m11:49:22.007380 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/concat.sql
+[0m11:49:22.008512 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/utils/timestamps.sql
+[0m11:49:22.009469 [debug] [MainThread]: Partial parsing: added file: dbt://macros/etc/statement.sql
+[0m11:49:22.010256 [debug] [MainThread]: Partial parsing: added file: dbt://macros/get_custom_name/get_custom_alias.sql
+[0m11:49:22.011010 [debug] [MainThread]: Partial parsing: added file: dbt://macros/adapters/apply_grants.sql
+[0m11:49:22.011810 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/utils/hash.sql
+[0m11:49:22.012558 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/models/incremental/incremental.sql
+[0m11:49:22.013235 [debug] [MainThread]: Partial parsing: added file: dbt://macros/generic_test_sql/relationships.sql
+[0m11:49:22.013946 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/tests/unit.sql
+[0m11:49:22.014681 [debug] [MainThread]: Partial parsing: added file: dbt://macros/etc/datetime.sql
+[0m11:49:22.015353 [debug] [MainThread]: Partial parsing: added file: ecommerce_dbt://models/silver/silver_inventory.sql
+[0m11:49:22.016017 [debug] [MainThread]: Partial parsing: added file: dbt://macros/adapters/persist_docs.sql
+[0m11:49:22.016680 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/position.sql
+[0m11:49:22.017327 [debug] [MainThread]: Partial parsing: added file: ecommerce_dbt://models/gold/gold_support_metrics.sql
+[0m11:49:22.017958 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/date_spine.sql
+[0m11:49:22.018604 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/models/incremental/strategies.sql
+[0m11:49:22.019244 [debug] [MainThread]: Partial parsing: added file: dbt://macros/adapters/indexes.sql
+[0m11:49:22.019900 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/cast.sql
+[0m11:49:22.020746 [debug] [MainThread]: Partial parsing: added file: ecommerce_dbt://models/bronze/bronze_models.yml
+[0m11:49:22.021726 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/utils/datediff.sql
+[0m11:49:22.023026 [debug] [MainThread]: Partial parsing: added file: ecommerce_dbt://models/bronze/bronze_payment_transactions.sql
+[0m11:49:22.024168 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/utils/array_concat.sql
+[0m11:49:22.025397 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/table/rename.sql
+[0m11:49:22.026324 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/table/create.sql
+[0m11:49:22.027091 [debug] [MainThread]: Partial parsing: added file: ecommerce_dbt://seeds/raw_customer_events.csv
+[0m11:49:22.027816 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/split_part.sql
+[0m11:49:22.028796 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/models/clone/create_or_replace_clone.sql
+[0m11:49:22.029558 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/drop_backup.sql
+[0m11:49:22.030394 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/array_concat.sql
+[0m11:49:22.031933 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/utils/date_spine.sql
+[0m11:49:22.032757 [debug] [MainThread]: Partial parsing: added file: ecommerce_dbt://models/gold/gold_sales_summary.sql
+[0m11:49:22.033582 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/view/rename.sql
+[0m11:49:22.034303 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/tests/test.sql
+[0m11:49:22.034976 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/models/incremental/is_incremental.sql
+[0m11:49:22.035653 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/create_intermediate.sql
+[0m11:49:22.036293 [debug] [MainThread]: Partial parsing: added file: ecommerce_dbt://seeds/raw_support_tickets.csv
+[0m11:49:22.037007 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/replace.sql
+[0m11:49:22.037653 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/intersect.sql
+[0m11:49:22.038447 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/rename_intermediate.sql
+[0m11:49:22.039579 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/tests/helpers.sql
+[0m11:49:22.040731 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/date.sql
+[0m11:49:22.041910 [debug] [MainThread]: Partial parsing: added file: dbt://macros/python_model/python.sql
+[0m11:49:22.042875 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/equals.sql
+[0m11:49:22.043724 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/length.sql
+[0m11:49:22.044695 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/replace.sql
+[0m11:49:22.045501 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/data_types.sql
+[0m11:49:22.046350 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/materialized_view/drop.sql
+[0m11:49:22.047555 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/utils/array_construct.sql
+[0m11:49:22.048566 [debug] [MainThread]: Partial parsing: added file: dbt://macros/generic_test_sql/accepted_values.sql
+[0m11:49:22.049494 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/escape_single_quotes.sql
+[0m11:49:22.050368 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/table/replace.sql
+[0m11:49:22.051443 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\split_part.sql
+[0m11:49:22.052198 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\materializations\seeds\helpers.sql
+[0m11:49:22.053145 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\drop.sql
+[0m11:49:22.053869 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\materialized_view\refresh.sql
+[0m11:49:22.054534 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\replace.sql
+[0m11:49:22.055390 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\adapters\indexes.sql
+[0m11:49:22.056469 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\escape_single_quotes.sql
+[0m11:49:22.057535 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\unit_test_sql\get_fixture_sql.sql
+[0m11:49:22.058700 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\date_spine.sql
+[0m11:49:22.059766 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\utils\split_part.sql
+[0m11:49:22.061040 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\rename_intermediate.sql
+[0m11:49:22.061893 [debug] [MainThread]: Partial parsing: deleted file: ecommerce_dbt://models\gold\gold_customer_360.sql
+[0m11:49:22.062947 [debug] [MainThread]: Partial parsing: deleted file: ecommerce_dbt://models\gold\gold_support_metrics.sql
+[0m11:49:22.063857 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\models\incremental\is_incremental.sql
+[0m11:49:22.064578 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\array_concat.sql
+[0m11:49:22.065279 [debug] [MainThread]: Partial parsing: deleted file: ecommerce_dbt://seeds\raw_inventory_snapshots.csv
+[0m11:49:22.066010 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\models\incremental\strategies.sql
+[0m11:49:22.066745 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\materialized_view\rename.sql
+[0m11:49:22.067476 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\generate_series.sql
+[0m11:49:22.068234 [debug] [MainThread]: Partial parsing: deleted file: ecommerce_dbt://models\bronze\bronze_support_tickets.sql
+[0m11:49:22.069282 [debug] [MainThread]: Partial parsing: deleted file: ecommerce_dbt://models\gold\gold_sales_summary.sql
+[0m11:49:22.070416 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\cast.sql
+[0m11:49:22.071425 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\rename.sql
+[0m11:49:22.072460 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\adapters\freshness.sql
+[0m11:49:22.073535 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\generic_test_sql\not_null.sql
+[0m11:49:22.074549 [debug] [MainThread]: Partial parsing: deleted file: ecommerce_dbt://models\silver\silver_payments.sql
+[0m11:49:22.075569 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\create_intermediate.sql
+[0m11:49:22.076595 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\listagg.sql
+[0m11:49:22.077441 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\right.sql
+[0m11:49:22.078694 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\table\create.sql
+[0m11:49:22.080029 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\concat.sql
+[0m11:49:22.081466 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\snapshots\helpers.sql
+[0m11:49:22.082592 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\adapters\relation.sql
+[0m11:49:22.083450 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\catalog.sql
+[0m11:49:22.084834 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\column\columns_spec_ddl.sql
+[0m11:49:22.085550 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\get_custom_name\get_custom_schema.sql
+[0m11:49:22.086241 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\array_append.sql
+[0m11:49:22.087039 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\snapshots\strategies.sql
+[0m11:49:22.087789 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\python_model\python.sql
+[0m11:49:22.088621 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\last_day.sql
+[0m11:49:22.089558 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\any_value.sql
+[0m11:49:22.090618 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\get_custom_name\get_custom_database.sql
+[0m11:49:22.091789 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\view\drop.sql
+[0m11:49:22.092971 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\models\incremental\on_schema_change.sql
+[0m11:49:22.094079 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\adapters\persist_docs.sql
+[0m11:49:22.095025 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\length.sql
+[0m11:49:22.095951 [debug] [MainThread]: Partial parsing: deleted file: ecommerce_dbt://seeds\raw_customer_events.csv
+[0m11:49:22.096912 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\adapters\schema.sql
+[0m11:49:22.098062 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\etc\statement.sql
+[0m11:49:22.098948 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\hooks.sql
+[0m11:49:22.099754 [debug] [MainThread]: Partial parsing: deleted file: dbt://tests\generic\builtin.sql
+[0m11:49:22.100622 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\models\table.sql
+[0m11:49:22.101406 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\date.sql
+[0m11:49:22.102269 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\tests\test.sql
+[0m11:49:22.103327 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\table\replace.sql
+[0m11:49:22.104249 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\utils\hash.sql
+[0m11:49:22.105389 [debug] [MainThread]: Partial parsing: deleted file: ecommerce_dbt://models\bronze\bronze_payment_transactions.sql
+[0m11:49:22.106504 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\utils\safe_cast.sql
+[0m11:49:22.107471 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\utils\date_spine.sql
+[0m11:49:22.108538 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\snapshots\snapshot.sql
+[0m11:49:22.109489 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\configs.sql
+[0m11:49:22.110286 [debug] [MainThread]: Partial parsing: deleted file: ecommerce_dbt://models\gold\gold_inventory_health.sql
+[0m11:49:22.111234 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\view\rename.sql
+[0m11:49:22.112174 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\adapters\validate_sql.sql
+[0m11:49:22.113023 [debug] [MainThread]: Partial parsing: deleted file: dbt://docs\overview.md
+[0m11:49:22.113774 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\snapshots\snapshot_merge.sql
+[0m11:49:22.114600 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\view\replace.sql
+[0m11:49:22.115431 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\view\create.sql
+[0m11:49:22.116123 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\materializations\incremental.sql
+[0m11:49:22.116820 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\utils\datatypes.sql
+[0m11:49:22.117468 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\cast_bool_to_text.sql
+[0m11:49:22.119859 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\apply_grants.sql
+[0m11:49:22.121092 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\models\clone\can_clone_table.sql
+[0m11:49:22.122413 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\table\drop.sql
+[0m11:49:22.124101 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\literal.sql
+[0m11:49:22.125353 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\utils\dateadd.sql
+[0m11:49:22.126466 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\adapters\show.sql
+[0m11:49:22.127473 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\models\materialized_view.sql
+[0m11:49:22.128474 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\materializations\snapshot.sql
+[0m11:49:22.129215 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\intersect.sql
+[0m11:49:22.129915 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\generic_test_sql\relationships.sql
+[0m11:49:22.130587 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\utils\listagg.sql
+[0m11:49:22.131671 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\adapters\columns.sql
+[0m11:49:22.132545 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\safe_cast.sql
+[0m11:49:22.133540 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\adapters\apply_grants.sql
+[0m11:49:22.134389 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\materialized_view\alter.sql
+[0m11:49:22.135292 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\materialized_view\create.sql
+[0m11:49:22.136116 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\materializations\materialized_view.sql
+[0m11:49:22.136886 [debug] [MainThread]: Partial parsing: deleted file: ecommerce_dbt://models\silver\silver_inventory.sql
+[0m11:49:22.137616 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\adapters\metadata.sql
+[0m11:49:22.139408 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\data_types.sql
+[0m11:49:22.140857 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\utils\array_construct.sql
+[0m11:49:22.141910 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\materialized_view\replace.sql
+[0m11:49:22.144217 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\materialized_view\drop.sql
+[0m11:49:22.145349 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\seeds\helpers.sql
+[0m11:49:22.146355 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\models\incremental\incremental.sql
+[0m11:49:22.147291 [debug] [MainThread]: Partial parsing: deleted file: ecommerce_dbt://models\bronze\bronze_inventory_snapshots.sql
+[0m11:49:22.148243 [debug] [MainThread]: Partial parsing: deleted file: ecommerce_dbt://seeds\raw_payment_transactions.csv
+[0m11:49:22.149626 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\tests\where_subquery.sql
+[0m11:49:22.152084 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\except.sql
+[0m11:49:22.153106 [debug] [MainThread]: Partial parsing: deleted file: ecommerce_dbt://models\silver\silver_customer_events.sql
+[0m11:49:22.155195 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\materializations\table.sql
+[0m11:49:22.156413 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\utils\bool_or.sql
+[0m11:49:22.159901 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\utils\timestamps.sql
+[0m11:49:22.162420 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\generic_test_sql\accepted_values.sql
+[0m11:49:22.164131 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\adapters.sql
+[0m11:49:22.165264 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\models\incremental\merge.sql
+[0m11:49:22.166931 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\array_construct.sql
+[0m11:49:22.168476 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\dateadd.sql
+[0m11:49:22.169363 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\utils\datediff.sql
+[0m11:49:22.170170 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\utils\any_value.sql
+[0m11:49:22.170927 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\seeds\seed.sql
+[0m11:49:22.173928 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\tests\unit.sql
+[0m11:49:22.175726 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\utils\array_concat.sql
+[0m11:49:22.176859 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\adapters\timestamps.sql
+[0m11:49:22.177911 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\utils\right.sql
+[0m11:49:22.178767 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\utils\array_append.sql
+[0m11:49:22.179589 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\bool_or.sql
+[0m11:49:22.180571 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\position.sql
+[0m11:49:22.181773 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\hash.sql
+[0m11:49:22.182676 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\replace.sql
+[0m11:49:22.184867 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\tests\helpers.sql
+[0m11:49:22.195531 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\materializations\view.sql
+[0m11:49:22.197572 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\models\clone\clone.sql
+[0m11:49:22.199889 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\date_trunc.sql
+[0m11:49:22.200974 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\table\rename.sql
+[0m11:49:22.202205 [debug] [MainThread]: Partial parsing: deleted file: ecommerce_dbt://models\bronze\bronze_customer_events.sql
+[0m11:49:22.208455 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\models\incremental\column_helpers.sql
+[0m11:49:22.211564 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\schema.sql
+[0m11:49:22.212609 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\models\view.sql
+[0m11:49:22.213550 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\equals.sql
+[0m11:49:22.214666 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\utils\date_trunc.sql
+[0m11:49:22.215629 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\create_backup.sql
+[0m11:49:22.216500 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\drop_backup.sql
+[0m11:49:22.217214 [debug] [MainThread]: Partial parsing: deleted file: ecommerce_dbt://models\silver\silver_support.sql
+[0m11:49:22.217883 [debug] [MainThread]: Partial parsing: deleted file: ecommerce_dbt://seeds\raw_support_tickets.csv
+[0m11:49:22.218588 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\etc\datetime.sql
+[0m11:49:22.219245 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\datediff.sql
+[0m11:49:22.219881 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\models\clone\create_or_replace_clone.sql
+[0m11:49:22.220553 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\create.sql
+[0m11:49:22.224693 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\get_custom_name\get_custom_alias.sql
+[0m11:49:22.225758 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\generic_test_sql\unique.sql
+[0m11:49:22.259180 [error] [MainThread]: Encountered an error:
+'dbt_trino://macros/apply_grants.sql'
+[0m11:49:22.419430 [error] [MainThread]: Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.13/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/airflow/.local/lib/python3.13/site-packages/trino/sqlalchemy/dialect.py", line 442, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.13/site-packages/trino/dbapi.py", line 640, in execute
+    self._iterator = iter(self._query.execute())
+                          ~~~~~~~~~~~~~~~~~~~^^
+  File "/home/airflow/.local/lib/python3.13/site-packages/trino/client.py", line 938, in execute
+    self._result.rows += self.fetch()
+                         ~~~~~~~~~~^^
+  File "/home/airflow/.local/lib/python3.13/site-packages/trino/client.py", line 958, in fetch
+    status = self._request.process(response)
+  File "/home/airflow/.local/lib/python3.13/site-packages/trino/client.py", line 727, in process
+    raise self._process_error(response["error"], response.get("id"))
+          ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.13/site-packages/trino/client.py", line 696, in _process_error
+    raise exceptions.TrinoExternalError(error, query_id)
+trino.exceptions.TrinoExternalError: TrinoExternalError(type=EXTERNAL, name=ICEBERG_CATALOG_ERROR, message="Cannot obtain metadata", query_id=20260507_114917_00001_f8ybt)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/airflow/dags/dag_pipeline.py", line 391, in seed_bronze
+    result = conn.execute(text("SELECT count(*) as cnt FROM raw_customer_events"))
+  File "/home/airflow/.local/lib/python3.13/site-packages/sqlalchemy/engine/base.py", line 1419, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "/home/airflow/.local/lib/python3.13/site-packages/sqlalchemy/sql/elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/airflow/.local/lib/python3.13/site-packages/sqlalchemy/engine/base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "/home/airflow/.local/lib/python3.13/site-packages/sqlalchemy/engine/base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/airflow/.local/lib/python3.13/site-packages/sqlalchemy/engine/base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/airflow/.local/lib/python3.13/site-packages/sqlalchemy/engine/base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/home/airflow/.local/lib/python3.13/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/airflow/.local/lib/python3.13/site-packages/trino/sqlalchemy/dialect.py", line 442, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.13/site-packages/trino/dbapi.py", line 640, in execute
+    self._iterator = iter(self._query.execute())
+                          ~~~~~~~~~~~~~~~~~~~^^
+  File "/home/airflow/.local/lib/python3.13/site-packages/trino/client.py", line 938, in execute
+    self._result.rows += self.fetch()
+                         ~~~~~~~~~~^^
+  File "/home/airflow/.local/lib/python3.13/site-packages/trino/client.py", line 958, in fetch
+    status = self._request.process(response)
+  File "/home/airflow/.local/lib/python3.13/site-packages/trino/client.py", line 727, in process
+    raise self._process_error(response["error"], response.get("id"))
+          ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.13/site-packages/trino/client.py", line 696, in _process_error
+    raise exceptions.TrinoExternalError(error, query_id)
+sqlalchemy.exc.OperationalError: (trino.exceptions.TrinoExternalError) TrinoExternalError(type=EXTERNAL, name=ICEBERG_CATALOG_ERROR, message="Cannot obtain metadata", query_id=20260507_114917_00001_f8ybt)
+[SQL: SELECT count(*) as cnt FROM raw_customer_events]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.13/site-packages/dbt/cli/requires.py", line 178, in wrapper
+    result, success = func(*args, **kwargs)
+                      ~~~~^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.13/site-packages/dbt/cli/requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.13/site-packages/dbt/cli/requires.py", line 272, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.13/site-packages/dbt/cli/requires.py", line 303, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.13/site-packages/dbt/cli/requires.py", line 350, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.13/site-packages/dbt/cli/requires.py", line 389, in wrapper
+    setup_manifest(ctx, write=write, write_perf_info=write_perf_info)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.13/site-packages/dbt/cli/requires.py", line 416, in setup_manifest
+    ctx.obj["manifest"] = parse_manifest(
+                          ~~~~~~~~~~~~~~^
+        runtime_config,
+        ^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        active_integrations,
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/airflow/.local/lib/python3.13/site-packages/dbt/parser/manifest.py", line 2123, in parse_manifest
+    manifest = ManifestLoader.get_full_manifest(
+        runtime_config,
+        write_perf_info=write_perf_info,
+    )
+  File "/home/airflow/.local/lib/python3.13/site-packages/dbt/parser/manifest.py", line 320, in get_full_manifest
+    manifest = loader.load()
+  File "/home/airflow/.local/lib/python3.13/site-packages/dbt/parser/manifest.py", line 389, in load
+    self.load_and_parse_macros(project_parser_files)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.13/site-packages/dbt/parser/manifest.py", line 691, in load_and_parse_macros
+    block = FileBlock(self.manifest.files[file_id])
+                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+KeyError: 'dbt_trino://macros/apply_grants.sql'
+
+[0m11:49:22.426205 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_success": false, "command_wall_clock_time": 4.422671, "process_in_blocks": "384", "process_kernel_time": 1.428718, "process_mem_max_rss": "293924", "process_out_blocks": "0", "process_user_time": 4.855888}
+[0m11:49:22.427451 [debug] [MainThread]: Command `cli seed` failed at 11:49:22.427223 after 4.42 seconds
+[0m11:49:22.428814 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x706a69c17e50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x706a69c15e50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x706a69c0f020>]}
+[0m11:49:22.429819 [debug] [MainThread]: Flushing usage events
+[0m11:49:23.842579 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:52:03.689669 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x706a6b1634d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x706a6c09cf50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x706a69d5fc50>]}
+
+
+============================== 11:52:03.696553 | e3c4d908-619a-4409-89ab-c5dbefe408f8 ==============================
+[0m11:52:03.696553 [info ] [MainThread]: Running with dbt=1.10.10
+[0m11:52:03.697625 [debug] [MainThread]: running dbt with arguments {'warn_error': 'None', 'log_format': 'default', 'use_colors': 'True', 'target_path': 'None', 'profiles_dir': '/opt/airflow/dags/ecommerce_dbt', 'empty': 'None', 'cache_selected_only': 'False', 'printer_width': '80', 'partial_parse': 'True', 'log_path': '/opt/airflow/dags/ecommerce_dbt/logs', 'fail_fast': 'False', 'debug': 'False', 'no_print': 'None', 'version_check': 'True', 'log_cache_events': 'False', 'introspect': 'True', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True', 'write_json': 'True', 'invocation_command': 'dbt celery worker', 'static_parser': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager'}
+[0m11:52:04.088973 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e3c4d908-619a-4409-89ab-c5dbefe408f8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x706a6adf95b0>]}
+[0m11:52:04.231944 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e3c4d908-619a-4409-89ab-c5dbefe408f8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x706a6b1a3020>]}
+[0m11:52:04.233330 [info ] [MainThread]: Registered adapter: trino=1.9.3
+[0m11:52:04.805089 [debug] [MainThread]: checksum: 502a0dc23e9052e1ae09f7c44ee219ef7a02dfea7e7d66580d54c304c14d553b, vars: {}, profile: , target: , version: 1.10.10
+[0m11:52:05.227133 [debug] [MainThread]: Partial parsing enabled: 143 files deleted, 143 files added, 0 files changed.
+[0m11:52:05.228371 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/utils/split_part.sql
+[0m11:52:05.229309 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/materializations/incremental.sql
+[0m11:52:05.230268 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/drop.sql
+[0m11:52:05.231325 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/snapshots/helpers.sql
+[0m11:52:05.232351 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/configs.sql
+[0m11:52:05.233297 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/utils/any_value.sql
+[0m11:52:05.234257 [debug] [MainThread]: Partial parsing: added file: ecommerce_dbt://models/silver/silver_customer_events.sql
+[0m11:52:05.235239 [debug] [MainThread]: Partial parsing: added file: dbt://macros/generic_test_sql/unique.sql
+[0m11:52:05.236279 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/schema.sql
+[0m11:52:05.237283 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/array_append.sql
+[0m11:52:05.238189 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/models/incremental/column_helpers.sql
+[0m11:52:05.239255 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/snapshots/strategies.sql
+[0m11:52:05.240406 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/array_construct.sql
+[0m11:52:05.241772 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/generate_series.sql
+[0m11:52:05.242864 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/bool_or.sql
+[0m11:52:05.243839 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/listagg.sql
+[0m11:52:05.244779 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/apply_grants.sql
+[0m11:52:05.245887 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/adapters.sql
+[0m11:52:05.246950 [debug] [MainThread]: Partial parsing: added file: dbt://tests/generic/builtin.sql
+[0m11:52:05.247985 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/materialized_view/rename.sql
+[0m11:52:05.249066 [debug] [MainThread]: Partial parsing: added file: ecommerce_dbt://models/bronze/bronze_inventory_snapshots.sql
+[0m11:52:05.250052 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/utils/dateadd.sql
+[0m11:52:05.250951 [debug] [MainThread]: Partial parsing: added file: dbt://macros/adapters/schema.sql
+[0m11:52:05.251889 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/except.sql
+[0m11:52:05.252844 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/snapshots/snapshot_merge.sql
+[0m11:52:05.254024 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/create_backup.sql
+[0m11:52:05.255110 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/rename.sql
+[0m11:52:05.256591 [debug] [MainThread]: Partial parsing: added file: dbt://macros/generic_test_sql/not_null.sql
+[0m11:52:05.258393 [debug] [MainThread]: Partial parsing: added file: dbt://macros/get_custom_name/get_custom_schema.sql
+[0m11:52:05.259402 [debug] [MainThread]: Partial parsing: added file: ecommerce_dbt://seeds/raw_payment_transactions.csv
+[0m11:52:05.260321 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/utils/datatypes.sql
+[0m11:52:05.261498 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/create.sql
+[0m11:52:05.262416 [debug] [MainThread]: Partial parsing: added file: dbt://macros/unit_test_sql/get_fixture_sql.sql
+[0m11:52:05.263487 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/utils/bool_or.sql
+[0m11:52:05.264497 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/seeds/helpers.sql
+[0m11:52:05.265426 [debug] [MainThread]: Partial parsing: added file: ecommerce_dbt://models/bronze/bronze_support_tickets.sql
+[0m11:52:05.266454 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/dateadd.sql
+[0m11:52:05.267457 [debug] [MainThread]: Partial parsing: added file: dbt://macros/adapters/freshness.sql
+[0m11:52:05.268377 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/table/drop.sql
+[0m11:52:05.269254 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/models/materialized_view.sql
+[0m11:52:05.270140 [debug] [MainThread]: Partial parsing: added file: dbt://macros/adapters/relation.sql
+[0m11:52:05.271266 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/safe_cast.sql
+[0m11:52:05.272544 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/right.sql
+[0m11:52:05.273945 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/utils/array_append.sql
+[0m11:52:05.275381 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/materializations/materialized_view.sql
+[0m11:52:05.276445 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/seeds/seed.sql
+[0m11:52:05.277382 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/materialized_view/alter.sql
+[0m11:52:05.278392 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/materializations/seeds/helpers.sql
+[0m11:52:05.279460 [debug] [MainThread]: Partial parsing: added file: ecommerce_dbt://models/gold/gold_inventory_health.sql
+[0m11:52:05.280577 [debug] [MainThread]: Partial parsing: added file: ecommerce_dbt://models/gold/gold_customer_360.sql
+[0m11:52:05.281854 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/tests/where_subquery.sql
+[0m11:52:05.282834 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/materializations/table.sql
+[0m11:52:05.283806 [debug] [MainThread]: Partial parsing: added file: dbt://macros/adapters/metadata.sql
+[0m11:52:05.284829 [debug] [MainThread]: Partial parsing: added file: ecommerce_dbt://models/silver/silver_payments.sql
+[0m11:52:05.285912 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/last_day.sql
+[0m11:52:05.286881 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/materializations/view.sql
+[0m11:52:05.288092 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/utils/date_trunc.sql
+[0m11:52:05.292740 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/utils/safe_cast.sql
+[0m11:52:05.295196 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/utils/listagg.sql
+[0m11:52:05.296466 [debug] [MainThread]: Partial parsing: added file: dbt://macros/adapters/show.sql
+[0m11:52:05.297594 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/models/incremental/on_schema_change.sql
+[0m11:52:05.298582 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/view/create.sql
+[0m11:52:05.299746 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/date_trunc.sql
+[0m11:52:05.300723 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/datediff.sql
+[0m11:52:05.301743 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/view/drop.sql
+[0m11:52:05.302686 [debug] [MainThread]: Partial parsing: added file: dbt://macros/adapters/validate_sql.sql
+[0m11:52:05.303585 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/catalog.sql
+[0m11:52:05.306162 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/models/view.sql
+[0m11:52:05.308688 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/models/table.sql
+[0m11:52:05.310002 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/snapshots/snapshot.sql
+[0m11:52:05.311250 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/hash.sql
+[0m11:52:05.312369 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/materialized_view/refresh.sql
+[0m11:52:05.313395 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/materializations/snapshot.sql
+[0m11:52:05.314379 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/view/replace.sql
+[0m11:52:05.315291 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/any_value.sql
+[0m11:52:05.316291 [debug] [MainThread]: Partial parsing: added file: dbt://macros/get_custom_name/get_custom_database.sql
+[0m11:52:05.317115 [debug] [MainThread]: Partial parsing: added file: dbt://macros/adapters/columns.sql
+[0m11:52:05.317976 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/hooks.sql
+[0m11:52:05.318817 [debug] [MainThread]: Partial parsing: added file: ecommerce_dbt://seeds/raw_inventory_snapshots.csv
+[0m11:52:05.319697 [debug] [MainThread]: Partial parsing: added file: dbt://docs/overview.md
+[0m11:52:05.320673 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/models/clone/can_clone_table.sql
+[0m11:52:05.321713 [debug] [MainThread]: Partial parsing: added file: dbt://macros/adapters/timestamps.sql
+[0m11:52:05.323207 [debug] [MainThread]: Partial parsing: added file: ecommerce_dbt://models/bronze/bronze_customer_events.sql
+[0m11:52:05.324793 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/utils/right.sql
+[0m11:52:05.325876 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/cast_bool_to_text.sql
+[0m11:52:05.326718 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/materialized_view/replace.sql
+[0m11:52:05.327569 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/materialized_view/create.sql
+[0m11:52:05.328653 [debug] [MainThread]: Partial parsing: added file: ecommerce_dbt://models/silver/silver_support.sql
+[0m11:52:05.329753 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/models/clone/clone.sql
+[0m11:52:05.330726 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/models/incremental/merge.sql
+[0m11:52:05.331617 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/column/columns_spec_ddl.sql
+[0m11:52:05.332449 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/literal.sql
+[0m11:52:05.333247 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/concat.sql
+[0m11:52:05.334257 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/utils/timestamps.sql
+[0m11:52:05.335276 [debug] [MainThread]: Partial parsing: added file: dbt://macros/etc/statement.sql
+[0m11:52:05.336226 [debug] [MainThread]: Partial parsing: added file: dbt://macros/get_custom_name/get_custom_alias.sql
+[0m11:52:05.337603 [debug] [MainThread]: Partial parsing: added file: dbt://macros/adapters/apply_grants.sql
+[0m11:52:05.338537 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/utils/hash.sql
+[0m11:52:05.339888 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/models/incremental/incremental.sql
+[0m11:52:05.341639 [debug] [MainThread]: Partial parsing: added file: dbt://macros/generic_test_sql/relationships.sql
+[0m11:52:05.342595 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/tests/unit.sql
+[0m11:52:05.343545 [debug] [MainThread]: Partial parsing: added file: dbt://macros/etc/datetime.sql
+[0m11:52:05.344672 [debug] [MainThread]: Partial parsing: added file: ecommerce_dbt://models/silver/silver_inventory.sql
+[0m11:52:05.345796 [debug] [MainThread]: Partial parsing: added file: dbt://macros/adapters/persist_docs.sql
+[0m11:52:05.346685 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/position.sql
+[0m11:52:05.347546 [debug] [MainThread]: Partial parsing: added file: ecommerce_dbt://models/gold/gold_support_metrics.sql
+[0m11:52:05.348471 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/date_spine.sql
+[0m11:52:05.349437 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/models/incremental/strategies.sql
+[0m11:52:05.350353 [debug] [MainThread]: Partial parsing: added file: dbt://macros/adapters/indexes.sql
+[0m11:52:05.351271 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/cast.sql
+[0m11:52:05.352289 [debug] [MainThread]: Partial parsing: added file: ecommerce_dbt://models/bronze/bronze_models.yml
+[0m11:52:05.353364 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/utils/datediff.sql
+[0m11:52:05.354261 [debug] [MainThread]: Partial parsing: added file: ecommerce_dbt://models/bronze/bronze_payment_transactions.sql
+[0m11:52:05.355264 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/utils/array_concat.sql
+[0m11:52:05.358829 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/table/rename.sql
+[0m11:52:05.360685 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/table/create.sql
+[0m11:52:05.362092 [debug] [MainThread]: Partial parsing: added file: ecommerce_dbt://seeds/raw_customer_events.csv
+[0m11:52:05.364008 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/split_part.sql
+[0m11:52:05.365256 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/models/clone/create_or_replace_clone.sql
+[0m11:52:05.366388 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/drop_backup.sql
+[0m11:52:05.367815 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/array_concat.sql
+[0m11:52:05.369491 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/utils/date_spine.sql
+[0m11:52:05.371583 [debug] [MainThread]: Partial parsing: added file: ecommerce_dbt://models/gold/gold_sales_summary.sql
+[0m11:52:05.373259 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/view/rename.sql
+[0m11:52:05.375022 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/tests/test.sql
+[0m11:52:05.376326 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/models/incremental/is_incremental.sql
+[0m11:52:05.377348 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/create_intermediate.sql
+[0m11:52:05.378330 [debug] [MainThread]: Partial parsing: added file: ecommerce_dbt://seeds/raw_support_tickets.csv
+[0m11:52:05.379241 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/replace.sql
+[0m11:52:05.380032 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/intersect.sql
+[0m11:52:05.381022 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/rename_intermediate.sql
+[0m11:52:05.381824 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/tests/helpers.sql
+[0m11:52:05.382658 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/date.sql
+[0m11:52:05.383545 [debug] [MainThread]: Partial parsing: added file: dbt://macros/python_model/python.sql
+[0m11:52:05.385597 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/equals.sql
+[0m11:52:05.386500 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/length.sql
+[0m11:52:05.387361 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/replace.sql
+[0m11:52:05.388189 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/data_types.sql
+[0m11:52:05.389133 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/materialized_view/drop.sql
+[0m11:52:05.391049 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/utils/array_construct.sql
+[0m11:52:05.392294 [debug] [MainThread]: Partial parsing: added file: dbt://macros/generic_test_sql/accepted_values.sql
+[0m11:52:05.393345 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/escape_single_quotes.sql
+[0m11:52:05.394268 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/table/replace.sql
+[0m11:52:05.395366 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\split_part.sql
+[0m11:52:05.396276 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\materializations\seeds\helpers.sql
+[0m11:52:05.397268 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\drop.sql
+[0m11:52:05.398159 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\materialized_view\refresh.sql
+[0m11:52:05.399013 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\replace.sql
+[0m11:52:05.399901 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\adapters\indexes.sql
+[0m11:52:05.401076 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\escape_single_quotes.sql
+[0m11:52:05.402097 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\unit_test_sql\get_fixture_sql.sql
+[0m11:52:05.402921 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\date_spine.sql
+[0m11:52:05.403742 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\utils\split_part.sql
+[0m11:52:05.404475 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\rename_intermediate.sql
+[0m11:52:05.405208 [debug] [MainThread]: Partial parsing: deleted file: ecommerce_dbt://models\gold\gold_customer_360.sql
+[0m11:52:05.405879 [debug] [MainThread]: Partial parsing: deleted file: ecommerce_dbt://models\gold\gold_support_metrics.sql
+[0m11:52:05.406689 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\models\incremental\is_incremental.sql
+[0m11:52:05.407778 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\array_concat.sql
+[0m11:52:05.408730 [debug] [MainThread]: Partial parsing: deleted file: ecommerce_dbt://seeds\raw_inventory_snapshots.csv
+[0m11:52:05.409608 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\models\incremental\strategies.sql
+[0m11:52:05.410351 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\materialized_view\rename.sql
+[0m11:52:05.411066 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\generate_series.sql
+[0m11:52:05.411729 [debug] [MainThread]: Partial parsing: deleted file: ecommerce_dbt://models\bronze\bronze_support_tickets.sql
+[0m11:52:05.412365 [debug] [MainThread]: Partial parsing: deleted file: ecommerce_dbt://models\gold\gold_sales_summary.sql
+[0m11:52:05.413276 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\cast.sql
+[0m11:52:05.413983 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\rename.sql
+[0m11:52:05.414673 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\adapters\freshness.sql
+[0m11:52:05.415575 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\generic_test_sql\not_null.sql
+[0m11:52:05.416490 [debug] [MainThread]: Partial parsing: deleted file: ecommerce_dbt://models\silver\silver_payments.sql
+[0m11:52:05.417337 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\create_intermediate.sql
+[0m11:52:05.418081 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\listagg.sql
+[0m11:52:05.418721 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\right.sql
+[0m11:52:05.419638 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\table\create.sql
+[0m11:52:05.420292 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\concat.sql
+[0m11:52:05.421142 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\snapshots\helpers.sql
+[0m11:52:05.422164 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\adapters\relation.sql
+[0m11:52:05.423196 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\catalog.sql
+[0m11:52:05.424764 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\column\columns_spec_ddl.sql
+[0m11:52:05.425801 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\get_custom_name\get_custom_schema.sql
+[0m11:52:05.426503 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\array_append.sql
+[0m11:52:05.427238 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\snapshots\strategies.sql
+[0m11:52:05.427950 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\python_model\python.sql
+[0m11:52:05.428662 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\last_day.sql
+[0m11:52:05.429607 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\any_value.sql
+[0m11:52:05.430432 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\get_custom_name\get_custom_database.sql
+[0m11:52:05.431214 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\view\drop.sql
+[0m11:52:05.432137 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\models\incremental\on_schema_change.sql
+[0m11:52:05.433325 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\adapters\persist_docs.sql
+[0m11:52:05.434078 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\length.sql
+[0m11:52:05.434853 [debug] [MainThread]: Partial parsing: deleted file: ecommerce_dbt://seeds\raw_customer_events.csv
+[0m11:52:05.435547 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\adapters\schema.sql
+[0m11:52:05.437075 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\etc\statement.sql
+[0m11:52:05.438284 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\hooks.sql
+[0m11:52:05.439361 [debug] [MainThread]: Partial parsing: deleted file: dbt://tests\generic\builtin.sql
+[0m11:52:05.440437 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\models\table.sql
+[0m11:52:05.441607 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\date.sql
+[0m11:52:05.442648 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\tests\test.sql
+[0m11:52:05.443614 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\table\replace.sql
+[0m11:52:05.444373 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\utils\hash.sql
+[0m11:52:05.445158 [debug] [MainThread]: Partial parsing: deleted file: ecommerce_dbt://models\bronze\bronze_payment_transactions.sql
+[0m11:52:05.445921 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\utils\safe_cast.sql
+[0m11:52:05.446606 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\utils\date_spine.sql
+[0m11:52:05.447531 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\snapshots\snapshot.sql
+[0m11:52:05.448609 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\configs.sql
+[0m11:52:05.449491 [debug] [MainThread]: Partial parsing: deleted file: ecommerce_dbt://models\gold\gold_inventory_health.sql
+[0m11:52:05.450272 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\view\rename.sql
+[0m11:52:05.450975 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\adapters\validate_sql.sql
+[0m11:52:05.451634 [debug] [MainThread]: Partial parsing: deleted file: dbt://docs\overview.md
+[0m11:52:05.452320 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\snapshots\snapshot_merge.sql
+[0m11:52:05.453061 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\view\replace.sql
+[0m11:52:05.453813 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\view\create.sql
+[0m11:52:05.454516 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\materializations\incremental.sql
+[0m11:52:05.455260 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\utils\datatypes.sql
+[0m11:52:05.456203 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\cast_bool_to_text.sql
+[0m11:52:05.457322 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\apply_grants.sql
+[0m11:52:05.458276 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\models\clone\can_clone_table.sql
+[0m11:52:05.459148 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\table\drop.sql
+[0m11:52:05.459895 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\literal.sql
+[0m11:52:05.460675 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\utils\dateadd.sql
+[0m11:52:05.461475 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\adapters\show.sql
+[0m11:52:05.462159 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\models\materialized_view.sql
+[0m11:52:05.462816 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\materializations\snapshot.sql
+[0m11:52:05.463533 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\intersect.sql
+[0m11:52:05.464357 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\generic_test_sql\relationships.sql
+[0m11:52:05.465210 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\utils\listagg.sql
+[0m11:52:05.466311 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\adapters\columns.sql
+[0m11:52:05.467031 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\safe_cast.sql
+[0m11:52:05.467962 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\adapters\apply_grants.sql
+[0m11:52:05.468747 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\materialized_view\alter.sql
+[0m11:52:05.469501 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\materialized_view\create.sql
+[0m11:52:05.470240 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\materializations\materialized_view.sql
+[0m11:52:05.470930 [debug] [MainThread]: Partial parsing: deleted file: ecommerce_dbt://models\silver\silver_inventory.sql
+[0m11:52:05.471844 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\adapters\metadata.sql
+[0m11:52:05.472773 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\data_types.sql
+[0m11:52:05.473777 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\utils\array_construct.sql
+[0m11:52:05.474625 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\materialized_view\replace.sql
+[0m11:52:05.475312 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\materialized_view\drop.sql
+[0m11:52:05.476022 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\seeds\helpers.sql
+[0m11:52:05.476714 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\models\incremental\incremental.sql
+[0m11:52:05.477411 [debug] [MainThread]: Partial parsing: deleted file: ecommerce_dbt://models\bronze\bronze_inventory_snapshots.sql
+[0m11:52:05.478043 [debug] [MainThread]: Partial parsing: deleted file: ecommerce_dbt://seeds\raw_payment_transactions.csv
+[0m11:52:05.478756 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\tests\where_subquery.sql
+[0m11:52:05.479473 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\except.sql
+[0m11:52:05.480242 [debug] [MainThread]: Partial parsing: deleted file: ecommerce_dbt://models\silver\silver_customer_events.sql
+[0m11:52:05.481003 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\materializations\table.sql
+[0m11:52:05.481679 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\utils\bool_or.sql
+[0m11:52:05.482323 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\utils\timestamps.sql
+[0m11:52:05.482945 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\generic_test_sql\accepted_values.sql
+[0m11:52:05.483885 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\adapters.sql
+[0m11:52:05.484544 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\models\incremental\merge.sql
+[0m11:52:05.485233 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\array_construct.sql
+[0m11:52:05.485886 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\dateadd.sql
+[0m11:52:05.486505 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\utils\datediff.sql
+[0m11:52:05.487191 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\utils\any_value.sql
+[0m11:52:05.487974 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\seeds\seed.sql
+[0m11:52:05.489105 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\tests\unit.sql
+[0m11:52:05.490474 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\utils\array_concat.sql
+[0m11:52:05.491652 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\adapters\timestamps.sql
+[0m11:52:05.492387 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\utils\right.sql
+[0m11:52:05.493021 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\utils\array_append.sql
+[0m11:52:05.493693 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\bool_or.sql
+[0m11:52:05.494321 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\position.sql
+[0m11:52:05.495000 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\hash.sql
+[0m11:52:05.495730 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\replace.sql
+[0m11:52:05.496545 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\tests\helpers.sql
+[0m11:52:05.497371 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\materializations\view.sql
+[0m11:52:05.498084 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\models\clone\clone.sql
+[0m11:52:05.498734 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\date_trunc.sql
+[0m11:52:05.499440 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\table\rename.sql
+[0m11:52:05.500070 [debug] [MainThread]: Partial parsing: deleted file: ecommerce_dbt://models\bronze\bronze_customer_events.sql
+[0m11:52:05.500754 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\models\incremental\column_helpers.sql
+[0m11:52:05.501464 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\schema.sql
+[0m11:52:05.502114 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\models\view.sql
+[0m11:52:05.502739 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\equals.sql
+[0m11:52:05.503395 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\utils\date_trunc.sql
+[0m11:52:05.504180 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\create_backup.sql
+[0m11:52:05.505005 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\drop_backup.sql
+[0m11:52:05.505703 [debug] [MainThread]: Partial parsing: deleted file: ecommerce_dbt://models\silver\silver_support.sql
+[0m11:52:05.506577 [debug] [MainThread]: Partial parsing: deleted file: ecommerce_dbt://seeds\raw_support_tickets.csv
+[0m11:52:05.507850 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\etc\datetime.sql
+[0m11:52:05.508745 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\datediff.sql
+[0m11:52:05.509488 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\models\clone\create_or_replace_clone.sql
+[0m11:52:05.510127 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\create.sql
+[0m11:52:05.510799 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\get_custom_name\get_custom_alias.sql
+[0m11:52:05.511627 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\generic_test_sql\unique.sql
+[0m11:52:05.536797 [error] [MainThread]: Encountered an error:
+'dbt_trino://macros/apply_grants.sql'
+[0m11:52:05.548569 [error] [MainThread]: Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.13/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/airflow/.local/lib/python3.13/site-packages/trino/sqlalchemy/dialect.py", line 442, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.13/site-packages/trino/dbapi.py", line 640, in execute
+    self._iterator = iter(self._query.execute())
+                          ~~~~~~~~~~~~~~~~~~~^^
+  File "/home/airflow/.local/lib/python3.13/site-packages/trino/client.py", line 938, in execute
+    self._result.rows += self.fetch()
+                         ~~~~~~~~~~^^
+  File "/home/airflow/.local/lib/python3.13/site-packages/trino/client.py", line 958, in fetch
+    status = self._request.process(response)
+  File "/home/airflow/.local/lib/python3.13/site-packages/trino/client.py", line 727, in process
+    raise self._process_error(response["error"], response.get("id"))
+          ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.13/site-packages/trino/client.py", line 696, in _process_error
+    raise exceptions.TrinoExternalError(error, query_id)
+trino.exceptions.TrinoExternalError: TrinoExternalError(type=EXTERNAL, name=ICEBERG_CATALOG_ERROR, message="Cannot obtain metadata", query_id=20260507_115203_00002_f8ybt)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/airflow/dags/dag_pipeline.py", line 391, in seed_bronze
+    result = conn.execute(text("SELECT count(*) as cnt FROM raw_customer_events"))
+  File "/home/airflow/.local/lib/python3.13/site-packages/sqlalchemy/engine/base.py", line 1419, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "/home/airflow/.local/lib/python3.13/site-packages/sqlalchemy/sql/elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/airflow/.local/lib/python3.13/site-packages/sqlalchemy/engine/base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "/home/airflow/.local/lib/python3.13/site-packages/sqlalchemy/engine/base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/airflow/.local/lib/python3.13/site-packages/sqlalchemy/engine/base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/airflow/.local/lib/python3.13/site-packages/sqlalchemy/engine/base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/home/airflow/.local/lib/python3.13/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/airflow/.local/lib/python3.13/site-packages/trino/sqlalchemy/dialect.py", line 442, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.13/site-packages/trino/dbapi.py", line 640, in execute
+    self._iterator = iter(self._query.execute())
+                          ~~~~~~~~~~~~~~~~~~~^^
+  File "/home/airflow/.local/lib/python3.13/site-packages/trino/client.py", line 938, in execute
+    self._result.rows += self.fetch()
+                         ~~~~~~~~~~^^
+  File "/home/airflow/.local/lib/python3.13/site-packages/trino/client.py", line 958, in fetch
+    status = self._request.process(response)
+  File "/home/airflow/.local/lib/python3.13/site-packages/trino/client.py", line 727, in process
+    raise self._process_error(response["error"], response.get("id"))
+          ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.13/site-packages/trino/client.py", line 696, in _process_error
+    raise exceptions.TrinoExternalError(error, query_id)
+sqlalchemy.exc.OperationalError: (trino.exceptions.TrinoExternalError) TrinoExternalError(type=EXTERNAL, name=ICEBERG_CATALOG_ERROR, message="Cannot obtain metadata", query_id=20260507_115203_00002_f8ybt)
+[SQL: SELECT count(*) as cnt FROM raw_customer_events]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.13/site-packages/dbt/cli/requires.py", line 178, in wrapper
+    result, success = func(*args, **kwargs)
+                      ~~~~^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.13/site-packages/dbt/cli/requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.13/site-packages/dbt/cli/requires.py", line 272, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.13/site-packages/dbt/cli/requires.py", line 303, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.13/site-packages/dbt/cli/requires.py", line 350, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.13/site-packages/dbt/cli/requires.py", line 389, in wrapper
+    setup_manifest(ctx, write=write, write_perf_info=write_perf_info)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.13/site-packages/dbt/cli/requires.py", line 416, in setup_manifest
+    ctx.obj["manifest"] = parse_manifest(
+                          ~~~~~~~~~~~~~~^
+        runtime_config,
+        ^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        active_integrations,
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/airflow/.local/lib/python3.13/site-packages/dbt/parser/manifest.py", line 2123, in parse_manifest
+    manifest = ManifestLoader.get_full_manifest(
+        runtime_config,
+        write_perf_info=write_perf_info,
+    )
+  File "/home/airflow/.local/lib/python3.13/site-packages/dbt/parser/manifest.py", line 320, in get_full_manifest
+    manifest = loader.load()
+  File "/home/airflow/.local/lib/python3.13/site-packages/dbt/parser/manifest.py", line 389, in load
+    self.load_and_parse_macros(project_parser_files)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.13/site-packages/dbt/parser/manifest.py", line 691, in load_and_parse_macros
+    block = FileBlock(self.manifest.files[file_id])
+                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+KeyError: 'dbt_trino://macros/apply_grants.sql'
+
+[0m11:52:05.550413 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_success": false, "command_wall_clock_time": 2.0056565, "process_in_blocks": "240", "process_kernel_time": 0.549457, "process_mem_max_rss": "294284", "process_out_blocks": "0", "process_user_time": 3.268253}
+[0m11:52:05.552461 [debug] [MainThread]: Command `cli seed` failed at 11:52:05.551663 after 2.01 seconds
+[0m11:52:05.554631 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x706a69c1bd50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x706a69c1be50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x706a69bf76b0>]}
+[0m11:52:05.556663 [debug] [MainThread]: Flushing usage events
+[0m11:52:06.928545 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:56:17.909529 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x706a6b1634d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x706a69d5fed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x706a69d5f9d0>]}
+
+
+============================== 11:56:17.925025 | cccc37da-90bb-4aed-a0e3-d048f4daa3c6 ==============================
+[0m11:56:17.925025 [info ] [MainThread]: Running with dbt=1.10.10
+[0m11:56:17.927691 [debug] [MainThread]: running dbt with arguments {'warn_error': 'None', 'log_format': 'default', 'use_colors': 'True', 'target_path': 'None', 'profiles_dir': '/opt/airflow/dags/ecommerce_dbt', 'empty': 'None', 'cache_selected_only': 'False', 'printer_width': '80', 'partial_parse': 'True', 'log_path': '/opt/airflow/dags/ecommerce_dbt/logs', 'fail_fast': 'False', 'debug': 'False', 'no_print': 'None', 'version_check': 'True', 'log_cache_events': 'False', 'introspect': 'True', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True', 'write_json': 'True', 'invocation_command': 'dbt celery worker', 'static_parser': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager'}
+[0m11:56:18.396423 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'cccc37da-90bb-4aed-a0e3-d048f4daa3c6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x706a6ae195b0>]}
+[0m11:56:18.546269 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'cccc37da-90bb-4aed-a0e3-d048f4daa3c6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x706a6b1a7020>]}
+[0m11:56:18.547694 [info ] [MainThread]: Registered adapter: trino=1.9.3
+[0m11:56:18.994356 [debug] [MainThread]: checksum: 502a0dc23e9052e1ae09f7c44ee219ef7a02dfea7e7d66580d54c304c14d553b, vars: {}, profile: , target: , version: 1.10.10
+[0m11:56:19.416089 [debug] [MainThread]: Partial parsing enabled: 143 files deleted, 143 files added, 0 files changed.
+[0m11:56:19.417236 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/utils/split_part.sql
+[0m11:56:19.418061 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/materializations/incremental.sql
+[0m11:56:19.418837 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/drop.sql
+[0m11:56:19.419606 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/snapshots/helpers.sql
+[0m11:56:19.420351 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/configs.sql
+[0m11:56:19.421506 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/utils/any_value.sql
+[0m11:56:19.422724 [debug] [MainThread]: Partial parsing: added file: ecommerce_dbt://models/silver/silver_customer_events.sql
+[0m11:56:19.423674 [debug] [MainThread]: Partial parsing: added file: dbt://macros/generic_test_sql/unique.sql
+[0m11:56:19.424575 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/schema.sql
+[0m11:56:19.425663 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/array_append.sql
+[0m11:56:19.426585 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/models/incremental/column_helpers.sql
+[0m11:56:19.427676 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/snapshots/strategies.sql
+[0m11:56:19.428657 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/array_construct.sql
+[0m11:56:19.429582 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/generate_series.sql
+[0m11:56:19.430438 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/bool_or.sql
+[0m11:56:19.431330 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/listagg.sql
+[0m11:56:19.432161 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/apply_grants.sql
+[0m11:56:19.432921 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/adapters.sql
+[0m11:56:19.433684 [debug] [MainThread]: Partial parsing: added file: dbt://tests/generic/builtin.sql
+[0m11:56:19.434437 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/materialized_view/rename.sql
+[0m11:56:19.435151 [debug] [MainThread]: Partial parsing: added file: ecommerce_dbt://models/bronze/bronze_inventory_snapshots.sql
+[0m11:56:19.435899 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/utils/dateadd.sql
+[0m11:56:19.436618 [debug] [MainThread]: Partial parsing: added file: dbt://macros/adapters/schema.sql
+[0m11:56:19.437701 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/except.sql
+[0m11:56:19.438923 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/snapshots/snapshot_merge.sql
+[0m11:56:19.440006 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/create_backup.sql
+[0m11:56:19.440821 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/rename.sql
+[0m11:56:19.441594 [debug] [MainThread]: Partial parsing: added file: dbt://macros/generic_test_sql/not_null.sql
+[0m11:56:19.442271 [debug] [MainThread]: Partial parsing: added file: dbt://macros/get_custom_name/get_custom_schema.sql
+[0m11:56:19.442974 [debug] [MainThread]: Partial parsing: added file: ecommerce_dbt://seeds/raw_payment_transactions.csv
+[0m11:56:19.443735 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/utils/datatypes.sql
+[0m11:56:19.444618 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/create.sql
+[0m11:56:19.445313 [debug] [MainThread]: Partial parsing: added file: dbt://macros/unit_test_sql/get_fixture_sql.sql
+[0m11:56:19.446005 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/utils/bool_or.sql
+[0m11:56:19.446698 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/seeds/helpers.sql
+[0m11:56:19.447457 [debug] [MainThread]: Partial parsing: added file: ecommerce_dbt://models/bronze/bronze_support_tickets.sql
+[0m11:56:19.448169 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/dateadd.sql
+[0m11:56:19.448909 [debug] [MainThread]: Partial parsing: added file: dbt://macros/adapters/freshness.sql
+[0m11:56:19.449644 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/table/drop.sql
+[0m11:56:19.450370 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/models/materialized_view.sql
+[0m11:56:19.451122 [debug] [MainThread]: Partial parsing: added file: dbt://macros/adapters/relation.sql
+[0m11:56:19.451894 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/safe_cast.sql
+[0m11:56:19.452589 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/right.sql
+[0m11:56:19.453282 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/utils/array_append.sql
+[0m11:56:19.454016 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/materializations/materialized_view.sql
+[0m11:56:19.455082 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/seeds/seed.sql
+[0m11:56:19.456363 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/materialized_view/alter.sql
+[0m11:56:19.457193 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/materializations/seeds/helpers.sql
+[0m11:56:19.457956 [debug] [MainThread]: Partial parsing: added file: ecommerce_dbt://models/gold/gold_inventory_health.sql
+[0m11:56:19.458680 [debug] [MainThread]: Partial parsing: added file: ecommerce_dbt://models/gold/gold_customer_360.sql
+[0m11:56:19.459407 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/tests/where_subquery.sql
+[0m11:56:19.460222 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/materializations/table.sql
+[0m11:56:19.461010 [debug] [MainThread]: Partial parsing: added file: dbt://macros/adapters/metadata.sql
+[0m11:56:19.461771 [debug] [MainThread]: Partial parsing: added file: ecommerce_dbt://models/silver/silver_payments.sql
+[0m11:56:19.462458 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/last_day.sql
+[0m11:56:19.463130 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/materializations/view.sql
+[0m11:56:19.463863 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/utils/date_trunc.sql
+[0m11:56:19.464576 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/utils/safe_cast.sql
+[0m11:56:19.465293 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/utils/listagg.sql
+[0m11:56:19.466014 [debug] [MainThread]: Partial parsing: added file: dbt://macros/adapters/show.sql
+[0m11:56:19.466762 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/models/incremental/on_schema_change.sql
+[0m11:56:19.467513 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/view/create.sql
+[0m11:56:19.468245 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/date_trunc.sql
+[0m11:56:19.468954 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/datediff.sql
+[0m11:56:19.469650 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/view/drop.sql
+[0m11:56:19.470341 [debug] [MainThread]: Partial parsing: added file: dbt://macros/adapters/validate_sql.sql
+[0m11:56:19.471028 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/catalog.sql
+[0m11:56:19.471922 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/models/view.sql
+[0m11:56:19.472923 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/models/table.sql
+[0m11:56:19.473773 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/snapshots/snapshot.sql
+[0m11:56:19.474541 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/hash.sql
+[0m11:56:19.475358 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/materialized_view/refresh.sql
+[0m11:56:19.476084 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/materializations/snapshot.sql
+[0m11:56:19.476823 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/view/replace.sql
+[0m11:56:19.477540 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/any_value.sql
+[0m11:56:19.478248 [debug] [MainThread]: Partial parsing: added file: dbt://macros/get_custom_name/get_custom_database.sql
+[0m11:56:19.478966 [debug] [MainThread]: Partial parsing: added file: dbt://macros/adapters/columns.sql
+[0m11:56:19.479774 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/hooks.sql
+[0m11:56:19.480602 [debug] [MainThread]: Partial parsing: added file: ecommerce_dbt://seeds/raw_inventory_snapshots.csv
+[0m11:56:19.481378 [debug] [MainThread]: Partial parsing: added file: dbt://docs/overview.md
+[0m11:56:19.482152 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/models/clone/can_clone_table.sql
+[0m11:56:19.482880 [debug] [MainThread]: Partial parsing: added file: dbt://macros/adapters/timestamps.sql
+[0m11:56:19.483635 [debug] [MainThread]: Partial parsing: added file: ecommerce_dbt://models/bronze/bronze_customer_events.sql
+[0m11:56:19.484345 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/utils/right.sql
+[0m11:56:19.485052 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/cast_bool_to_text.sql
+[0m11:56:19.485789 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/materialized_view/replace.sql
+[0m11:56:19.486494 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/materialized_view/create.sql
+[0m11:56:19.487316 [debug] [MainThread]: Partial parsing: added file: ecommerce_dbt://models/silver/silver_support.sql
+[0m11:56:19.488282 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/models/clone/clone.sql
+[0m11:56:19.489279 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/models/incremental/merge.sql
+[0m11:56:19.490164 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/column/columns_spec_ddl.sql
+[0m11:56:19.490944 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/literal.sql
+[0m11:56:19.491747 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/concat.sql
+[0m11:56:19.492481 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/utils/timestamps.sql
+[0m11:56:19.493208 [debug] [MainThread]: Partial parsing: added file: dbt://macros/etc/statement.sql
+[0m11:56:19.493938 [debug] [MainThread]: Partial parsing: added file: dbt://macros/get_custom_name/get_custom_alias.sql
+[0m11:56:19.494659 [debug] [MainThread]: Partial parsing: added file: dbt://macros/adapters/apply_grants.sql
+[0m11:56:19.495428 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/utils/hash.sql
+[0m11:56:19.496138 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/models/incremental/incremental.sql
+[0m11:56:19.496859 [debug] [MainThread]: Partial parsing: added file: dbt://macros/generic_test_sql/relationships.sql
+[0m11:56:19.497573 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/tests/unit.sql
+[0m11:56:19.498256 [debug] [MainThread]: Partial parsing: added file: dbt://macros/etc/datetime.sql
+[0m11:56:19.498927 [debug] [MainThread]: Partial parsing: added file: ecommerce_dbt://models/silver/silver_inventory.sql
+[0m11:56:19.499671 [debug] [MainThread]: Partial parsing: added file: dbt://macros/adapters/persist_docs.sql
+[0m11:56:19.500388 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/position.sql
+[0m11:56:19.501128 [debug] [MainThread]: Partial parsing: added file: ecommerce_dbt://models/gold/gold_support_metrics.sql
+[0m11:56:19.501860 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/date_spine.sql
+[0m11:56:19.502622 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/models/incremental/strategies.sql
+[0m11:56:19.503331 [debug] [MainThread]: Partial parsing: added file: dbt://macros/adapters/indexes.sql
+[0m11:56:19.504016 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/cast.sql
+[0m11:56:19.505002 [debug] [MainThread]: Partial parsing: added file: ecommerce_dbt://models/bronze/bronze_models.yml
+[0m11:56:19.505905 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/utils/datediff.sql
+[0m11:56:19.506964 [debug] [MainThread]: Partial parsing: added file: ecommerce_dbt://models/bronze/bronze_payment_transactions.sql
+[0m11:56:19.507958 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/utils/array_concat.sql
+[0m11:56:19.508696 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/table/rename.sql
+[0m11:56:19.509434 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/table/create.sql
+[0m11:56:19.510250 [debug] [MainThread]: Partial parsing: added file: ecommerce_dbt://seeds/raw_customer_events.csv
+[0m11:56:19.511001 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/split_part.sql
+[0m11:56:19.511810 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/models/clone/create_or_replace_clone.sql
+[0m11:56:19.512604 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/drop_backup.sql
+[0m11:56:19.513410 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/array_concat.sql
+[0m11:56:19.514206 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/utils/date_spine.sql
+[0m11:56:19.514980 [debug] [MainThread]: Partial parsing: added file: ecommerce_dbt://models/gold/gold_sales_summary.sql
+[0m11:56:19.515922 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/view/rename.sql
+[0m11:56:19.516740 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/tests/test.sql
+[0m11:56:19.517542 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/models/incremental/is_incremental.sql
+[0m11:56:19.518293 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/create_intermediate.sql
+[0m11:56:19.519028 [debug] [MainThread]: Partial parsing: added file: ecommerce_dbt://seeds/raw_support_tickets.csv
+[0m11:56:19.519946 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/replace.sql
+[0m11:56:19.521061 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/intersect.sql
+[0m11:56:19.522377 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/rename_intermediate.sql
+[0m11:56:19.523673 [debug] [MainThread]: Partial parsing: added file: dbt://macros/materializations/tests/helpers.sql
+[0m11:56:19.524542 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/date.sql
+[0m11:56:19.525342 [debug] [MainThread]: Partial parsing: added file: dbt://macros/python_model/python.sql
+[0m11:56:19.526278 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/equals.sql
+[0m11:56:19.527094 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/length.sql
+[0m11:56:19.527961 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/replace.sql
+[0m11:56:19.528791 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/data_types.sql
+[0m11:56:19.529653 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/materialized_view/drop.sql
+[0m11:56:19.530777 [debug] [MainThread]: Partial parsing: added file: dbt_trino://macros/utils/array_construct.sql
+[0m11:56:19.531725 [debug] [MainThread]: Partial parsing: added file: dbt://macros/generic_test_sql/accepted_values.sql
+[0m11:56:19.532739 [debug] [MainThread]: Partial parsing: added file: dbt://macros/utils/escape_single_quotes.sql
+[0m11:56:19.533738 [debug] [MainThread]: Partial parsing: added file: dbt://macros/relations/table/replace.sql
+[0m11:56:19.535113 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\split_part.sql
+[0m11:56:19.537138 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\materializations\seeds\helpers.sql
+[0m11:56:19.541325 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\drop.sql
+[0m11:56:19.542266 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\materialized_view\refresh.sql
+[0m11:56:19.543382 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\replace.sql
+[0m11:56:19.544305 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\adapters\indexes.sql
+[0m11:56:19.545243 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\escape_single_quotes.sql
+[0m11:56:19.546080 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\unit_test_sql\get_fixture_sql.sql
+[0m11:56:19.547027 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\date_spine.sql
+[0m11:56:19.547915 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\utils\split_part.sql
+[0m11:56:19.548682 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\rename_intermediate.sql
+[0m11:56:19.549515 [debug] [MainThread]: Partial parsing: deleted file: ecommerce_dbt://models\gold\gold_customer_360.sql
+[0m11:56:19.550301 [debug] [MainThread]: Partial parsing: deleted file: ecommerce_dbt://models\gold\gold_support_metrics.sql
+[0m11:56:19.551116 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\models\incremental\is_incremental.sql
+[0m11:56:19.551991 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\array_concat.sql
+[0m11:56:19.552712 [debug] [MainThread]: Partial parsing: deleted file: ecommerce_dbt://seeds\raw_inventory_snapshots.csv
+[0m11:56:19.553603 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\models\incremental\strategies.sql
+[0m11:56:19.554710 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\materialized_view\rename.sql
+[0m11:56:19.555875 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\generate_series.sql
+[0m11:56:19.556914 [debug] [MainThread]: Partial parsing: deleted file: ecommerce_dbt://models\bronze\bronze_support_tickets.sql
+[0m11:56:19.557777 [debug] [MainThread]: Partial parsing: deleted file: ecommerce_dbt://models\gold\gold_sales_summary.sql
+[0m11:56:19.558768 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\cast.sql
+[0m11:56:19.559574 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\rename.sql
+[0m11:56:19.560338 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\adapters\freshness.sql
+[0m11:56:19.561164 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\generic_test_sql\not_null.sql
+[0m11:56:19.561998 [debug] [MainThread]: Partial parsing: deleted file: ecommerce_dbt://models\silver\silver_payments.sql
+[0m11:56:19.562832 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\create_intermediate.sql
+[0m11:56:19.563686 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\listagg.sql
+[0m11:56:19.564382 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\right.sql
+[0m11:56:19.565444 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\table\create.sql
+[0m11:56:19.566181 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\concat.sql
+[0m11:56:19.568117 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\snapshots\helpers.sql
+[0m11:56:19.569339 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\adapters\relation.sql
+[0m11:56:19.570557 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\catalog.sql
+[0m11:56:19.572505 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\column\columns_spec_ddl.sql
+[0m11:56:19.574108 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\get_custom_name\get_custom_schema.sql
+[0m11:56:19.575879 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\array_append.sql
+[0m11:56:19.576762 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\snapshots\strategies.sql
+[0m11:56:19.577753 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\python_model\python.sql
+[0m11:56:19.578991 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\last_day.sql
+[0m11:56:19.580384 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\any_value.sql
+[0m11:56:19.581375 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\get_custom_name\get_custom_database.sql
+[0m11:56:19.582321 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\view\drop.sql
+[0m11:56:19.583459 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\models\incremental\on_schema_change.sql
+[0m11:56:19.584488 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\adapters\persist_docs.sql
+[0m11:56:19.585336 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\length.sql
+[0m11:56:19.586200 [debug] [MainThread]: Partial parsing: deleted file: ecommerce_dbt://seeds\raw_customer_events.csv
+[0m11:56:19.587855 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\adapters\schema.sql
+[0m11:56:19.589516 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\etc\statement.sql
+[0m11:56:19.590593 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\hooks.sql
+[0m11:56:19.591453 [debug] [MainThread]: Partial parsing: deleted file: dbt://tests\generic\builtin.sql
+[0m11:56:19.592261 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\models\table.sql
+[0m11:56:19.593163 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\date.sql
+[0m11:56:19.593974 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\tests\test.sql
+[0m11:56:19.594825 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\table\replace.sql
+[0m11:56:19.595599 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\utils\hash.sql
+[0m11:56:19.596340 [debug] [MainThread]: Partial parsing: deleted file: ecommerce_dbt://models\bronze\bronze_payment_transactions.sql
+[0m11:56:19.597126 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\utils\safe_cast.sql
+[0m11:56:19.597808 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\utils\date_spine.sql
+[0m11:56:19.598541 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\snapshots\snapshot.sql
+[0m11:56:19.599339 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\configs.sql
+[0m11:56:19.600118 [debug] [MainThread]: Partial parsing: deleted file: ecommerce_dbt://models\gold\gold_inventory_health.sql
+[0m11:56:19.600915 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\view\rename.sql
+[0m11:56:19.601652 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\adapters\validate_sql.sql
+[0m11:56:19.602358 [debug] [MainThread]: Partial parsing: deleted file: dbt://docs\overview.md
+[0m11:56:19.603101 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\snapshots\snapshot_merge.sql
+[0m11:56:19.603975 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\view\replace.sql
+[0m11:56:19.605006 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\view\create.sql
+[0m11:56:19.606076 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\materializations\incremental.sql
+[0m11:56:19.606987 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\utils\datatypes.sql
+[0m11:56:19.607841 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\cast_bool_to_text.sql
+[0m11:56:19.608855 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\apply_grants.sql
+[0m11:56:19.609689 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\models\clone\can_clone_table.sql
+[0m11:56:19.610483 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\table\drop.sql
+[0m11:56:19.611316 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\literal.sql
+[0m11:56:19.612095 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\utils\dateadd.sql
+[0m11:56:19.612798 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\adapters\show.sql
+[0m11:56:19.613495 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\models\materialized_view.sql
+[0m11:56:19.614182 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\materializations\snapshot.sql
+[0m11:56:19.614828 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\intersect.sql
+[0m11:56:19.615532 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\generic_test_sql\relationships.sql
+[0m11:56:19.616182 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\utils\listagg.sql
+[0m11:56:19.617250 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\adapters\columns.sql
+[0m11:56:19.617957 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\safe_cast.sql
+[0m11:56:19.618924 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\adapters\apply_grants.sql
+[0m11:56:19.619682 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\materialized_view\alter.sql
+[0m11:56:19.620391 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\materialized_view\create.sql
+[0m11:56:19.621647 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\materializations\materialized_view.sql
+[0m11:56:19.622783 [debug] [MainThread]: Partial parsing: deleted file: ecommerce_dbt://models\silver\silver_inventory.sql
+[0m11:56:19.623671 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\adapters\metadata.sql
+[0m11:56:19.624405 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\data_types.sql
+[0m11:56:19.625084 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\utils\array_construct.sql
+[0m11:56:19.625752 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\materialized_view\replace.sql
+[0m11:56:19.626419 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\materialized_view\drop.sql
+[0m11:56:19.627217 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\seeds\helpers.sql
+[0m11:56:19.627980 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\models\incremental\incremental.sql
+[0m11:56:19.628654 [debug] [MainThread]: Partial parsing: deleted file: ecommerce_dbt://models\bronze\bronze_inventory_snapshots.sql
+[0m11:56:19.629332 [debug] [MainThread]: Partial parsing: deleted file: ecommerce_dbt://seeds\raw_payment_transactions.csv
+[0m11:56:19.629978 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\tests\where_subquery.sql
+[0m11:56:19.630659 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\except.sql
+[0m11:56:19.631344 [debug] [MainThread]: Partial parsing: deleted file: ecommerce_dbt://models\silver\silver_customer_events.sql
+[0m11:56:19.631989 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\materializations\table.sql
+[0m11:56:19.632654 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\utils\bool_or.sql
+[0m11:56:19.633322 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\utils\timestamps.sql
+[0m11:56:19.633929 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\generic_test_sql\accepted_values.sql
+[0m11:56:19.634836 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\adapters.sql
+[0m11:56:19.635518 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\models\incremental\merge.sql
+[0m11:56:19.636164 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\array_construct.sql
+[0m11:56:19.636919 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\dateadd.sql
+[0m11:56:19.637728 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\utils\datediff.sql
+[0m11:56:19.638770 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\utils\any_value.sql
+[0m11:56:19.639784 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\seeds\seed.sql
+[0m11:56:19.640501 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\tests\unit.sql
+[0m11:56:19.641136 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\utils\array_concat.sql
+[0m11:56:19.641847 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\adapters\timestamps.sql
+[0m11:56:19.642547 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\utils\right.sql
+[0m11:56:19.643213 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\utils\array_append.sql
+[0m11:56:19.643904 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\bool_or.sql
+[0m11:56:19.644539 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\position.sql
+[0m11:56:19.645723 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\hash.sql
+[0m11:56:19.646477 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\replace.sql
+[0m11:56:19.647200 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\tests\helpers.sql
+[0m11:56:19.647930 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\materializations\view.sql
+[0m11:56:19.648611 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\models\clone\clone.sql
+[0m11:56:19.649287 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\date_trunc.sql
+[0m11:56:19.649975 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\table\rename.sql
+[0m11:56:19.650591 [debug] [MainThread]: Partial parsing: deleted file: ecommerce_dbt://models\bronze\bronze_customer_events.sql
+[0m11:56:19.651285 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\models\incremental\column_helpers.sql
+[0m11:56:19.651953 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\schema.sql
+[0m11:56:19.652650 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\models\view.sql
+[0m11:56:19.653342 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\equals.sql
+[0m11:56:19.654076 [debug] [MainThread]: Partial parsing: deleted file: dbt_trino://macros\utils\date_trunc.sql
+[0m11:56:19.654800 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\create_backup.sql
+[0m11:56:19.655712 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\drop_backup.sql
+[0m11:56:19.656542 [debug] [MainThread]: Partial parsing: deleted file: ecommerce_dbt://models\silver\silver_support.sql
+[0m11:56:19.657282 [debug] [MainThread]: Partial parsing: deleted file: ecommerce_dbt://seeds\raw_support_tickets.csv
+[0m11:56:19.658018 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\etc\datetime.sql
+[0m11:56:19.658764 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\utils\datediff.sql
+[0m11:56:19.659441 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\materializations\models\clone\create_or_replace_clone.sql
+[0m11:56:19.660194 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\relations\create.sql
+[0m11:56:19.660841 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\get_custom_name\get_custom_alias.sql
+[0m11:56:19.661493 [debug] [MainThread]: Partial parsing: deleted file: dbt://macros\generic_test_sql\unique.sql
+[0m11:56:19.686626 [error] [MainThread]: Encountered an error:
+'dbt_trino://macros/apply_grants.sql'
+[0m11:56:19.697865 [error] [MainThread]: Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.13/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/airflow/.local/lib/python3.13/site-packages/trino/sqlalchemy/dialect.py", line 442, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.13/site-packages/trino/dbapi.py", line 640, in execute
+    self._iterator = iter(self._query.execute())
+                          ~~~~~~~~~~~~~~~~~~~^^
+  File "/home/airflow/.local/lib/python3.13/site-packages/trino/client.py", line 938, in execute
+    self._result.rows += self.fetch()
+                         ~~~~~~~~~~^^
+  File "/home/airflow/.local/lib/python3.13/site-packages/trino/client.py", line 958, in fetch
+    status = self._request.process(response)
+  File "/home/airflow/.local/lib/python3.13/site-packages/trino/client.py", line 727, in process
+    raise self._process_error(response["error"], response.get("id"))
+          ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.13/site-packages/trino/client.py", line 696, in _process_error
+    raise exceptions.TrinoExternalError(error, query_id)
+trino.exceptions.TrinoExternalError: TrinoExternalError(type=EXTERNAL, name=ICEBERG_CATALOG_ERROR, message="Cannot obtain metadata", query_id=20260507_115617_00003_f8ybt)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/airflow/dags/dag_pipeline.py", line 391, in seed_bronze
+    result = conn.execute(text("SELECT count(*) as cnt FROM raw_customer_events"))
+  File "/home/airflow/.local/lib/python3.13/site-packages/sqlalchemy/engine/base.py", line 1419, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "/home/airflow/.local/lib/python3.13/site-packages/sqlalchemy/sql/elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/airflow/.local/lib/python3.13/site-packages/sqlalchemy/engine/base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "/home/airflow/.local/lib/python3.13/site-packages/sqlalchemy/engine/base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/airflow/.local/lib/python3.13/site-packages/sqlalchemy/engine/base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/airflow/.local/lib/python3.13/site-packages/sqlalchemy/engine/base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/home/airflow/.local/lib/python3.13/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/airflow/.local/lib/python3.13/site-packages/trino/sqlalchemy/dialect.py", line 442, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.13/site-packages/trino/dbapi.py", line 640, in execute
+    self._iterator = iter(self._query.execute())
+                          ~~~~~~~~~~~~~~~~~~~^^
+  File "/home/airflow/.local/lib/python3.13/site-packages/trino/client.py", line 938, in execute
+    self._result.rows += self.fetch()
+                         ~~~~~~~~~~^^
+  File "/home/airflow/.local/lib/python3.13/site-packages/trino/client.py", line 958, in fetch
+    status = self._request.process(response)
+  File "/home/airflow/.local/lib/python3.13/site-packages/trino/client.py", line 727, in process
+    raise self._process_error(response["error"], response.get("id"))
+          ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.13/site-packages/trino/client.py", line 696, in _process_error
+    raise exceptions.TrinoExternalError(error, query_id)
+sqlalchemy.exc.OperationalError: (trino.exceptions.TrinoExternalError) TrinoExternalError(type=EXTERNAL, name=ICEBERG_CATALOG_ERROR, message="Cannot obtain metadata", query_id=20260507_115617_00003_f8ybt)
+[SQL: SELECT count(*) as cnt FROM raw_customer_events]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.13/site-packages/dbt/cli/requires.py", line 178, in wrapper
+    result, success = func(*args, **kwargs)
+                      ~~~~^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.13/site-packages/dbt/cli/requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.13/site-packages/dbt/cli/requires.py", line 272, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.13/site-packages/dbt/cli/requires.py", line 303, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.13/site-packages/dbt/cli/requires.py", line 350, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.13/site-packages/dbt/cli/requires.py", line 389, in wrapper
+    setup_manifest(ctx, write=write, write_perf_info=write_perf_info)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.13/site-packages/dbt/cli/requires.py", line 416, in setup_manifest
+    ctx.obj["manifest"] = parse_manifest(
+                          ~~~~~~~~~~~~~~^
+        runtime_config,
+        ^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        active_integrations,
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/airflow/.local/lib/python3.13/site-packages/dbt/parser/manifest.py", line 2123, in parse_manifest
+    manifest = ManifestLoader.get_full_manifest(
+        runtime_config,
+        write_perf_info=write_perf_info,
+    )
+  File "/home/airflow/.local/lib/python3.13/site-packages/dbt/parser/manifest.py", line 320, in get_full_manifest
+    manifest = loader.load()
+  File "/home/airflow/.local/lib/python3.13/site-packages/dbt/parser/manifest.py", line 389, in load
+    self.load_and_parse_macros(project_parser_files)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.13/site-packages/dbt/parser/manifest.py", line 691, in load_and_parse_macros
+    block = FileBlock(self.manifest.files[file_id])
+                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+KeyError: 'dbt_trino://macros/apply_grants.sql'
+
+[0m11:56:19.699923 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_success": false, "command_wall_clock_time": 2.0296912, "process_in_blocks": "0", "process_kernel_time": 0.592606, "process_mem_max_rss": "294288", "process_out_blocks": "0", "process_user_time": 3.225071}
+[0m11:56:19.700988 [debug] [MainThread]: Command `cli seed` failed at 11:56:19.700810 after 2.03 seconds
+[0m11:56:19.701808 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x706a69c1fd50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x706a69c1fe50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x706a69c16120>]}
+[0m11:56:19.702607 [debug] [MainThread]: Flushing usage events
+[0m11:56:20.601794 [debug] [MainThread]: An error was encountered while trying to flush usage events
