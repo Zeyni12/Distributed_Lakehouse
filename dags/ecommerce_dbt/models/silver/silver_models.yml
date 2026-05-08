@@ -1,0 +1,104 @@
+
+models: 
+  - name: silver_customer_events
+    description: "Cleaned and enriched customer event data. PII masked. Derived device category and product-event flag added."
+    columns:
+      - name: event_id
+        description: "Unique event identifier"
+        tests:
+          - unique
+          - not_null
+      - name: customer_id
+        description: "Customer identifier"
+        tests:
+          - not_null
+      - name: event_timestamp
+        description: "Timestamp of the event"
+        tests:
+          - not_null
+      - name: device_category
+        description: "Normalised device group: mobile | desktop | unknown"
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['mobile', 'desktop', 'unknown']
+      - name: is_product_event
+        description: "True when the event is associated with a product"
+        tests:
+          - not_null
+ 
+  - name: silver_inventory_snapshots
+    description: "Cleaned inventory snapshots. Negative quantities clamped to 0. Stock status and reorder flags derived."
+    columns:
+      - name: snapshot_id
+        description: "Unique snapshot identifier"
+        tests:
+          - unique
+          - not_null
+      - name: product_id
+        description: "Product identifier"
+        tests:
+          - not_null
+      - name: quantity_on_hand
+        description: "Total quantity in warehouse (>= 0)"
+        tests:
+          - not_null
+      - name: stock_status
+        description: "in_stock | low_stock | out_of_stock"
+        tests:
+          - accepted_values:
+              values: ['in_stock', 'low_stock', 'out_of_stock']
+      - name: needs_reorder
+        description: "True when quantity_on_hand <= reorder_point"
+        tests:
+          - not_null
+ 
+  - name: silver_payment_transactions
+    description: "Cleaned payment transactions. Status flags, risk tier, and net amount derived."
+    columns:
+      - name: transaction_id
+        description: "Unique transaction identifier"
+        tests:
+          - unique
+          - not_null
+      - name: amount
+        description: "Transaction amount (>= 0)"
+        tests:
+          - not_null
+      - name: is_successful
+        description: "True when payment_status = completed"
+        tests:
+          - not_null
+      - name: risk_tier
+        description: "low | medium | high"
+        tests:
+          - accepted_values:
+              values: ['low', 'medium', 'high']
+      - name: net_amount
+        description: "Amount minus gateway fee"
+        tests:
+          - not_null
+ 
+  - name: silver_support_tickets
+    description: "Cleaned support tickets. SLA breach flags, resolution/response duration, and satisfaction category derived."
+    columns:
+      - name: ticket_id
+        description: "Unique ticket identifier"
+        tests:
+          - unique
+          - not_null
+      - name: customer_id
+        description: "Customer who raised the ticket"
+        tests:
+          - not_null
+      - name: is_sla_breached
+        description: "True when first response exceeded SLA threshold for priority tier"
+        tests:
+          - not_null
+      - name: satisfaction_category
+        description: "satisfied | neutral | dissatisfied | null (no score)"
+        tests:
+          - accepted_values:
+              values: ['satisfied', 'neutral', 'dissatisfied']
+              config:
+                where: "satisfaction_category IS NOT NULL"

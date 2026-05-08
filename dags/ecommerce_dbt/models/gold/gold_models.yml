@@ -1,0 +1,102 @@
+ models:
+  - name: gold_customer_360
+    description: >
+      One row per customer aggregating behaviour across events, payments, and support.
+      Includes customer health score, value segment, and churn risk flag.
+      Source of truth for CRM, marketing, and executive dashboards.
+    columns:
+      - name: customer_id
+        description: "Unique customer identifier"
+        tests:
+          - unique
+          - not_null
+      - name: total_revenue
+        description: "Sum of all successful payment amounts"
+        tests:
+          - not_null
+      - name: customer_health_score
+        description: "0–100 composite score based on revenue, engagement, support satisfaction, and risk"
+        tests:
+          - not_null
+      - name: value_segment
+        description: "high_value | mid_value | low_value | no_purchase"
+        tests:
+          - accepted_values:
+              values: ['high_value', 'mid_value', 'low_value', 'no_purchase']
+      - name: is_churn_risk
+        description: "True when last purchase is > 90 days ago or no purchases exist"
+        tests:
+          - not_null
+ 
+  - name: gold_daily_revenue
+    description: >
+      Daily revenue metrics broken down by currency, payment method, and country.
+      Used for finance reporting, payment operations, and fraud monitoring.
+    columns:
+      - name: transaction_date
+        description: "Calendar date of the transactions"
+        tests:
+          - not_null
+      - name: currency
+        description: "ISO 4217 currency code"
+        tests:
+          - not_null
+      - name: gross_revenue
+        description: "Sum of all successful transaction amounts"
+        tests:
+          - not_null
+      - name: net_revenue
+        description: "Gross revenue minus gateway fees"
+        tests:
+          - not_null
+      - name: success_rate_pct
+        description: "Percentage of transactions that completed successfully"
+ 
+  - name: gold_inventory_health
+    description: >
+      Latest inventory snapshot per product × warehouse enriched with 30-day trend,
+      overstock flag, and estimated days of supply.
+      Used by supply chain and merchandising teams.
+    columns:
+      - name: product_id
+        description: "Product identifier"
+        tests:
+          - not_null
+      - name: warehouse_id
+        description: "Warehouse identifier"
+        tests:
+          - not_null
+      - name: stock_status
+        description: "in_stock | low_stock | out_of_stock"
+        tests:
+          - accepted_values:
+              values: ['in_stock', 'low_stock', 'out_of_stock']
+      - name: stock_trend
+        description: "increasing | stable | decreasing vs 30-day average"
+        tests:
+          - accepted_values:
+              values: ['increasing', 'stable', 'decreasing']
+ 
+  - name: gold_support_team_performance
+    description: >
+      Daily agent-level support KPIs: resolution rate, SLA breach rate, CSAT,
+      and response times. Used by support managers and ops dashboards.
+    columns:
+      - name: agent_id
+        description: "Support agent identifier"
+        tests:
+          - not_null
+      - name: created_date
+        description: "Date the tickets were created"
+        tests:
+          - not_null
+      - name: resolution_rate_pct
+        description: "% of tickets resolved by this agent on this day"
+      - name: csat_pct
+        description: "% of rated tickets with a satisfied score"
+      - name: performance_tier
+        description: "top_performer | solid_performer | average | needs_support"
+        tests:
+          - accepted_values:
+              values: ['top_performer', 'solid_performer', 'average', 'needs_support']
+ 

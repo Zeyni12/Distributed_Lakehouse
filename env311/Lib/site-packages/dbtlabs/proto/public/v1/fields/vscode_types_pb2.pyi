@@ -134,6 +134,11 @@ class _CompareFailureModeEnumTypeWrapper(google.protobuf.internal.enum_type_wrap
     """The model build step failed before compare could run"""
     COMPARE_FAILURE_MODE_OTHER: _CompareFailureMode.ValueType  # 4
     """Any other unexpected failure"""
+    COMPARE_FAILURE_MODE_EMPTY_RESULTS: _CompareFailureMode.ValueType  # 5
+    """The compare command exited without an error but produced no diff rows.
+    Reported with compare_success = false so analytics can segment empty runs
+    from runs that produced actual diffs; user-facing UX shows a friendly empty panel.
+    """
 
 class CompareFailureMode(_CompareFailureMode, metaclass=_CompareFailureModeEnumTypeWrapper):
     """Categorizes how a compare operation failed"""
@@ -148,6 +153,11 @@ COMPARE_FAILURE_MODE_BUILD_FAILED: CompareFailureMode.ValueType  # 3
 """The model build step failed before compare could run"""
 COMPARE_FAILURE_MODE_OTHER: CompareFailureMode.ValueType  # 4
 """Any other unexpected failure"""
+COMPARE_FAILURE_MODE_EMPTY_RESULTS: CompareFailureMode.ValueType  # 5
+"""The compare command exited without an error but produced no diff rows.
+Reported with compare_success = false so analytics can segment empty runs
+from runs that produced actual diffs; user-facing UX shows a friendly empty panel.
+"""
 Global___CompareFailureMode: typing_extensions.TypeAlias = CompareFailureMode
 
 class _RegistrationMethod:
@@ -175,6 +185,292 @@ REGISTRATION_METHOD_OAUTH: RegistrationMethod.ValueType  # 2
 REGISTRATION_METHOD_REGISTRATION_CODE: RegistrationMethod.ValueType  # 3
 """Registration completed via registration code flow (web)"""
 Global___RegistrationMethod: typing_extensions.TypeAlias = RegistrationMethod
+
+class _ModelDocsEnrichmentOutcome:
+    ValueType = typing.NewType("ValueType", builtins.int)
+    V: typing_extensions.TypeAlias = ValueType
+
+class _ModelDocsEnrichmentOutcomeEnumTypeWrapper(google.protobuf.internal.enum_type_wrapper._EnumTypeWrapper[_ModelDocsEnrichmentOutcome.ValueType], builtins.type):
+    DESCRIPTOR: google.protobuf.descriptor.EnumDescriptor
+    MODEL_DOCS_ENRICHMENT_OUTCOME_UNSPECIFIED: _ModelDocsEnrichmentOutcome.ValueType  # 0
+    MODEL_DOCS_ENRICHMENT_OUTCOME_SUCCEEDED: _ModelDocsEnrichmentOutcome.ValueType  # 1
+    MODEL_DOCS_ENRICHMENT_OUTCOME_SKIPPED_NO_MANIFEST: _ModelDocsEnrichmentOutcome.ValueType  # 2
+    MODEL_DOCS_ENRICHMENT_OUTCOME_SKIPPED_NO_CREDENTIALS: _ModelDocsEnrichmentOutcome.ValueType  # 3
+    MODEL_DOCS_ENRICHMENT_OUTCOME_FAILED_PROJECT_RESOLUTION: _ModelDocsEnrichmentOutcome.ValueType  # 4
+    MODEL_DOCS_ENRICHMENT_OUTCOME_FAILED_OTHER: _ModelDocsEnrichmentOutcome.ValueType  # 5
+
+class ModelDocsEnrichmentOutcome(_ModelDocsEnrichmentOutcome, metaclass=_ModelDocsEnrichmentOutcomeEnumTypeWrapper):
+    """Outcome of a Model Docs panel cloud-enrichment attempt.
+    One value is emitted per ExtensionModelDocsEnrichmentCompleted event.
+    """
+
+MODEL_DOCS_ENRICHMENT_OUTCOME_UNSPECIFIED: ModelDocsEnrichmentOutcome.ValueType  # 0
+MODEL_DOCS_ENRICHMENT_OUTCOME_SUCCEEDED: ModelDocsEnrichmentOutcome.ValueType  # 1
+MODEL_DOCS_ENRICHMENT_OUTCOME_SKIPPED_NO_MANIFEST: ModelDocsEnrichmentOutcome.ValueType  # 2
+MODEL_DOCS_ENRICHMENT_OUTCOME_SKIPPED_NO_CREDENTIALS: ModelDocsEnrichmentOutcome.ValueType  # 3
+MODEL_DOCS_ENRICHMENT_OUTCOME_FAILED_PROJECT_RESOLUTION: ModelDocsEnrichmentOutcome.ValueType  # 4
+MODEL_DOCS_ENRICHMENT_OUTCOME_FAILED_OTHER: ModelDocsEnrichmentOutcome.ValueType  # 5
+Global___ModelDocsEnrichmentOutcome: typing_extensions.TypeAlias = ModelDocsEnrichmentOutcome
+
+class _LineageInteractionType:
+    ValueType = typing.NewType("ValueType", builtins.int)
+    V: typing_extensions.TypeAlias = ValueType
+
+class _LineageInteractionTypeEnumTypeWrapper(google.protobuf.internal.enum_type_wrapper._EnumTypeWrapper[_LineageInteractionType.ValueType], builtins.type):
+    DESCRIPTOR: google.protobuf.descriptor.EnumDescriptor
+    LINEAGE_INTERACTION_TYPE_UNSPECIFIED: _LineageInteractionType.ValueType  # 0
+    LINEAGE_INTERACTION_TYPE_SELECT_NODE: _LineageInteractionType.ValueType  # 1
+    """Node interactions
+    User single-clicked a node in the graph
+    """
+    LINEAGE_INTERACTION_TYPE_OPEN_FILE: _LineageInteractionType.ValueType  # 2
+    """User opened the file backing a node (double-click or context menu)"""
+    LINEAGE_INTERACTION_TYPE_REFOCUS_ON_NODE: _LineageInteractionType.ValueType  # 3
+    """User refocused the graph on a specific node"""
+    LINEAGE_INTERACTION_TYPE_SHOW_UPSTREAM: _LineageInteractionType.ValueType  # 4
+    """User requested upstream-only view for a node"""
+    LINEAGE_INTERACTION_TYPE_SHOW_DOWNSTREAM: _LineageInteractionType.ValueType  # 5
+    """User requested downstream-only view for a node"""
+    LINEAGE_INTERACTION_TYPE_SWITCH_TO_COLUMN_LINEAGE: _LineageInteractionType.ValueType  # 6
+    """Grain switches
+    User switched from project lineage to column lineage
+    """
+    LINEAGE_INTERACTION_TYPE_SWITCH_TO_PROJECT_LINEAGE: _LineageInteractionType.ValueType  # 7
+    """User switched back from column lineage to project lineage"""
+    LINEAGE_INTERACTION_TYPE_SELECTOR_APPLIED: _LineageInteractionType.ValueType  # 8
+    """Toolbar actions
+    User applied a custom selector from the toolbar
+    """
+    LINEAGE_INTERACTION_TYPE_LENS_CHANGED: _LineageInteractionType.ValueType  # 9
+    """User changed the active lens"""
+    LINEAGE_INTERACTION_TYPE_LEGEND_TOGGLED: _LineageInteractionType.ValueType  # 10
+    """User toggled the legend panel"""
+    LINEAGE_INTERACTION_TYPE_ZOOM_IN: _LineageInteractionType.ValueType  # 11
+    """User zoomed in via the toolbar"""
+    LINEAGE_INTERACTION_TYPE_ZOOM_OUT: _LineageInteractionType.ValueType  # 12
+    """User zoomed out via the toolbar"""
+    LINEAGE_INTERACTION_TYPE_RESET_VIEW: _LineageInteractionType.ValueType  # 13
+    """User reset the graph view to fit"""
+
+class LineageInteractionType(_LineageInteractionType, metaclass=_LineageInteractionTypeEnumTypeWrapper):
+    """Type of user interaction within the lineage panel"""
+
+LINEAGE_INTERACTION_TYPE_UNSPECIFIED: LineageInteractionType.ValueType  # 0
+LINEAGE_INTERACTION_TYPE_SELECT_NODE: LineageInteractionType.ValueType  # 1
+"""Node interactions
+User single-clicked a node in the graph
+"""
+LINEAGE_INTERACTION_TYPE_OPEN_FILE: LineageInteractionType.ValueType  # 2
+"""User opened the file backing a node (double-click or context menu)"""
+LINEAGE_INTERACTION_TYPE_REFOCUS_ON_NODE: LineageInteractionType.ValueType  # 3
+"""User refocused the graph on a specific node"""
+LINEAGE_INTERACTION_TYPE_SHOW_UPSTREAM: LineageInteractionType.ValueType  # 4
+"""User requested upstream-only view for a node"""
+LINEAGE_INTERACTION_TYPE_SHOW_DOWNSTREAM: LineageInteractionType.ValueType  # 5
+"""User requested downstream-only view for a node"""
+LINEAGE_INTERACTION_TYPE_SWITCH_TO_COLUMN_LINEAGE: LineageInteractionType.ValueType  # 6
+"""Grain switches
+User switched from project lineage to column lineage
+"""
+LINEAGE_INTERACTION_TYPE_SWITCH_TO_PROJECT_LINEAGE: LineageInteractionType.ValueType  # 7
+"""User switched back from column lineage to project lineage"""
+LINEAGE_INTERACTION_TYPE_SELECTOR_APPLIED: LineageInteractionType.ValueType  # 8
+"""Toolbar actions
+User applied a custom selector from the toolbar
+"""
+LINEAGE_INTERACTION_TYPE_LENS_CHANGED: LineageInteractionType.ValueType  # 9
+"""User changed the active lens"""
+LINEAGE_INTERACTION_TYPE_LEGEND_TOGGLED: LineageInteractionType.ValueType  # 10
+"""User toggled the legend panel"""
+LINEAGE_INTERACTION_TYPE_ZOOM_IN: LineageInteractionType.ValueType  # 11
+"""User zoomed in via the toolbar"""
+LINEAGE_INTERACTION_TYPE_ZOOM_OUT: LineageInteractionType.ValueType  # 12
+"""User zoomed out via the toolbar"""
+LINEAGE_INTERACTION_TYPE_RESET_VIEW: LineageInteractionType.ValueType  # 13
+"""User reset the graph view to fit"""
+Global___LineageInteractionType: typing_extensions.TypeAlias = LineageInteractionType
+
+class _LineageGrain:
+    ValueType = typing.NewType("ValueType", builtins.int)
+    V: typing_extensions.TypeAlias = ValueType
+
+class _LineageGrainEnumTypeWrapper(google.protobuf.internal.enum_type_wrapper._EnumTypeWrapper[_LineageGrain.ValueType], builtins.type):
+    DESCRIPTOR: google.protobuf.descriptor.EnumDescriptor
+    LINEAGE_GRAIN_UNSPECIFIED: _LineageGrain.ValueType  # 0
+    LINEAGE_GRAIN_PROJECT: _LineageGrain.ValueType  # 1
+    """Project-level lineage (nodes are dbt resources)"""
+    LINEAGE_GRAIN_COLUMN: _LineageGrain.ValueType  # 2
+    """Column-level lineage"""
+
+class LineageGrain(_LineageGrain, metaclass=_LineageGrainEnumTypeWrapper):
+    """Current grain shown in the lineage panel"""
+
+LINEAGE_GRAIN_UNSPECIFIED: LineageGrain.ValueType  # 0
+LINEAGE_GRAIN_PROJECT: LineageGrain.ValueType  # 1
+"""Project-level lineage (nodes are dbt resources)"""
+LINEAGE_GRAIN_COLUMN: LineageGrain.ValueType  # 2
+"""Column-level lineage"""
+Global___LineageGrain: typing_extensions.TypeAlias = LineageGrain
+
+class _GetStartedStepId:
+    ValueType = typing.NewType("ValueType", builtins.int)
+    V: typing_extensions.TypeAlias = ValueType
+
+class _GetStartedStepIdEnumTypeWrapper(google.protobuf.internal.enum_type_wrapper._EnumTypeWrapper[_GetStartedStepId.ValueType], builtins.type):
+    DESCRIPTOR: google.protobuf.descriptor.EnumDescriptor
+    GET_STARTED_STEP_ID_UNSPECIFIED: _GetStartedStepId.ValueType  # 0
+    GET_STARTED_STEP_ID_INSTALL_FUSION: _GetStartedStepId.ValueType  # 1
+    GET_STARTED_STEP_ID_OPEN_PROJECT: _GetStartedStepId.ValueType  # 2
+    GET_STARTED_STEP_ID_CHECK_COMPATIBILITY: _GetStartedStepId.ValueType  # 3
+    GET_STARTED_STEP_ID_REGISTER: _GetStartedStepId.ValueType  # 4
+
+class GetStartedStepId(_GetStartedStepId, metaclass=_GetStartedStepIdEnumTypeWrapper):
+    """Step in the Get Started onboarding panel"""
+
+GET_STARTED_STEP_ID_UNSPECIFIED: GetStartedStepId.ValueType  # 0
+GET_STARTED_STEP_ID_INSTALL_FUSION: GetStartedStepId.ValueType  # 1
+GET_STARTED_STEP_ID_OPEN_PROJECT: GetStartedStepId.ValueType  # 2
+GET_STARTED_STEP_ID_CHECK_COMPATIBILITY: GetStartedStepId.ValueType  # 3
+GET_STARTED_STEP_ID_REGISTER: GetStartedStepId.ValueType  # 4
+Global___GetStartedStepId: typing_extensions.TypeAlias = GetStartedStepId
+
+class _GetStartedStepStatus:
+    ValueType = typing.NewType("ValueType", builtins.int)
+    V: typing_extensions.TypeAlias = ValueType
+
+class _GetStartedStepStatusEnumTypeWrapper(google.protobuf.internal.enum_type_wrapper._EnumTypeWrapper[_GetStartedStepStatus.ValueType], builtins.type):
+    DESCRIPTOR: google.protobuf.descriptor.EnumDescriptor
+    GET_STARTED_STEP_STATUS_UNSPECIFIED: _GetStartedStepStatus.ValueType  # 0
+    GET_STARTED_STEP_STATUS_PENDING: _GetStartedStepStatus.ValueType  # 1
+    GET_STARTED_STEP_STATUS_IN_PROGRESS: _GetStartedStepStatus.ValueType  # 2
+    GET_STARTED_STEP_STATUS_COMPLETED: _GetStartedStepStatus.ValueType  # 3
+
+class GetStartedStepStatus(_GetStartedStepStatus, metaclass=_GetStartedStepStatusEnumTypeWrapper):
+    """Status of a Get Started onboarding step"""
+
+GET_STARTED_STEP_STATUS_UNSPECIFIED: GetStartedStepStatus.ValueType  # 0
+GET_STARTED_STEP_STATUS_PENDING: GetStartedStepStatus.ValueType  # 1
+GET_STARTED_STEP_STATUS_IN_PROGRESS: GetStartedStepStatus.ValueType  # 2
+GET_STARTED_STEP_STATUS_COMPLETED: GetStartedStepStatus.ValueType  # 3
+Global___GetStartedStepStatus: typing_extensions.TypeAlias = GetStartedStepStatus
+
+class _GetStartedInteractionType:
+    ValueType = typing.NewType("ValueType", builtins.int)
+    V: typing_extensions.TypeAlias = ValueType
+
+class _GetStartedInteractionTypeEnumTypeWrapper(google.protobuf.internal.enum_type_wrapper._EnumTypeWrapper[_GetStartedInteractionType.ValueType], builtins.type):
+    DESCRIPTOR: google.protobuf.descriptor.EnumDescriptor
+    GET_STARTED_INTERACTION_TYPE_UNSPECIFIED: _GetStartedInteractionType.ValueType  # 0
+    GET_STARTED_INTERACTION_TYPE_INSTALL_FUSION_CLICKED: _GetStartedInteractionType.ValueType  # 1
+    """CTA clicks"""
+    GET_STARTED_INTERACTION_TYPE_OPEN_PROJECT_CLICKED: _GetStartedInteractionType.ValueType  # 2
+    GET_STARTED_INTERACTION_TYPE_CHECK_COMPATIBILITY_CLICKED: _GetStartedInteractionType.ValueType  # 3
+    GET_STARTED_INTERACTION_TYPE_REGISTER_NOW_CLICKED: _GetStartedInteractionType.ValueType  # 4
+    GET_STARTED_INTERACTION_TYPE_MIGRATE_WITH_AGENT_CLICKED: _GetStartedInteractionType.ValueType  # 5
+    GET_STARTED_INTERACTION_TYPE_STEP_COMPLETED: _GetStartedInteractionType.ValueType  # 6
+    """Step state transitions"""
+    GET_STARTED_INTERACTION_TYPE_ALL_STEPS_COMPLETED: _GetStartedInteractionType.ValueType  # 7
+
+class GetStartedInteractionType(_GetStartedInteractionType, metaclass=_GetStartedInteractionTypeEnumTypeWrapper):
+    """Type of interaction with the Get Started onboarding panel"""
+
+GET_STARTED_INTERACTION_TYPE_UNSPECIFIED: GetStartedInteractionType.ValueType  # 0
+GET_STARTED_INTERACTION_TYPE_INSTALL_FUSION_CLICKED: GetStartedInteractionType.ValueType  # 1
+"""CTA clicks"""
+GET_STARTED_INTERACTION_TYPE_OPEN_PROJECT_CLICKED: GetStartedInteractionType.ValueType  # 2
+GET_STARTED_INTERACTION_TYPE_CHECK_COMPATIBILITY_CLICKED: GetStartedInteractionType.ValueType  # 3
+GET_STARTED_INTERACTION_TYPE_REGISTER_NOW_CLICKED: GetStartedInteractionType.ValueType  # 4
+GET_STARTED_INTERACTION_TYPE_MIGRATE_WITH_AGENT_CLICKED: GetStartedInteractionType.ValueType  # 5
+GET_STARTED_INTERACTION_TYPE_STEP_COMPLETED: GetStartedInteractionType.ValueType  # 6
+"""Step state transitions"""
+GET_STARTED_INTERACTION_TYPE_ALL_STEPS_COMPLETED: GetStartedInteractionType.ValueType  # 7
+Global___GetStartedInteractionType: typing_extensions.TypeAlias = GetStartedInteractionType
+
+class _QueryCompletionStatus:
+    ValueType = typing.NewType("ValueType", builtins.int)
+    V: typing_extensions.TypeAlias = ValueType
+
+class _QueryCompletionStatusEnumTypeWrapper(google.protobuf.internal.enum_type_wrapper._EnumTypeWrapper[_QueryCompletionStatus.ValueType], builtins.type):
+    DESCRIPTOR: google.protobuf.descriptor.EnumDescriptor
+    QUERY_COMPLETION_STATUS_UNSPECIFIED: _QueryCompletionStatus.ValueType  # 0
+    QUERY_COMPLETION_STATUS_SUCCESS: _QueryCompletionStatus.ValueType  # 1
+    """Query ran and returned results without errors."""
+    QUERY_COMPLETION_STATUS_FAILED: _QueryCompletionStatus.ValueType  # 2
+    """Query ran but returned an error."""
+    QUERY_COMPLETION_STATUS_CANCELLED: _QueryCompletionStatus.ValueType  # 3
+    """User cancelled the query before it completed."""
+    QUERY_COMPLETION_STATUS_INVALID: _QueryCompletionStatus.ValueType  # 4
+    """Query never ran because the target file is invalid (e.g., not part of an open dbt project)."""
+
+class QueryCompletionStatus(_QueryCompletionStatus, metaclass=_QueryCompletionStatusEnumTypeWrapper):
+    """Status of a Query Results panel query at completion."""
+
+QUERY_COMPLETION_STATUS_UNSPECIFIED: QueryCompletionStatus.ValueType  # 0
+QUERY_COMPLETION_STATUS_SUCCESS: QueryCompletionStatus.ValueType  # 1
+"""Query ran and returned results without errors."""
+QUERY_COMPLETION_STATUS_FAILED: QueryCompletionStatus.ValueType  # 2
+"""Query ran but returned an error."""
+QUERY_COMPLETION_STATUS_CANCELLED: QueryCompletionStatus.ValueType  # 3
+"""User cancelled the query before it completed."""
+QUERY_COMPLETION_STATUS_INVALID: QueryCompletionStatus.ValueType  # 4
+"""Query never ran because the target file is invalid (e.g., not part of an open dbt project)."""
+Global___QueryCompletionStatus: typing_extensions.TypeAlias = QueryCompletionStatus
+
+class _QueryOrigin:
+    ValueType = typing.NewType("ValueType", builtins.int)
+    V: typing_extensions.TypeAlias = ValueType
+
+class _QueryOriginEnumTypeWrapper(google.protobuf.internal.enum_type_wrapper._EnumTypeWrapper[_QueryOrigin.ValueType], builtins.type):
+    DESCRIPTOR: google.protobuf.descriptor.EnumDescriptor
+    QUERY_ORIGIN_UNSPECIFIED: _QueryOrigin.ValueType  # 0
+    QUERY_ORIGIN_PREVIEW_FILE: _QueryOrigin.ValueType  # 1
+    """Triggered by Preview File on a model/SQL file."""
+    QUERY_ORIGIN_PREVIEW_CTE: _QueryOrigin.ValueType  # 2
+    """Triggered by Preview CTE within a model."""
+
+class QueryOrigin(_QueryOrigin, metaclass=_QueryOriginEnumTypeWrapper):
+    """Which entry point initiated a Query Results panel query."""
+
+QUERY_ORIGIN_UNSPECIFIED: QueryOrigin.ValueType  # 0
+QUERY_ORIGIN_PREVIEW_FILE: QueryOrigin.ValueType  # 1
+"""Triggered by Preview File on a model/SQL file."""
+QUERY_ORIGIN_PREVIEW_CTE: QueryOrigin.ValueType  # 2
+"""Triggered by Preview CTE within a model."""
+Global___QueryOrigin: typing_extensions.TypeAlias = QueryOrigin
+
+class _QueryResultInteractionType:
+    ValueType = typing.NewType("ValueType", builtins.int)
+    V: typing_extensions.TypeAlias = ValueType
+
+class _QueryResultInteractionTypeEnumTypeWrapper(google.protobuf.internal.enum_type_wrapper._EnumTypeWrapper[_QueryResultInteractionType.ValueType], builtins.type):
+    DESCRIPTOR: google.protobuf.descriptor.EnumDescriptor
+    QUERY_RESULT_INTERACTION_TYPE_UNSPECIFIED: _QueryResultInteractionType.ValueType  # 0
+    QUERY_RESULT_INTERACTION_TYPE_SORT: _QueryResultInteractionType.ValueType  # 1
+    """User sorted the result table by clicking a column header."""
+    QUERY_RESULT_INTERACTION_TYPE_COPY_CELL: _QueryResultInteractionType.ValueType  # 2
+    """User copied a single cell value via context menu."""
+    QUERY_RESULT_INTERACTION_TYPE_COPY_ALL_CSV: _QueryResultInteractionType.ValueType  # 3
+    """User copied the entire result set as CSV."""
+    QUERY_RESULT_INTERACTION_TYPE_OPEN_IN_EDITOR: _QueryResultInteractionType.ValueType  # 4
+    """User opened the result set in a new editor tab."""
+    QUERY_RESULT_INTERACTION_TYPE_SCROLL: _QueryResultInteractionType.ValueType  # 5
+    """First scroll within a single result set (subsequent scrolls are not reported)."""
+
+class QueryResultInteractionType(_QueryResultInteractionType, metaclass=_QueryResultInteractionTypeEnumTypeWrapper):
+    """Type of user interaction with the Query Results panel after results render."""
+
+QUERY_RESULT_INTERACTION_TYPE_UNSPECIFIED: QueryResultInteractionType.ValueType  # 0
+QUERY_RESULT_INTERACTION_TYPE_SORT: QueryResultInteractionType.ValueType  # 1
+"""User sorted the result table by clicking a column header."""
+QUERY_RESULT_INTERACTION_TYPE_COPY_CELL: QueryResultInteractionType.ValueType  # 2
+"""User copied a single cell value via context menu."""
+QUERY_RESULT_INTERACTION_TYPE_COPY_ALL_CSV: QueryResultInteractionType.ValueType  # 3
+"""User copied the entire result set as CSV."""
+QUERY_RESULT_INTERACTION_TYPE_OPEN_IN_EDITOR: QueryResultInteractionType.ValueType  # 4
+"""User opened the result set in a new editor tab."""
+QUERY_RESULT_INTERACTION_TYPE_SCROLL: QueryResultInteractionType.ValueType  # 5
+"""First scroll within a single result set (subsequent scrolls are not reported)."""
+Global___QueryResultInteractionType: typing_extensions.TypeAlias = QueryResultInteractionType
 
 @typing.final
 class User(google.protobuf.message.Message):

@@ -7626,6 +7626,114 @@ class LogFunctionResultMsg(google.protobuf.message.Message):
 Global___LogFunctionResultMsg: typing_extensions.TypeAlias = LogFunctionResultMsg
 
 @typing.final
+class LogStartOverload(google.protobuf.message.Message):
+    """Q048"""
+
+    DESCRIPTOR: google.protobuf.descriptor.Descriptor
+
+    NODE_INFO_FIELD_NUMBER: builtins.int
+    DESCRIPTION_FIELD_NUMBER: builtins.int
+    OVERLOAD_INDEX_FIELD_NUMBER: builtins.int
+    TOTAL_OVERLOADS_FIELD_NUMBER: builtins.int
+    description: builtins.str
+    overload_index: builtins.int
+    total_overloads: builtins.int
+    @property
+    def node_info(self) -> Global___NodeInfo: ...
+    def __init__(
+        self,
+        *,
+        node_info: Global___NodeInfo | None = ...,
+        description: builtins.str = ...,
+        overload_index: builtins.int = ...,
+        total_overloads: builtins.int = ...,
+    ) -> None: ...
+    def HasField(self, field_name: typing.Literal["node_info", b"node_info"]) -> builtins.bool: ...
+    def ClearField(self, field_name: typing.Literal["description", b"description", "node_info", b"node_info", "overload_index", b"overload_index", "total_overloads", b"total_overloads"]) -> None: ...
+
+Global___LogStartOverload: typing_extensions.TypeAlias = LogStartOverload
+
+@typing.final
+class LogStartOverloadMsg(google.protobuf.message.Message):
+    DESCRIPTOR: google.protobuf.descriptor.Descriptor
+
+    INFO_FIELD_NUMBER: builtins.int
+    DATA_FIELD_NUMBER: builtins.int
+    @property
+    def info(self) -> Global___CoreEventInfo: ...
+    @property
+    def data(self) -> Global___LogStartOverload: ...
+    def __init__(
+        self,
+        *,
+        info: Global___CoreEventInfo | None = ...,
+        data: Global___LogStartOverload | None = ...,
+    ) -> None: ...
+    def HasField(self, field_name: typing.Literal["data", b"data", "info", b"info"]) -> builtins.bool: ...
+    def ClearField(self, field_name: typing.Literal["data", b"data", "info", b"info"]) -> None: ...
+
+Global___LogStartOverloadMsg: typing_extensions.TypeAlias = LogStartOverloadMsg
+
+@typing.final
+class LogOverloadResult(google.protobuf.message.Message):
+    """Q049"""
+
+    DESCRIPTOR: google.protobuf.descriptor.Descriptor
+
+    NODE_INFO_FIELD_NUMBER: builtins.int
+    DESCRIPTION_FIELD_NUMBER: builtins.int
+    STATUS_FIELD_NUMBER: builtins.int
+    OVERLOAD_INDEX_FIELD_NUMBER: builtins.int
+    TOTAL_OVERLOADS_FIELD_NUMBER: builtins.int
+    EXECUTION_TIME_FIELD_NUMBER: builtins.int
+    GROUP_FIELD_NUMBER: builtins.int
+    description: builtins.str
+    status: builtins.str
+    overload_index: builtins.int
+    total_overloads: builtins.int
+    execution_time: builtins.float
+    @property
+    def node_info(self) -> Global___NodeInfo: ...
+    @property
+    def group(self) -> Global___Group: ...
+    def __init__(
+        self,
+        *,
+        node_info: Global___NodeInfo | None = ...,
+        description: builtins.str = ...,
+        status: builtins.str = ...,
+        overload_index: builtins.int = ...,
+        total_overloads: builtins.int = ...,
+        execution_time: builtins.float = ...,
+        group: Global___Group | None = ...,
+    ) -> None: ...
+    def HasField(self, field_name: typing.Literal["group", b"group", "node_info", b"node_info"]) -> builtins.bool: ...
+    def ClearField(self, field_name: typing.Literal["description", b"description", "execution_time", b"execution_time", "group", b"group", "node_info", b"node_info", "overload_index", b"overload_index", "status", b"status", "total_overloads", b"total_overloads"]) -> None: ...
+
+Global___LogOverloadResult: typing_extensions.TypeAlias = LogOverloadResult
+
+@typing.final
+class LogOverloadResultMsg(google.protobuf.message.Message):
+    DESCRIPTOR: google.protobuf.descriptor.Descriptor
+
+    INFO_FIELD_NUMBER: builtins.int
+    DATA_FIELD_NUMBER: builtins.int
+    @property
+    def info(self) -> Global___CoreEventInfo: ...
+    @property
+    def data(self) -> Global___LogOverloadResult: ...
+    def __init__(
+        self,
+        *,
+        info: Global___CoreEventInfo | None = ...,
+        data: Global___LogOverloadResult | None = ...,
+    ) -> None: ...
+    def HasField(self, field_name: typing.Literal["data", b"data", "info", b"info"]) -> builtins.bool: ...
+    def ClearField(self, field_name: typing.Literal["data", b"data", "info", b"info"]) -> None: ...
+
+Global___LogOverloadResultMsg: typing_extensions.TypeAlias = LogOverloadResultMsg
+
+@typing.final
 class CatchableExceptionOnRun(google.protobuf.message.Message):
     """Skipped W001
 
