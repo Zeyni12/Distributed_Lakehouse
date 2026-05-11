@@ -1,0 +1,9 @@
+{
+  "mappings": [
+    {
+      "prefix": "s3://lakehouse/",
+      "accessKey": "minio",
+      "secretKey": "minio12345"
+    }
+  ]
+}

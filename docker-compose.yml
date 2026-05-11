@@ -279,15 +279,6 @@ services:
     volumes:
       - minio-data:/data
     restart: always
-  # nessie:
-  #   image: projectnessie/nessie
-  #   container_name: nessie
-  #   ports:
-  #     - "19120:19120"
-  #   environment:
-  #     QUARKUS_PROFILE: prod
-  #   restart: always
-
   nessie:
    image: ghcr.io/projectnessie/nessie:0.107.5
    container_name: nessie
@@ -300,59 +291,88 @@ services:
     NESSIE_CATALOG_DEFAULT_WAREHOUSE: warehouse
     NESSIE_CATALOG_WAREHOUSES__WAREHOUSE__LOCATION: s3://lakehouse/
     NESSIE_CATALOG_SERVICE_S3_DEFAULT_OPTIONS_ENDPOINT: http://minio:9000
+    NESSIE_CATALOG_SERVICE_S3_DEFAULT_OPTIONS_EXTERNAL_ENDPOINT: http://minio:9000
     NESSIE_CATALOG_SERVICE_S3_DEFAULT_OPTIONS_PATH_STYLE_ACCESS: "true"
     NESSIE_CATALOG_SERVICE_S3_DEFAULT_OPTIONS_REGION: us-east-1
-    NESSIE_CATALOG_SERVICE_S3_DEFAULT_OPTIONS_ACCESS_KEY_ID: minio
-    NESSIE_CATALOG_SERVICE_S3_DEFAULT_OPTIONS_SECRET_ACCESS_KEY: minio12345
+    NESSIE_CATALOG_SERVICE_S3_DEFAULT_OPTIONS_REQUEST_SIGNING_ENABLED: "false"
+    NESSIE_CATALOG_SERVICE_S3_DEFAULT_OPTIONS_AUTH_TYPE: "STATIC"
+    # Use quarkus config to inject credentials
+    QUARKUS_NATIVE_RESOURCES_INCLUDES: "**"
+    nessie.catalog.service.s3.default-options.access-key.name: minio
+    nessie.catalog.service.s3.default-options.access-key.secret: minio12345
    networks:
     - lakehouse
-
   trino-coordinator:
-    image: trinodb/trino:latest
-    networks: 
-      - lakehouse
-    container_name: trino-coordinator
-    ports:
-      - "8088:8080"
-    volumes:
-      - ./coordinator/config.properties:/etc/trino/config.properties
-      - ./catalog:/etc/trino/catalog
-    restart: always
+   image: trinodb/trino:latest
+   container_name: trino-coordinator
+   ports:
+    - "8088:8080"
+   volumes:
+    - ./coordinator/config.properties:/etc/trino/config.properties
+    - ./catalog:/etc/trino/catalog
+   healthcheck:
+    test: ["CMD", "curl", "-f", "http://localhost:8080/v1/info"]
+    interval: 30s
+    timeout: 10s
+    retries: 10
+    start_period: 180s    # ← give Trino 2 minutes to start
+   networks:
+    - lakehouse
+   restart: always
 
   trino-worker-1:
-    image: trinodb/trino:latest
-    networks:
-       - lakehouse
-    container_name: trino-worker-1
-    volumes:
-      - ./worker/config.properties:/etc/trino/config.properties
-      - ./catalog:/etc/trino/catalog
-    depends_on:
-      - trino-coordinator
-    restart: always
+   image: trinodb/trino:latest
+   networks:
+    - lakehouse
+   container_name: trino-worker-1
+   volumes:
+    - ./worker/config.properties:/etc/trino/config.properties
+    - ./catalog:/etc/trino/catalog
+   healthcheck:
+    test: ["CMD", "curl", "-f", "http://localhost:8080/v1/info"]
+    interval: 30s
+    timeout: 10s
+    retries: 10
+    start_period: 180s
+   depends_on:
+    - trino-coordinator
+   restart: always
 
   trino-worker-2:
-    image: trinodb/trino:latest
-    networks:
-      - lakehouse
-    container_name: trino-worker-2
-    volumes:
-      - ./worker/config.properties:/etc/trino/config.properties
-      - ./catalog:/etc/trino/catalog
-    depends_on:
-      - trino-coordinator
-    restart: always
+   image: trinodb/trino:latest
+   networks:
+    - lakehouse
+   container_name: trino-worker-2
+   volumes:
+    - ./worker/config.properties:/etc/trino/config.properties
+    - ./catalog:/etc/trino/catalog
+   healthcheck:
+    test: ["CMD", "curl", "-f", "http://localhost:8080/v1/info"]
+    interval: 30s
+    timeout: 10s
+    retries: 10
+    start_period: 180s
+   depends_on:
+    - trino-coordinator
+   restart: always
+
   trino-worker-3:
-    image: trinodb/trino:latest
-    networks:
-       - lakehouse
-    container_name: trino-worker-3
-    volumes:
-      - ./worker/config.properties:/etc/trino/config.properties
-      - ./catalog:/etc/trino/catalog
-    depends_on:
-      - trino-coordinator
-    restart: always  
+   image: trinodb/trino:latest
+   networks:
+    - lakehouse
+   container_name: trino-worker-3
+   volumes:
+    - ./worker/config.properties:/etc/trino/config.properties
+    - ./catalog:/etc/trino/catalog
+   healthcheck:
+    test: ["CMD", "curl", "-f", "http://localhost:8080/v1/info"]
+    interval: 30s
+    timeout: 10s
+    retries: 10
+    start_period: 180s
+   depends_on:
+    - trino-coordinator
+   restart: always
 
 volumes:
   postgres-db-volume:

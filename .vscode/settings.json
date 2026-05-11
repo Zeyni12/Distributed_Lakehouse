@@ -1,0 +1,43 @@
+{
+    "sqltools.connections": [
+        {
+            "trinoOptions": {
+                "ssl": {
+                    "rejectUnauthorized": true
+                }
+            },
+            "previewLimit": 50,
+            "driver": "Trino Driver",
+            "name": "@localhost",
+            "server": "localhost",
+            "user": "trinoadmin",
+            "catalog": "iceberg"
+        },
+        {
+            "trinoOptions": {
+                "ssl": {
+                    "rejectUnauthorized": true
+                }
+            },
+            "previewLimit": 50,
+            "driver": "Trino Driver",
+            "server": "localhost:8088",
+            "catalog": "iceberg",
+            "user": "trinoadmin",
+            "name": "@localhost"
+        },
+        {
+            "trinoOptions": {
+                "ssl": {
+                    "rejectUnauthorized": true
+                }
+            },
+            "previewLimit": 50,
+            "driver": "Trino Driver",
+            "name": "Trino local",
+            "server": "localhost:8088",
+            "user": "trino",
+            "catalog": "iveberg"
+        }
+    ]
+}
