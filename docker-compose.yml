@@ -279,29 +279,24 @@ services:
     volumes:
       - minio-data:/data
     restart: always
-  nessie:
-   image: ghcr.io/projectnessie/nessie:0.107.5
-   container_name: nessie
-   ports:
-    - "19120:19120"
-   environment:
-    QUARKUS_HTTP_PORT: 19120
-    NESSIE_VERSION_STORE_TYPE: IN_MEMORY
-    NESSIE_CATALOG_ENABLED: "true"
-    NESSIE_CATALOG_DEFAULT_WAREHOUSE: warehouse
-    NESSIE_CATALOG_WAREHOUSES__WAREHOUSE__LOCATION: s3://lakehouse/
-    NESSIE_CATALOG_SERVICE_S3_DEFAULT_OPTIONS_ENDPOINT: http://minio:9000
-    NESSIE_CATALOG_SERVICE_S3_DEFAULT_OPTIONS_EXTERNAL_ENDPOINT: http://minio:9000
-    NESSIE_CATALOG_SERVICE_S3_DEFAULT_OPTIONS_PATH_STYLE_ACCESS: "true"
-    NESSIE_CATALOG_SERVICE_S3_DEFAULT_OPTIONS_REGION: us-east-1
-    NESSIE_CATALOG_SERVICE_S3_DEFAULT_OPTIONS_REQUEST_SIGNING_ENABLED: "false"
-    NESSIE_CATALOG_SERVICE_S3_DEFAULT_OPTIONS_AUTH_TYPE: "STATIC"
-    # Use quarkus config to inject credentials
-    QUARKUS_NATIVE_RESOURCES_INCLUDES: "**"
-    nessie.catalog.service.s3.default-options.access-key.name: minio
-    nessie.catalog.service.s3.default-options.access-key.secret: minio12345
-   networks:
-    - lakehouse
+  iceberg-rest:
+    image: tabulario/iceberg-rest:latest
+    container_name: iceberg-rest
+    ports:
+      - "8181:8181"
+    environment:
+      CATALOG_WAREHOUSE: s3://lakehouse/
+      CATALOG_IO__IMPL: org.apache.iceberg.aws.s3.S3FileIO
+      CATALOG_S3_ENDPOINT: http://minio:9000
+      CATALOG_S3_PATH__STYLE__ACCESS: "true"
+      CATALOG_S3_ACCESS__KEY__ID: minio
+      CATALOG_S3_SECRET__ACCESS__KEY: minio12345
+      AWS_ACCESS_KEY_ID: minio
+      AWS_SECRET_ACCESS_KEY: minio12345
+      AWS_REGION: us-east-1
+    networks:
+      - lakehouse
+    restart: always
   trino-coordinator:
    image: trinodb/trino:latest
    container_name: trino-coordinator

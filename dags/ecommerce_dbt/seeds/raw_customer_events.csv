@@ -1,201 +1,201 @@
-event_id,customer_id,session_id,event_type,event_timestamp,page_url,product_id
-e00001,c12,s26,search,2026-05-25T21:25:05,/page/11,p1
-e00002,c15,s75,page_view,2026-05-06T09:54:41,/page/17,p71
-e00003,c49,s12,purchase,2026-05-27T15:10:02,/page/7,p43
-e00004,c24,s34,page_view,2026-05-25T23:20:50,/page/4,p54
-e00005,c26,s61,page_view,2026-05-09T02:04:25,/page/19,p12
-e00006,c22,s35,purchase,2026-05-10T23:50:04,/page/17,p116
-e00007,c32,s18,page_view,2026-05-13T14:52:09,/page/3,p118
-e00008,c22,s26,page_view,2026-05-30T12:59:19,/page/4,p55
-e00009,c5,s27,purchase,2026-05-05T22:50:57,/page/11,p34
-e00010,c30,s71,page_view,2026-05-21T14:59:41,/page/4,p62
-e00011,c21,s52,purchase,2026-05-02T21:28:06,/page/7,p77
-e00012,c8,s34,add_to_cart,2026-05-09T16:48:37,/page/9,p23
-e00013,c15,s9,purchase,2026-05-30T02:49:04,/page/4,p107
-e00014,c41,s51,purchase,2026-05-01T10:21:08,/page/7,p118
-e00015,c25,s55,purchase,2026-05-26T05:15:52,/page/3,p81
-e00016,c39,s24,search,2026-05-22T00:17:14,/page/6,p56
-e00017,c37,s14,product_view,2026-05-27T08:06:20,/page/20,p76
-e00018,c29,s12,product_view,2026-05-22T07:41:21,/page/16,p60
-e00019,c12,s17,purchase,2026-05-21T02:43:31,/page/11,p53
-e00020,c15,s38,product_view,2026-05-02T22:00:44,/page/4,p78
-e00021,c42,s12,add_to_cart,2026-05-27T09:38:01,/page/6,p32
-e00022,c42,s42,purchase,2026-05-30T23:46:20,/page/18,p51
-e00023,c18,s9,product_view,2026-05-17T11:25:19,/page/12,p57
-e00024,c41,s60,add_to_cart,2026-05-08T14:50:48,/page/1,p76
-e00025,c5,s18,add_to_cart,2026-05-16T03:29:34,/page/20,p61
-e00026,c50,s24,product_view,2026-05-20T12:05:48,/page/19,p82
-e00027,c22,s68,add_to_cart,2026-05-19T02:06:49,/page/18,p71
-e00028,c50,s19,product_view,2026-05-16T01:26:04,/page/6,p82
-e00029,c20,s76,purchase,2026-05-27T17:52:46,/page/19,p74
-e00030,c36,s2,purchase,2026-05-28T13:29:11,/page/7,p34
-e00031,c50,s5,page_view,2026-05-01T14:44:18,/page/5,p81
-e00032,c37,s4,add_to_cart,2026-05-30T04:23:21,/page/9,p112
-e00033,c46,s20,add_to_cart,2026-05-20T00:29:43,/page/5,p62
-e00034,c31,s46,page_view,2026-05-23T17:12:51,/page/15,p84
-e00035,c25,s80,search,2026-05-24T21:59:57,/page/13,p105
-e00036,c23,s23,page_view,2026-05-15T05:10:08,/page/12,p58
-e00037,c49,s41,purchase,2026-05-28T02:08:38,/page/10,p11
-e00038,c44,s62,purchase,2026-05-07T17:13:39,/page/15,p9
-e00039,c30,s21,product_view,2026-05-15T16:29:43,/page/1,p34
-e00040,c9,s52,search,2026-05-17T09:15:30,/page/8,p49
-e00041,c41,s37,product_view,2026-05-30T12:07:54,/page/1,p63
-e00042,c42,s32,add_to_cart,2026-05-03T04:51:00,/page/15,p40
-e00043,c11,s3,product_view,2026-05-28T16:57:01,/page/7,p42
-e00044,c4,s67,page_view,2026-05-25T19:25:09,/page/10,p6
-e00045,c13,s76,search,2026-05-30T13:09:39,/page/16,p11
-e00046,c47,s73,product_view,2026-05-02T19:02:19,/page/16,p26
-e00047,c18,s18,product_view,2026-05-07T08:08:26,/page/11,p45
-e00048,c34,s76,add_to_cart,2026-05-15T00:27:07,/page/19,p31
-e00049,c7,s11,search,2026-05-21T13:41:04,/page/12,p24
-e00050,c12,s29,add_to_cart,2026-05-04T23:25:46,/page/19,p31
-e00051,c33,s60,page_view,2026-05-13T19:31:01,/page/7,p91
-e00052,c22,s42,purchase,2026-05-29T08:29:29,/page/3,p111
-e00053,c10,s72,add_to_cart,2026-05-13T16:43:46,/page/13,p21
-e00054,c24,s25,add_to_cart,2026-05-12T15:23:55,/page/3,p119
-e00055,c29,s56,add_to_cart,2026-05-07T19:16:32,/page/11,p6
-e00056,c22,s22,search,2026-05-19T02:26:34,/page/19,p8
-e00057,c37,s14,product_view,2026-05-28T15:38:29,/page/16,p27
-e00058,c23,s30,search,2026-05-22T01:52:09,/page/18,p86
-e00059,c26,s77,page_view,2026-05-30T15:08:43,/page/7,p8
-e00060,c11,s43,search,2026-05-04T11:24:38,/page/13,p72
-e00061,c10,s52,purchase,2026-05-26T06:40:56,/page/13,p106
-e00062,c36,s76,search,2026-05-05T15:00:51,/page/4,p67
-e00063,c11,s19,search,2026-05-27T07:00:36,/page/9,p45
-e00064,c26,s2,purchase,2026-05-13T03:53:47,/page/5,p16
-e00065,c29,s1,search,2026-05-21T00:57:47,/page/10,p64
-e00066,c10,s63,product_view,2026-05-08T23:51:17,/page/14,p89
-e00067,c19,s18,purchase,2026-05-27T18:01:57,/page/13,p39
-e00068,c16,s33,purchase,2026-05-18T22:53:10,/page/3,p61
-e00069,c16,s61,add_to_cart,2026-05-21T00:14:54,/page/19,p69
-e00070,c28,s32,purchase,2026-05-18T09:39:45,/page/8,p88
-e00071,c16,s6,add_to_cart,2026-05-27T15:06:37,/page/4,p39
-e00072,c29,s37,purchase,2026-05-16T13:25:03,/page/9,p30
-e00073,c45,s36,add_to_cart,2026-05-04T22:34:54,/page/8,p84
-e00074,c36,s56,add_to_cart,2026-05-18T11:42:09,/page/1,p15
-e00075,c10,s79,search,2026-05-07T03:06:30,/page/4,p15
-e00076,c23,s16,purchase,2026-05-30T13:11:08,/page/16,p11
-e00077,c46,s34,page_view,2026-05-10T08:50:19,/page/10,p71
-e00078,c6,s71,page_view,2026-05-10T16:57:05,/page/2,p87
-e00079,c46,s27,product_view,2026-05-07T00:07:13,/page/8,p1
-e00080,c20,s37,purchase,2026-05-29T20:46:52,/page/5,p29
-e00081,c37,s25,product_view,2026-05-05T18:30:11,/page/15,p99
-e00082,c13,s57,search,2026-05-08T16:41:07,/page/10,p112
-e00083,c36,s37,purchase,2026-05-11T17:20:07,/page/20,p25
-e00084,c23,s3,add_to_cart,2026-05-08T22:13:51,/page/17,p61
-e00085,c16,s79,search,2026-05-14T00:53:13,/page/16,p13
-e00086,c18,s58,page_view,2026-05-03T23:26:33,/page/12,p99
-e00087,c49,s37,purchase,2026-05-01T00:14:32,/page/13,p86
-e00088,c33,s44,product_view,2026-05-09T20:46:05,/page/18,p60
-e00089,c43,s3,page_view,2026-05-27T00:30:44,/page/7,p49
-e00090,c37,s39,search,2026-05-12T02:45:38,/page/12,p59
-e00091,c41,s49,search,2026-05-07T13:55:51,/page/19,p18
-e00092,c8,s35,product_view,2026-05-02T12:18:39,/page/7,p28
-e00093,c44,s79,product_view,2026-05-16T14:03:00,/page/1,p34
-e00094,c46,s9,page_view,2026-05-27T03:17:49,/page/17,p119
-e00095,c18,s3,purchase,2026-05-03T10:07:18,/page/20,p87
-e00096,c12,s57,add_to_cart,2026-05-06T11:03:49,/page/9,p22
-e00097,c12,s51,page_view,2026-05-10T08:09:43,/page/6,p37
-e00098,c16,s4,search,2026-05-19T17:17:57,/page/1,p110
-e00099,c17,s43,product_view,2026-05-30T13:00:45,/page/8,p112
-e00100,c9,s24,page_view,2026-05-30T09:48:50,/page/8,p104
-e00101,c31,s50,purchase,2026-05-14T16:06:21,/page/20,p103
-e00102,c2,s1,product_view,2026-05-05T05:06:07,/page/17,p103
-e00103,c31,s53,page_view,2026-05-27T21:10:01,/page/4,p104
-e00104,c23,s53,page_view,2026-05-20T03:30:47,/page/7,p108
-e00105,c2,s19,purchase,2026-05-06T01:52:06,/page/16,p76
-e00106,c25,s25,page_view,2026-05-18T06:50:21,/page/19,p63
-e00107,c23,s78,product_view,2026-05-15T07:44:00,/page/2,p98
-e00108,c41,s60,page_view,2026-05-10T22:26:21,/page/11,p5
-e00109,c27,s55,page_view,2026-05-25T23:33:50,/page/14,p63
-e00110,c44,s9,add_to_cart,2026-05-22T17:35:33,/page/13,p48
-e00111,c4,s60,purchase,2026-05-21T02:39:43,/page/17,p39
-e00112,c36,s78,add_to_cart,2026-05-29T01:56:24,/page/9,p82
-e00113,c48,s63,product_view,2026-05-04T12:00:20,/page/18,p28
-e00114,c9,s28,purchase,2026-05-19T17:59:12,/page/4,p23
-e00115,c5,s66,add_to_cart,2026-05-14T15:33:56,/page/4,p10
-e00116,c43,s15,search,2026-05-30T13:14:51,/page/9,p32
-e00117,c34,s51,product_view,2026-05-29T04:21:59,/page/15,p13
-e00118,c11,s34,product_view,2026-05-05T21:29:34,/page/11,p94
-e00119,c39,s16,product_view,2026-05-02T02:58:02,/page/13,p113
-e00120,c22,s48,add_to_cart,2026-05-26T16:27:33,/page/16,p24
-e00121,c38,s43,add_to_cart,2026-05-04T16:23:11,/page/10,p25
-e00122,c11,s41,page_view,2026-05-02T13:14:02,/page/7,p25
-e00123,c6,s40,product_view,2026-05-13T20:20:55,/page/7,p70
-e00124,c22,s37,product_view,2026-05-29T14:48:15,/page/14,p104
-e00125,c10,s80,page_view,2026-05-23T12:24:54,/page/9,p2
-e00126,c26,s54,product_view,2026-05-12T16:43:03,/page/15,p101
-e00127,c11,s37,search,2026-05-04T11:25:09,/page/15,p27
-e00128,c23,s65,purchase,2026-05-07T12:01:44,/page/2,p38
-e00129,c43,s3,product_view,2026-05-02T01:16:06,/page/18,p10
-e00130,c40,s22,add_to_cart,2026-05-07T13:29:31,/page/16,p30
-e00131,c33,s72,page_view,2026-05-04T22:15:44,/page/1,p91
-e00132,c35,s48,page_view,2026-05-13T04:29:13,/page/13,p20
-e00133,c9,s43,page_view,2026-05-16T15:24:34,/page/2,p116
-e00134,c34,s77,page_view,2026-05-07T05:04:19,/page/9,p38
-e00135,c7,s59,search,2026-05-14T02:59:04,/page/14,p89
-e00136,c38,s75,add_to_cart,2026-05-17T00:19:59,/page/15,p26
-e00137,c50,s70,product_view,2026-05-23T11:21:40,/page/15,p10
-e00138,c37,s24,purchase,2026-05-21T03:36:14,/page/19,p99
-e00139,c18,s19,purchase,2026-05-03T13:53:36,/page/2,p97
-e00140,c45,s1,page_view,2026-05-18T20:28:57,/page/15,p15
-e00141,c31,s19,page_view,2026-05-18T21:50:20,/page/19,p39
-e00142,c43,s60,search,2026-05-20T11:13:54,/page/1,p69
-e00143,c14,s30,page_view,2026-05-15T14:52:34,/page/16,p87
-e00144,c36,s25,purchase,2026-05-27T10:03:34,/page/11,p90
-e00145,c3,s48,product_view,2026-05-01T22:14:13,/page/10,p99
-e00146,c23,s69,purchase,2026-05-24T14:47:56,/page/1,p43
-e00147,c15,s1,product_view,2026-05-30T18:04:52,/page/1,p6
-e00148,c46,s40,add_to_cart,2026-05-11T16:04:43,/page/8,p12
-e00149,c34,s12,add_to_cart,2026-05-18T01:35:21,/page/16,p46
-e00150,c40,s65,purchase,2026-05-19T17:41:05,/page/10,p8
-e00151,c50,s51,search,2026-05-21T23:10:20,/page/9,p87
-e00152,c22,s25,add_to_cart,2026-05-02T23:25:44,/page/16,p11
-e00153,c12,s15,product_view,2026-05-11T10:45:59,/page/7,p21
-e00154,c16,s62,search,2026-05-12T09:22:08,/page/15,p83
-e00155,c11,s65,search,2026-05-05T20:28:29,/page/17,p67
-e00156,c49,s14,product_view,2026-05-17T13:02:09,/page/18,p44
-e00157,c25,s36,search,2026-05-23T20:32:47,/page/10,p42
-e00158,c39,s14,purchase,2026-05-06T08:25:14,/page/1,p50
-e00159,c48,s71,add_to_cart,2026-05-22T00:54:55,/page/19,p52
-e00160,c35,s53,search,2026-05-18T02:02:14,/page/7,p90
-e00161,c40,s17,product_view,2026-05-22T18:05:44,/page/1,p67
-e00162,c11,s38,add_to_cart,2026-05-09T00:14:49,/page/15,p35
-e00163,c32,s38,product_view,2026-05-13T13:51:12,/page/18,p21
-e00164,c18,s75,add_to_cart,2026-05-28T08:45:53,/page/15,p63
-e00165,c24,s43,purchase,2026-05-26T04:02:26,/page/1,p103
-e00166,c27,s39,product_view,2026-05-14T00:27:20,/page/19,p102
-e00167,c23,s73,product_view,2026-05-23T14:36:21,/page/8,p114
-e00168,c16,s68,add_to_cart,2026-05-29T07:37:06,/page/16,p7
-e00169,c42,s12,page_view,2026-05-25T07:10:54,/page/13,p3
-e00170,c3,s47,add_to_cart,2026-05-14T05:52:56,/page/20,p84
-e00171,c25,s1,search,2026-05-25T06:38:30,/page/14,p99
-e00172,c28,s59,add_to_cart,2026-05-25T21:55:18,/page/4,p84
-e00173,c8,s74,product_view,2026-05-26T17:17:52,/page/3,p107
-e00174,c45,s26,add_to_cart,2026-05-12T23:49:42,/page/14,p98
-e00175,c44,s38,purchase,2026-05-21T19:24:29,/page/8,p40
-e00176,c3,s25,add_to_cart,2026-05-26T04:42:01,/page/13,p7
-e00177,c18,s69,product_view,2026-05-20T06:49:31,/page/4,p8
-e00178,c4,s57,add_to_cart,2026-05-25T17:31:21,/page/19,p36
-e00179,c20,s50,page_view,2026-05-21T17:55:41,/page/19,p34
-e00180,c9,s19,page_view,2026-05-19T16:28:59,/page/4,p22
-e00181,c36,s48,search,2026-05-04T04:15:03,/page/13,p87
-e00182,c46,s52,product_view,2026-05-26T18:24:43,/page/17,p6
-e00183,c27,s29,add_to_cart,2026-05-28T14:14:14,/page/20,p10
-e00184,c44,s40,page_view,2026-05-18T09:41:24,/page/10,p66
-e00185,c7,s18,add_to_cart,2026-05-12T04:18:29,/page/13,p24
-e00186,c3,s9,add_to_cart,2026-05-24T10:02:13,/page/18,p23
-e00187,c4,s16,search,2026-05-06T22:24:55,/page/13,p95
-e00188,c11,s32,search,2026-05-09T22:38:06,/page/18,p81
-e00189,c22,s22,search,2026-05-11T16:12:17,/page/9,p72
-e00190,c38,s42,product_view,2026-05-20T22:14:27,/page/17,p49
-e00191,c47,s80,search,2026-05-06T13:10:47,/page/6,p92
-e00192,c13,s75,search,2026-05-12T23:24:44,/page/7,p77
-e00193,c27,s24,search,2026-05-26T21:32:25,/page/5,p65
-e00194,c14,s66,search,2026-05-11T04:37:50,/page/2,p80
-e00195,c46,s75,search,2026-05-30T22:28:39,/page/3,p70
-e00196,c11,s32,product_view,2026-05-11T12:15:13,/page/1,p90
-e00197,c50,s21,product_view,2026-05-26T18:25:57,/page/11,p38
-e00198,c18,s22,search,2026-05-28T18:08:41,/page/13,p32
-e00199,c49,s70,search,2026-05-12T01:47:46,/page/5,p24
-e00200,c20,s32,add_to_cart,2026-05-02T06:52:26,/page/4,p83
+event_id,customer_id,session_id,event_type,event_timestamp,page_url,product_id,category_id,referrer_source,device_type,user_agent,ip_address
+e00001,c41,s15,search,2026-12-09T07:14:08,/page/24,,cat2,facebook,tablet,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/124.0 Mobile Safari/537.36,9.15.47.56
+e00002,c15,s65,search,2026-09-07T22:41:44,/page/18,,cat7,email,mobile,Mozilla/5.0 (iPad; CPU OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,72.3.81.179
+e00003,c28,s44,wishlist,2026-03-07T10:06:05,/page/13,,cat2,twitter,mobile,Mozilla/5.0 (iPad; CPU OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,68.22.235.138
+e00004,c8,s49,page_view,2026-09-10T20:39:56,/page/28,p47,cat4,facebook,desktop,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,198.148.40.219
+e00005,c15,s13,login,2026-05-15T20:53:23,/page/6,,cat6,twitter,desktop,Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,180.36.87.137
+e00006,c47,s32,purchase,2026-08-13T08:59:40,/page/23,p72,cat4,twitter,desktop,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,211.16.161.103
+e00007,c18,s9,add_to_cart,2026-10-23T10:13:41,/page/16,p51,cat8,direct,mobile,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,64.134.219.230
+e00008,c38,s52,checkout,2026-04-05T16:31:05,/page/25,,cat1,facebook,desktop,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,203.216.32.99
+e00009,c25,s77,logout,2026-09-09T17:55:00,/page/22,,cat2,instagram,tablet,Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,29.150.222.41
+e00010,c30,s1,wishlist,2026-09-25T05:32:58,/page/4,,cat5,email,desktop,Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,196.82.0.154
+e00011,c21,s63,search,2026-02-12T09:15:03,/page/8,,cat2,facebook,tablet,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/124.0 Mobile Safari/537.36,209.35.64.33
+e00012,c43,s61,purchase,2026-05-17T19:27:13,/page/30,p70,cat4,instagram,mobile,Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,113.231.61.64
+e00013,c15,s9,checkout,2026-01-19T17:14:37,/page/8,,cat1,facebook,tablet,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,59.34.16.221
+e00014,c22,s10,add_to_cart,2026-05-22T15:13:34,/page/5,p74,cat8,email,mobile,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/124.0 Mobile Safari/537.36,49.48.49.169
+e00015,c28,s46,login,2026-07-15T23:03:43,/page/21,,cat2,google,mobile,Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,205.55.127.50
+e00016,c13,s69,logout,2026-03-14T05:17:29,/page/8,,cat2,bing,tablet,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,13.7.47.238
+e00017,c49,s31,purchase,2026-07-16T15:13:55,/page/13,p8,cat3,affiliate,desktop,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/124.0 Mobile Safari/537.36,68.232.146.109
+e00018,c45,s94,logout,2026-03-07T09:13:03,/page/19,,,google,tablet,Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,15.25.244.129
+e00019,c59,s68,purchase,2026-01-17T02:54:11,/page/3,p77,cat2,email,mobile,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,242.126.20.159
+e00020,c6,s54,checkout,2026-05-07T21:45:20,/page/8,,cat5,affiliate,desktop,Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,118.161.37.3
+e00021,c30,s80,page_view,2026-02-18T06:32:16,/page/5,p45,cat2,email,mobile,Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,41.224.154.157
+e00022,c52,s84,search,2026-11-27T17:19:59,/page/22,,cat2,direct,mobile,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,228.54.79.70
+e00023,c19,s78,add_to_cart,2026-12-11T06:43:40,/page/28,p34,,bing,mobile,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,24.216.141.12
+e00024,c1,s43,purchase,2026-11-09T05:47:28,/page/18,p55,,google,desktop,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,242.76.18.214
+e00025,c24,s75,purchase,2026-07-05T01:19:23,/page/29,p6,cat6,email,tablet,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,171.52.181.200
+e00026,c36,s53,purchase,2026-04-28T05:51:51,/page/6,p53,cat1,direct,tablet,Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,201.210.127.69
+e00027,c11,s90,page_view,2026-07-28T01:54:30,/page/8,p26,cat8,twitter,mobile,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,58.12.98.103
+e00028,c22,s36,page_view,2026-05-12T20:32:25,/page/22,p69,cat6,google,desktop,Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,46.135.19.28
+e00029,c39,s56,checkout,2026-12-26T10:27:38,/page/17,,cat2,affiliate,tablet,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,66.22.223.1
+e00030,c34,s69,add_to_cart,2026-06-14T02:42:58,/page/11,p80,cat6,facebook,tablet,Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,130.158.209.84
+e00031,c26,s90,wishlist,2026-09-05T06:26:42,/page/13,,cat3,instagram,mobile,Mozilla/5.0 (iPad; CPU OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,214.0.155.74
+e00032,c14,s56,checkout,2026-08-15T14:43:13,/page/17,,cat8,direct,tablet,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,73.171.47.210
+e00033,c49,s31,wishlist,2026-04-26T06:09:01,/page/2,,cat4,bing,tablet,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,117.212.99.184
+e00034,c45,s50,logout,2026-07-08T04:41:44,/page/1,,cat2,affiliate,desktop,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,206.237.25.143
+e00035,c16,s16,logout,2026-03-26T14:42:33,/page/18,,cat6,bing,tablet,Mozilla/5.0 (iPad; CPU OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,110.228.81.191
+e00036,c56,s61,logout,2026-05-25T07:53:40,/page/9,,,bing,tablet,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,71.225.39.183
+e00037,c19,s31,wishlist,2026-06-11T17:05:08,/page/5,,cat4,affiliate,tablet,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,181.109.32.107
+e00038,c27,s43,logout,2026-07-02T06:53:26,/page/13,,cat1,affiliate,mobile,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,242.180.152.193
+e00039,c25,s54,add_to_cart,2026-08-08T08:27:31,/page/1,p50,cat6,affiliate,tablet,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,216.239.65.252
+e00040,c40,s69,search,2026-07-19T18:42:01,/page/3,,cat7,direct,mobile,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,13.133.194.84
+e00041,c14,s59,checkout,2026-06-25T12:17:48,/page/27,,cat7,instagram,desktop,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/124.0 Mobile Safari/537.36,5.26.179.58
+e00042,c42,s9,search,2026-01-08T06:53:01,/page/20,,cat3,email,desktop,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/124.0 Mobile Safari/537.36,172.58.111.120
+e00043,c45,s33,checkout,2026-03-20T19:47:45,/page/4,,cat3,instagram,desktop,Mozilla/5.0 (iPad; CPU OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,7.159.192.102
+e00044,c46,s26,page_view,2026-10-23T20:15:06,/page/23,p39,cat2,google,mobile,Mozilla/5.0 (iPad; CPU OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,110.189.35.130
+e00045,c42,s44,search,2026-07-27T15:06:27,/page/12,,cat8,direct,mobile,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,188.138.247.120
+e00046,c28,s94,wishlist,2026-06-28T07:53:59,/page/3,,cat5,bing,desktop,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/124.0 Mobile Safari/537.36,146.194.172.8
+e00047,c32,s42,purchase,2026-08-07T11:51:16,/page/11,p36,cat5,google,tablet,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,22.123.208.126
+e00048,c36,s98,add_to_cart,2026-12-16T20:45:31,/page/15,p3,cat2,instagram,desktop,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/124.0 Mobile Safari/537.36,178.124.156.170
+e00049,c38,s48,logout,2026-09-17T11:27:47,/page/18,,cat6,twitter,tablet,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/124.0 Mobile Safari/537.36,70.156.128.60
+e00050,c8,s93,add_to_cart,2026-06-04T23:34:48,/page/23,p24,cat4,email,tablet,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/124.0 Mobile Safari/537.36,71.144.51.214
+e00051,c13,s38,add_to_cart,2026-06-06T09:00:45,/page/18,p17,cat5,google,desktop,Mozilla/5.0 (iPad; CPU OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,75.64.251.27
+e00052,c56,s2,wishlist,2026-08-16T14:21:11,/page/2,,cat5,bing,desktop,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,103.251.37.148
+e00053,c41,s88,search,2026-03-05T18:19:05,/page/8,,cat2,affiliate,tablet,Mozilla/5.0 (iPad; CPU OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,203.115.194.116
+e00054,c59,s57,wishlist,2026-10-14T09:36:39,/page/2,,cat2,email,tablet,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,68.41.80.62
+e00055,c12,s71,page_view,2026-03-01T13:28:44,/page/20,p61,cat5,google,desktop,Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,181.144.232.19
+e00056,c44,s30,wishlist,2026-11-19T21:51:59,/page/7,,cat7,facebook,tablet,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,166.76.136.212
+e00057,c10,s10,search,2026-03-26T09:38:47,/page/27,,cat5,bing,desktop,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/124.0 Mobile Safari/537.36,177.155.206.242
+e00058,c18,s65,logout,2026-08-03T19:02:56,/page/14,,cat6,instagram,desktop,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,59.10.137.148
+e00059,c3,s98,purchase,2026-08-17T20:28:58,/page/9,p24,cat7,bing,desktop,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/124.0 Mobile Safari/537.36,90.209.170.83
+e00060,c43,s14,purchase,2026-06-14T22:31:18,/page/22,p52,,google,mobile,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,81.129.165.30
+e00061,c50,s52,search,2026-11-28T17:29:26,/page/2,,cat4,twitter,tablet,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/124.0 Mobile Safari/537.36,161.226.26.53
+e00062,c18,s71,purchase,2026-05-15T22:31:07,/page/1,p78,cat4,direct,mobile,Mozilla/5.0 (iPad; CPU OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,4.208.47.58
+e00063,c54,s15,logout,2026-02-21T04:31:59,/page/23,,cat5,instagram,mobile,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/124.0 Mobile Safari/537.36,251.241.124.117
+e00064,c36,s19,login,2026-04-20T16:47:56,/page/5,,cat2,instagram,mobile,Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,240.136.1.73
+e00065,c47,s39,logout,2026-03-15T17:30:22,/page/11,,,affiliate,mobile,Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,223.96.122.147
+e00066,c25,s30,login,2026-01-11T23:30:45,/page/30,,cat7,affiliate,tablet,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,127.18.64.129
+e00067,c38,s43,page_view,2026-08-04T16:58:29,/page/1,p19,cat7,direct,desktop,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/124.0 Mobile Safari/537.36,201.135.173.160
+e00068,c45,s51,page_view,2026-06-28T21:54:34,/page/13,p41,cat8,google,tablet,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,61.147.116.192
+e00069,c6,s56,page_view,2026-11-23T03:28:10,/page/23,p39,cat1,google,mobile,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,76.183.191.111
+e00070,c10,s32,login,2026-10-22T05:10:11,/page/3,,cat7,email,mobile,Mozilla/5.0 (iPad; CPU OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,37.118.236.164
+e00071,c17,s59,wishlist,2026-11-01T14:57:18,/page/22,,,direct,desktop,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/124.0 Mobile Safari/537.36,242.176.153.164
+e00072,c28,s89,wishlist,2026-08-28T09:12:24,/page/28,,cat8,facebook,desktop,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/124.0 Mobile Safari/537.36,147.183.151.180
+e00073,c19,s3,login,2026-05-01T18:55:43,/page/25,,cat1,bing,mobile,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,156.180.112.163
+e00074,c13,s80,wishlist,2026-11-25T23:49:42,/page/22,,cat3,facebook,tablet,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,80.225.17.149
+e00075,c24,s94,purchase,2026-02-10T10:47:26,/page/6,p26,cat3,twitter,tablet,Mozilla/5.0 (iPad; CPU OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,234.139.84.66
+e00076,c59,s62,wishlist,2026-12-28T10:51:07,/page/15,,cat2,direct,desktop,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/124.0 Mobile Safari/537.36,248.187.46.203
+e00077,c26,s2,wishlist,2026-09-04T14:23:43,/page/24,,cat5,affiliate,tablet,Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,28.119.241.7
+e00078,c40,s72,checkout,2026-10-08T20:04:40,/page/27,,cat8,instagram,tablet,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/124.0 Mobile Safari/537.36,30.71.23.243
+e00079,c3,s39,logout,2026-02-04T07:56:34,/page/5,,cat7,bing,mobile,Mozilla/5.0 (iPad; CPU OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,108.79.212.168
+e00080,c7,s63,login,2026-05-02T22:23:13,/page/15,,cat8,email,mobile,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,252.188.183.16
+e00081,c26,s36,add_to_cart,2026-02-28T14:05:42,/page/7,p77,cat1,google,mobile,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,254.64.105.18
+e00082,c54,s98,add_to_cart,2026-10-07T07:21:49,/page/5,p77,cat1,instagram,desktop,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,139.128.89.29
+e00083,c43,s4,purchase,2026-01-12T07:37:20,/page/1,p23,cat5,google,desktop,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/124.0 Mobile Safari/537.36,135.58.32.122
+e00084,c29,s100,checkout,2026-09-19T03:28:32,/page/8,,cat1,instagram,mobile,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,16.245.205.110
+e00085,c44,s14,logout,2026-12-15T02:57:05,/page/11,,cat3,facebook,desktop,Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,160.166.195.153
+e00086,c34,s38,logout,2026-09-20T13:06:50,/page/23,,cat2,email,mobile,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/124.0 Mobile Safari/537.36,228.116.211.87
+e00087,c53,s59,login,2026-07-24T03:20:27,/page/11,,cat5,twitter,desktop,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/124.0 Mobile Safari/537.36,18.46.43.24
+e00088,c28,s13,checkout,2026-03-18T01:37:35,/page/18,,cat6,facebook,mobile,Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,224.216.26.248
+e00089,c19,s77,wishlist,2026-06-04T18:32:13,/page/5,,cat8,email,desktop,Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,217.188.58.196
+e00090,c18,s74,add_to_cart,2026-07-28T17:49:52,/page/20,p79,,google,tablet,Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,8.92.139.180
+e00091,c49,s40,checkout,2026-06-01T05:55:09,/page/19,,cat7,facebook,desktop,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,24.110.192.108
+e00092,c30,s44,purchase,2026-06-10T23:20:49,/page/19,p77,cat2,google,desktop,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,194.25.41.70
+e00093,c29,s85,login,2026-08-20T14:26:17,/page/7,,,facebook,mobile,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/124.0 Mobile Safari/537.36,29.145.249.135
+e00094,c43,s40,search,2026-04-13T19:03:00,/page/7,,cat5,email,desktop,Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,75.167.61.2
+e00095,c32,s96,login,2026-03-05T12:34:45,/page/8,,,twitter,desktop,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/124.0 Mobile Safari/537.36,221.21.223.5
+e00096,c30,s10,checkout,2026-10-14T18:25:45,/page/21,,cat7,instagram,desktop,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/124.0 Mobile Safari/537.36,6.166.87.206
+e00097,c40,s59,checkout,2026-02-14T03:15:27,/page/19,,cat7,facebook,mobile,Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,191.173.113.86
+e00098,c50,s22,page_view,2026-09-21T03:33:32,/page/7,p45,cat6,direct,desktop,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,38.131.101.45
+e00099,c39,s20,page_view,2026-03-25T20:31:29,/page/25,p73,cat8,twitter,tablet,Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,39.225.34.121
+e00100,c29,s81,wishlist,2026-05-19T01:22:32,/page/3,,cat5,bing,mobile,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,15.188.146.20
+e00101,c42,s12,login,2026-08-19T17:50:47,/page/29,,cat1,bing,tablet,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,83.243.77.246
+e00102,c4,s58,page_view,2026-06-23T02:32:41,/page/6,p6,cat4,bing,mobile,Mozilla/5.0 (iPad; CPU OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,134.81.186.96
+e00103,c59,s37,login,2026-07-25T10:43:38,/page/2,,cat6,facebook,mobile,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,143.197.145.65
+e00104,c47,s85,purchase,2026-06-03T18:42:09,/page/30,p45,cat5,affiliate,desktop,Mozilla/5.0 (iPad; CPU OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,182.43.158.144
+e00105,c25,s83,checkout,2026-03-22T22:53:47,/page/22,,,facebook,tablet,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/124.0 Mobile Safari/537.36,131.185.9.93
+e00106,c20,s24,add_to_cart,2026-06-25T15:12:14,/page/5,p20,cat2,instagram,desktop,Mozilla/5.0 (iPad; CPU OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,198.19.172.225
+e00107,c50,s80,purchase,2026-10-13T04:10:11,/page/27,p80,cat3,bing,desktop,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/124.0 Mobile Safari/537.36,94.121.227.157
+e00108,c19,s97,logout,2026-04-18T07:19:51,/page/26,,cat8,email,mobile,Mozilla/5.0 (iPad; CPU OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,253.225.236.197
+e00109,c19,s100,login,2026-09-17T13:10:52,/page/7,,cat3,instagram,desktop,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/124.0 Mobile Safari/537.36,224.190.52.183
+e00110,c55,s67,page_view,2026-05-03T05:17:28,/page/29,p66,cat3,affiliate,desktop,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,210.230.178.239
+e00111,c2,s54,search,2026-07-17T11:15:24,/page/3,,cat6,email,desktop,Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,239.50.171.203
+e00112,c10,s18,search,2026-05-27T15:44:53,/page/5,,cat8,bing,tablet,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,232.40.9.66
+e00113,c14,s20,login,2026-02-25T09:15:19,/page/4,,cat1,email,mobile,Mozilla/5.0 (iPad; CPU OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,118.32.56.215
+e00114,c58,s64,search,2026-11-17T18:15:45,/page/5,,cat5,affiliate,desktop,Mozilla/5.0 (iPad; CPU OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,91.123.213.48
+e00115,c43,s86,page_view,2026-09-12T02:33:34,/page/17,p65,,google,mobile,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/124.0 Mobile Safari/537.36,12.198.191.65
+e00116,c48,s3,checkout,2026-02-12T07:46:42,/page/21,,cat2,twitter,desktop,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,91.173.89.213
+e00117,c50,s88,logout,2026-12-16T20:11:51,/page/5,,cat2,bing,desktop,Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,52.22.102.227
+e00118,c3,s41,wishlist,2026-09-13T17:30:16,/page/2,,cat4,instagram,mobile,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,222.169.139.32
+e00119,c52,s48,login,2026-07-24T14:57:24,/page/11,,cat3,bing,tablet,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/124.0 Mobile Safari/537.36,95.136.42.187
+e00120,c28,s11,login,2026-10-27T05:34:18,/page/11,,cat2,facebook,mobile,Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,79.228.218.43
+e00121,c45,s57,checkout,2026-08-02T23:55:58,/page/12,,cat7,instagram,tablet,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,20.207.186.132
+e00122,c52,s96,purchase,2026-01-05T19:43:50,/page/15,p5,cat3,facebook,desktop,Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,93.196.16.155
+e00123,c10,s87,logout,2026-06-12T14:48:04,/page/19,,cat3,twitter,mobile,Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,167.142.127.246
+e00124,c8,s4,purchase,2026-08-17T12:58:35,/page/4,p34,cat5,bing,desktop,Mozilla/5.0 (iPad; CPU OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,74.251.102.32
+e00125,c9,s10,logout,2026-03-23T14:05:51,/page/22,,cat6,twitter,tablet,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,141.148.153.218
+e00126,c11,s92,purchase,2026-06-17T07:07:12,/page/26,p18,cat4,bing,desktop,Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,142.188.239.206
+e00127,c36,s17,page_view,2026-02-10T12:45:46,/page/16,p68,cat7,affiliate,tablet,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,33.162.37.116
+e00128,c30,s88,checkout,2026-03-27T17:40:37,/page/6,,cat3,affiliate,tablet,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,213.63.78.78
+e00129,c11,s21,checkout,2026-12-08T11:33:57,/page/10,,cat2,instagram,desktop,Mozilla/5.0 (iPad; CPU OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,71.64.155.158
+e00130,c35,s12,purchase,2026-10-19T04:10:42,/page/20,p78,cat6,google,desktop,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,12.135.107.197
+e00131,c37,s54,search,2026-08-21T17:18:41,/page/10,,cat8,email,tablet,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/124.0 Mobile Safari/537.36,77.232.37.177
+e00132,c4,s21,logout,2026-07-16T14:13:21,/page/20,,cat3,twitter,tablet,Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,188.176.204.34
+e00133,c49,s48,page_view,2026-06-08T14:07:17,/page/15,p32,cat3,facebook,desktop,Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,243.196.214.64
+e00134,c56,s21,checkout,2026-10-24T10:12:48,/page/6,,cat8,bing,mobile,Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,128.11.46.242
+e00135,c26,s65,logout,2026-04-07T18:22:03,/page/2,,cat5,bing,tablet,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/124.0 Mobile Safari/537.36,74.4.55.111
+e00136,c9,s34,checkout,2026-07-12T01:25:03,/page/19,,,email,mobile,Mozilla/5.0 (iPad; CPU OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,74.37.197.130
+e00137,c29,s98,wishlist,2026-10-22T19:07:08,/page/4,,cat7,twitter,mobile,Mozilla/5.0 (iPad; CPU OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,241.187.73.51
+e00138,c39,s66,login,2026-09-02T01:02:08,/page/23,,cat6,bing,tablet,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/124.0 Mobile Safari/537.36,39.71.167.239
+e00139,c40,s41,purchase,2026-07-20T23:53:19,/page/19,p44,,bing,tablet,Mozilla/5.0 (iPad; CPU OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,77.243.8.95
+e00140,c22,s87,page_view,2026-07-19T09:50:57,/page/24,p4,cat8,instagram,tablet,Mozilla/5.0 (iPad; CPU OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,148.116.26.150
+e00141,c31,s22,login,2026-03-27T21:15:02,/page/19,,cat2,email,desktop,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/124.0 Mobile Safari/537.36,81.214.77.106
+e00142,c45,s27,login,2026-09-25T19:58:30,/page/28,,cat1,direct,tablet,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,144.166.244.135
+e00143,c25,s41,purchase,2026-08-18T10:34:22,/page/22,p34,cat8,email,desktop,Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,143.152.115.242
+e00144,c20,s99,wishlist,2026-12-07T22:45:31,/page/11,,cat8,twitter,tablet,Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,74.62.194.230
+e00145,c26,s45,purchase,2026-05-02T09:45:05,/page/12,p57,cat5,bing,desktop,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,212.138.139.36
+e00146,c7,s79,add_to_cart,2026-04-02T21:57:33,/page/8,p30,cat1,facebook,mobile,Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,184.241.51.175
+e00147,c50,s18,search,2026-09-06T13:41:59,/page/29,,cat8,bing,tablet,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,194.147.164.74
+e00148,c42,s8,page_view,2026-11-19T07:34:47,/page/24,p5,cat3,affiliate,desktop,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,215.203.253.48
+e00149,c60,s96,wishlist,2026-01-01T09:36:38,/page/4,,cat6,instagram,mobile,Mozilla/5.0 (iPad; CPU OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,135.252.68.218
+e00150,c33,s60,wishlist,2026-04-26T03:21:10,/page/24,,cat8,instagram,tablet,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,4.172.151.146
+e00151,c44,s97,add_to_cart,2026-03-20T20:57:25,/page/27,p55,,twitter,desktop,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/124.0 Mobile Safari/537.36,172.48.94.252
+e00152,c9,s62,checkout,2026-04-01T08:24:15,/page/15,,cat5,twitter,mobile,Mozilla/5.0 (iPad; CPU OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,186.5.133.168
+e00153,c24,s89,add_to_cart,2026-01-22T03:29:19,/page/6,p52,,instagram,tablet,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,164.151.188.158
+e00154,c15,s29,purchase,2026-08-05T14:47:38,/page/12,p54,,bing,tablet,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,196.126.41.135
+e00155,c29,s68,checkout,2026-02-19T03:03:53,/page/18,,,email,tablet,Mozilla/5.0 (iPad; CPU OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,39.84.167.219
+e00156,c34,s57,page_view,2026-11-07T22:37:31,/page/3,p66,cat8,google,mobile,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,132.212.233.145
+e00157,c4,s72,logout,2026-11-26T09:46:01,/page/13,,cat5,google,tablet,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,149.37.23.109
+e00158,c23,s90,page_view,2026-09-02T02:59:30,/page/2,p37,cat7,direct,desktop,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/124.0 Mobile Safari/537.36,96.195.229.223
+e00159,c59,s49,login,2026-02-22T21:55:34,/page/5,,cat6,facebook,desktop,Mozilla/5.0 (iPad; CPU OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,101.65.114.214
+e00160,c1,s97,search,2026-05-15T21:46:34,/page/14,,,affiliate,desktop,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,118.177.79.71
+e00161,c13,s93,page_view,2026-01-26T21:26:39,/page/25,p3,cat4,email,desktop,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,153.17.228.154
+e00162,c44,s91,search,2026-04-24T01:25:28,/page/8,,,email,desktop,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,129.148.119.209
+e00163,c59,s94,checkout,2026-10-20T21:52:20,/page/8,,cat5,direct,tablet,Mozilla/5.0 (iPad; CPU OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,57.211.153.71
+e00164,c4,s72,purchase,2026-11-22T13:35:31,/page/2,p45,cat7,twitter,tablet,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/124.0 Mobile Safari/537.36,105.76.153.97
+e00165,c12,s97,logout,2026-04-28T07:19:54,/page/23,,cat3,bing,desktop,Mozilla/5.0 (iPad; CPU OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,106.213.68.100
+e00166,c16,s33,add_to_cart,2026-06-21T02:59:28,/page/28,p48,cat2,email,desktop,Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,97.20.37.49
+e00167,c52,s98,add_to_cart,2026-08-07T10:19:58,/page/1,p28,cat4,facebook,tablet,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/124.0 Mobile Safari/537.36,235.124.104.102
+e00168,c59,s31,checkout,2026-05-13T14:34:41,/page/12,,cat5,instagram,mobile,Mozilla/5.0 (iPad; CPU OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,226.254.238.26
+e00169,c52,s93,logout,2026-06-07T11:20:26,/page/2,,cat4,direct,desktop,Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,142.213.151.40
+e00170,c13,s43,add_to_cart,2026-07-19T07:31:35,/page/21,p44,cat5,bing,tablet,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/124.0 Mobile Safari/537.36,118.86.180.44
+e00171,c9,s93,logout,2026-03-18T20:03:33,/page/2,,cat2,google,desktop,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/124.0 Mobile Safari/537.36,36.118.34.182
+e00172,c10,s2,add_to_cart,2026-09-15T11:03:39,/page/21,p79,cat8,bing,desktop,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,137.210.6.5
+e00173,c34,s93,wishlist,2026-09-10T00:32:52,/page/23,,cat7,direct,desktop,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,135.76.123.50
+e00174,c40,s68,wishlist,2026-06-09T12:05:23,/page/13,,cat8,email,tablet,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,77.41.16.24
+e00175,c26,s49,login,2026-09-16T01:40:00,/page/23,,cat3,facebook,mobile,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/124.0 Mobile Safari/537.36,166.169.48.230
+e00176,c34,s6,add_to_cart,2026-04-28T22:56:36,/page/16,p35,cat1,facebook,tablet,Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,231.16.91.238
+e00177,c55,s41,search,2026-04-19T04:48:52,/page/23,,cat7,facebook,mobile,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,145.123.199.174
+e00178,c58,s70,checkout,2026-07-25T23:08:50,/page/23,,cat2,twitter,desktop,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,112.118.38.88
+e00179,c39,s99,login,2026-06-01T20:17:50,/page/15,,cat8,email,mobile,Mozilla/5.0 (iPad; CPU OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,241.192.221.48
+e00180,c44,s75,login,2026-02-25T19:18:51,/page/8,,cat2,facebook,mobile,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,98.78.199.82
+e00181,c24,s14,page_view,2026-01-10T14:23:48,/page/9,p14,cat3,facebook,desktop,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/124.0 Mobile Safari/537.36,115.208.52.7
+e00182,c6,s46,page_view,2026-10-20T10:55:24,/page/1,p38,cat7,affiliate,desktop,Mozilla/5.0 (iPad; CPU OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,232.124.86.176
+e00183,c25,s22,purchase,2026-05-10T08:31:09,/page/3,p22,cat7,instagram,mobile,Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,124.39.184.65
+e00184,c16,s93,logout,2026-10-20T06:29:06,/page/5,,cat5,google,mobile,Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,216.194.168.113
+e00185,c22,s56,purchase,2026-05-11T19:44:12,/page/16,p41,cat3,affiliate,mobile,Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,189.251.124.84
+e00186,c25,s36,login,2026-06-04T18:12:37,/page/18,,cat3,google,tablet,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/124.0 Mobile Safari/537.36,242.107.224.205
+e00187,c19,s89,page_view,2026-07-22T15:08:40,/page/10,p31,cat5,direct,tablet,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/124.0 Mobile Safari/537.36,203.193.37.115
+e00188,c39,s62,login,2026-09-17T22:26:34,/page/2,,cat6,facebook,desktop,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,169.181.85.166
+e00189,c40,s6,login,2026-06-26T13:06:00,/page/4,,cat5,email,tablet,Mozilla/5.0 (iPad; CPU OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,143.113.228.96
+e00190,c26,s60,purchase,2026-06-01T15:06:18,/page/14,p11,cat2,direct,mobile,Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,88.233.105.134
+e00191,c31,s45,logout,2026-02-15T23:44:28,/page/11,,cat2,instagram,desktop,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,6.175.55.174
+e00192,c52,s22,add_to_cart,2026-09-06T17:10:21,/page/18,p55,cat8,email,mobile,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,48.221.202.8
+e00193,c48,s79,add_to_cart,2026-08-19T13:24:00,/page/23,p28,cat4,instagram,tablet,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,148.52.95.94
+e00194,c21,s26,logout,2026-02-09T21:55:31,/page/17,,cat6,affiliate,tablet,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/124.0 Mobile Safari/537.36,151.58.178.91
+e00195,c55,s59,purchase,2026-11-23T09:58:39,/page/19,p11,cat3,twitter,desktop,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,79.59.93.96
+e00196,c45,s19,login,2026-07-20T04:36:24,/page/14,,cat3,bing,tablet,Mozilla/5.0 (iPad; CPU OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,178.88.85.126
+e00197,c19,s18,purchase,2026-06-27T14:39:03,/page/28,p46,cat1,bing,desktop,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,209.196.253.105
+e00198,c44,s63,login,2026-12-27T14:31:10,/page/3,,cat1,email,mobile,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,71.115.147.44
+e00199,c50,s59,logout,2026-09-17T03:36:07,/page/9,,,twitter,tablet,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36,195.225.111.254
+e00200,c28,s14,add_to_cart,2026-05-28T01:28:16,/page/12,p12,cat8,facebook,desktop,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0) AppleWebKit/605.1.15 Mobile/15E148 Safari/604.1,208.179.219.43

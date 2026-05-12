@@ -7,7 +7,7 @@ SELECT
    CAST(snapshot_date AS DATE) as snapshot_date,
    CAST(quantity_on_hand AS INTEGER) as quantity_on_hand,
    CAST(quantity_reserved AS INTEGER) as quantity_reserved,
-   CAST(quantity_avaliable AS INTEGER) as quantity_available,
+   CAST(quantity_available AS INTEGER) as quantity_available,
    CAST(reorder_point AS INTEGER) as reorder_point,
    CAST(reorder_quantity AS INTEGER) as reorder_quantity,
    supplier_id, 

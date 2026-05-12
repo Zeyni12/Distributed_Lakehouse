@@ -1,6 +1,5 @@
 {{ config(materialized='table', tags=['bronze']) }}
 
-
 SELECT
     event_id,
     customer_id,
@@ -15,9 +14,5 @@ SELECT
     user_agent,
     ip_address,
     CURRENT_TIMESTAMP as ingested_at,
-    'raw_customer_events' as source_system,
-FROM {{ ref('raw_customer_events') }}  
---WHERE event_id IS NOT NULL
---AND customer_id IS NOT NULL
---AND event_timestamp IS NOT NULL  
-
+    'raw_customer_events' as source_system
+FROM {{ ref('raw_customer_events') }}

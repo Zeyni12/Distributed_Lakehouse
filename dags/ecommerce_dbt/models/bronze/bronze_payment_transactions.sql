@@ -9,7 +9,7 @@ SELECT
     CAST(amount AS DECIMAL(10,2)) as amount, 
     currency, 
     CAST(transaction_timestamp as timestamp) as transaction_timestamp,
-    CAST(processor_response_code AS VARCHAR(2)) as processor_responce_code, 
+    CAST(processor_response_code AS VARCHAR(2)) as processor_response_code, 
     CAST(gateway_fee AS decimal(10,2)) as gateway_fee, 
     merchant_id, 
     billing_country, 

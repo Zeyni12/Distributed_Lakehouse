@@ -19,8 +19,8 @@ ecommerce_trino:
       type: trino
       method: none
       user: trino
-      host: localhost
-      port: 8088
+      host: trino-coordinator 
+      port: 8080 
       database: iceberg
-      schema: bronze
+      schema: bronze_raw
       threads: 4

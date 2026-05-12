@@ -14,27 +14,27 @@ cleaned AS (
         billing_country,
 
         -- Normalize categoricals
-        LOWER(TRIM(payment_method))                             AS payment_method,
-        LOWER(TRIM(payment_status))                             AS payment_status,
-        UPPER(TRIM(currency))                                   AS currency,
-        UPPER(TRIM(processor_response_code))                    AS processor_response_code,
+        LOWER(TRIM(payment_method))  AS payment_method,
+        LOWER(TRIM(payment_status))   AS payment_status,
+        UPPER(TRIM(currency))   AS currency,
+        UPPER(TRIM(processor_response_code)) AS processor_response_code,
 
         transaction_timestamp,
-        DATE(transaction_timestamp)                             AS transaction_date,
-        DATE_TRUNC('month', transaction_timestamp)              AS transaction_month,
+        DATE(transaction_timestamp)   AS transaction_date,
+        DATE_TRUNC('month', transaction_timestamp)  AS transaction_month,
 
         -- Financials
-        GREATEST(amount, 0)                                     AS amount,
-        GREATEST(gateway_fee, 0)                                AS gateway_fee,
+        GREATEST(amount, 0)   AS amount,
+        GREATEST(gateway_fee, 0)   AS gateway_fee,
         ROUND(GREATEST(amount, 0) - GREATEST(gateway_fee, 0), 2) AS net_amount,
 
         -- Risk
-        CAST(risk_score AS INTEGER)                             AS risk_score,
+        CAST(risk_score AS INTEGER)  AS risk_score,
         CASE
-            WHEN CAST(risk_score AS INTEGER) >= 80             THEN 'high'
-            WHEN CAST(risk_score AS INTEGER) >= 50             THEN 'medium'
+            WHEN CAST(risk_score AS INTEGER) >= 80  THEN 'high'
+            WHEN CAST(risk_score AS INTEGER) >= 50   THEN 'medium'
             ELSE 'low'
-        END                                                     AS risk_tier,
+        END   AS risk_tier,
 
         -- Status flags
         CASE WHEN LOWER(TRIM(payment_status)) = 'completed'    THEN TRUE ELSE FALSE END AS is_successful,
@@ -44,7 +44,7 @@ cleaned AS (
 
         ingested_at,
         source_system,
-        CURRENT_TIMESTAMP                                       AS transformed_at
+        CURRENT_TIMESTAMP  AS transformed_at
 
     FROM source
     WHERE
